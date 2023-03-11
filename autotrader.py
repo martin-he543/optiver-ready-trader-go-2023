@@ -19,7 +19,8 @@ import asyncio
 import itertools
 from typing import List
 from ready_trader_go import BaseAutoTrader, Instrument, Lifespan, MAXIMUM_ASK, MINIMUM_BID, Side
-import datetime
+import time
+import numpy as np
 
 LOT_SIZE = 10
 POSITION_LIMIT = 100
@@ -31,7 +32,7 @@ MAX_ASK_NEAREST_TICK = MAXIMUM_ASK // TICK_SIZE_IN_CENTS * TICK_SIZE_IN_CENTS
 # list_ask_prices, list_ask_volumes, list_bid_prices, list_bid_volumes = [], [], [], []
 list_of_lists = []
 order_time = []
-current_active_orders = []
+for j in range(50): order_time.append([0])
 
 class AutoTrader(BaseAutoTrader):
     """Example Auto-trader.
@@ -95,17 +96,27 @@ class AutoTrader(BaseAutoTrader):
             
             if (ETF_AP != 0) and (FUTURE_BP * 0.9998 - ETF_AP * 1.0002) > 0 and (self.position < POSITION_LIMIT - 9):
                 for i in range(MAX_ORDERS_BUY_ETF):
-                    now = datetime.datetime.now(); #print(now, len(order_time) + 1, "ARBITRAGE OPPORTUNITY: (1) SELL FUTURE, (BUY ETF)")
-                    self.bid_id = next(self.order_ids)
-                    self.send_insert_order(self.bid_id, Side.BUY, ETF_AP, LOT_SIZE, Lifespan.FILL_AND_KILL)
-                    self.bids.add(self.bid_id); order_time.append(now)
+                    current_time = time.time()
+                    print("PRINT", current_time)
+                    if (current_time - order_time[-39][0]) > 1:      # Check if more than 50 messages in 1 second
+                        print(order_time)
+                        print("WOWZERS", current_time - order_time[-39][0])
+                        #print(now, len(order_time) + 1, "ARBITRAGE OPPORTUNITY: (1) SELL FUTURE, (BUY ETF)")
+                        self.bid_id = next(self.order_ids)
+                        self.send_insert_order(self.bid_id, Side.BUY, ETF_AP, LOT_SIZE, Lifespan.FILL_AND_KILL)
+                        # 1. Add every timestamp.
+                        self.bids.add(self.bid_id); order_time.append(current_time)
                 
             if (ETF_BP * 0.9998 - FUTURE_AP * 1.0002) > 0 and (self.position > -(POSITION_LIMIT - 9)):
                 for i in range(MAX_ORDERS_SELL_ETF):
-                    now = datetime.datetime.now(); #print(now, len(order_time) + 1, "ARBITRAGE OPPORTUNITY: (2) SELL ETF, (BUY FUTURE)")
-                    self.ask_id = next(self.order_ids)
-                    self.send_insert_order(self.ask_id, Side.SELL, ETF_BP, LOT_SIZE, Lifespan.FILL_AND_KILL)
-                    self.asks.add(self.ask_id); order_time.append(now)
+                    current_time = time.time()
+                    if (current_time - order_time[-39][0]) > 1:      # Check if more than 50 messages in 1 second
+                        print(order_time)
+                        print("WOWZERS", current_time - order_time[-39][0])
+                        # now = datetime.now(); #print(now, len(order_time) + 1, "ARBITRAGE OPPORTUNITY: (2) SELL ETF, (BUY FUTURE)")
+                        self.ask_id = next(self.order_ids)
+                        self.send_insert_order(self.ask_id, Side.SELL, ETF_BP, LOT_SIZE, Lifespan.FILL_AND_KILL)
+                        self.asks.add(self.ask_id); order_time.append(current_time)
         
         # Search FUTURE updates for Market-Maker Situation
         if instrument == Instrument.FUTURE:            
@@ -119,14 +130,18 @@ class AutoTrader(BaseAutoTrader):
         #     if self.ask_id != 0 and new_ask_price not in (self.ask_price, 0):
         #         self.send_cancel_order(self.ask_id)
         #         self.ask_id = 0
-
-            if self.bid_id == 0 and new_bid_price != 0 and self.position < POSITION_LIMIT:  # Are BUYING, position grows
-                self.bid_id = next(self.order_ids)
-                self.bid_price = new_bid_price
-                self.send_insert_order(self.bid_id, Side.BUY, new_bid_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
-                self.bids.add(self.bid_id)
+        
+        # 1. Every order is legal (quantity is correct => in last second > 50; ACTIVE ORDERS - the response time between us buying and market response: 0.125s)
+        # 2. dont make more market than possible, ie dont offer to buy more ETF when already having too much ETF
+        
+        
+            # if self.bid_id == 0 and new_bid_price != 0 and self.position < POSITION_LIMIT:  # Are BUYING, position grows
+            #     self.bid_id = next(self.order_ids)
+            #     self.bid_price = new_bid_price
+            #     self.send_insert_order(self.bid_id, Side.BUY, new_bid_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
+            #     self.bids.add(self.bid_id)
                 # current_active_orders.append(now)
-                print(self.bids, ask_volumes, bid_volumes, ask_prices, bid_prices)
+                # print(self.bids, ask_volumes, bid_volumes, ask_prices, bid_prices)
 
             # if self.ask_id == 0 and new_ask_price != 0 and self.position > -POSITION_LIMIT:
             #     self.ask_id = next(self.order_ids)
@@ -168,9 +183,7 @@ class AutoTrader(BaseAutoTrader):
         # list_ask_volumes.append(ask_volumes)
         # list_bid_prices.append(bid_prices)
         # list_bid_volumes.append(bid_volumes)
-        
         list_of_lists.append([instrument, ask_prices, ask_volumes, bid_prices, bid_volumes])
-        
         # Safety and Stability - Don't EXPLODE
         # if len(order_time) > 50:    order_time = order_time[-50:]
         # print(order_time)
@@ -187,15 +200,19 @@ class AutoTrader(BaseAutoTrader):
                          price, volume)
         if client_order_id in self.bids:
             self.position += volume
-            self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
-            order_time.append(datetime.datetime.now())
-            now = datetime.datetime.now(); #print(now, len(order_time), "HEDGE ORDER: (1) SELL FUTURE, (BUY ETF)")
+            current_time = time.time(); #print(now, len(order_time), "HEDGE ORDER: (1) SELL FUTURE, (BUY ETF)")
+            if (current_time - order_time[-39][0]) > 1:
+                print(order_time)
+                self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
+                order_time.append(time.time())
             
         elif client_order_id in self.asks:
             self.position -= volume
-            self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
-            order_time.append(datetime.datetime.now())
-            now = datetime.datetime.now(); #print(now, len(order_time), "HEDGE ORDER: (2) SELL ETF, (BUY FUTURE)")
+            current_time = time.time(); #print(now, len(order_time), "HEDGE ORDER: (2) BUY FUTURE, (SELL ETF)")
+            if (current_time - order_time[-39][0]) > 1:
+                print(order_time)
+                self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
+                order_time.append(time.time())
             
     
     def on_order_status_message(self, client_order_id: int, fill_volume: int, remaining_volume: int,
