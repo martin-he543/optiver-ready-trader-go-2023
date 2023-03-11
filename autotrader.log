@@ -33476,3 +33476,1708 @@ TypeError: unsupported operand type(s) for /: 'list' and 'int'
 2023-03-11 19:40:06,267 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 325
 2023-03-11 19:40:06,468 [INFO   ] [APP] SIGTERM signal received - shutting down...
 2023-03-11 19:40:06,469 [INFO   ] [APP] closing event loop
+2023-03-11 19:54:11,568 [INFO   ] [APP] autotrader started with arguments={rtg.py, run, autotrader.py}
+2023-03-11 19:54:11,568 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"Type":"mmap","Name":"info.dat"},"TeamName":"TraderOne","Secret":"secret"}
+2023-03-11 19:54:11,571 [INFO   ] [CONNECTION] fd=16 connection established: peer=127.0.0.1:12345
+2023-03-11 19:54:15,950 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 1
+2023-03-11 19:54:15,950 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 1
+2023-03-11 19:54:15,950 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:15,950 [INFO   ] [TRADER] received order status for order 2 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:16,226 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 2
+2023-03-11 19:54:16,226 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 2
+2023-03-11 19:54:16,467 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 3
+2023-03-11 19:54:16,467 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 3
+2023-03-11 19:54:16,693 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 4
+2023-03-11 19:54:16,693 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 4
+2023-03-11 19:54:16,747 [INFO   ] [TRADER] received order filled for order 2 with price 147400 and volume 10
+2023-03-11 19:54:16,747 [INFO   ] [TRADER] received order status for order 2 with fill volume 10 remaining 0 and fees -147
+2023-03-11 19:54:16,748 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 2
+2023-03-11 19:54:16,748 [INFO   ] [TRADER] received hedge filled for order 3 with average price 147100 and volume 10
+2023-03-11 19:54:16,913 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 5
+2023-03-11 19:54:16,914 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 5
+2023-03-11 19:54:16,944 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:16,960 [INFO   ] [TRADER] received order status for order 4 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:16,961 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 2
+2023-03-11 19:54:16,969 [INFO   ] [TRADER] received order status for order 5 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:17,236 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 6
+2023-03-11 19:54:17,237 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 6
+2023-03-11 19:54:17,237 [INFO   ] [TRADER] received order status for order 5 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:17,237 [INFO   ] [TRADER] received order status for order 6 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:17,438 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 7
+2023-03-11 19:54:17,439 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 7
+2023-03-11 19:54:17,440 [INFO   ] [TRADER] received order status for order 6 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:17,440 [INFO   ] [TRADER] received order status for order 7 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:17,655 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 8
+2023-03-11 19:54:17,655 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 8
+2023-03-11 19:54:17,949 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 3
+2023-03-11 19:54:17,961 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 9
+2023-03-11 19:54:17,961 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 9
+2023-03-11 19:54:17,965 [INFO   ] [TRADER] received order status for order 4 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:17,965 [INFO   ] [TRADER] received order status for order 7 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:17,965 [INFO   ] [TRADER] received order status for order 8 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:17,965 [INFO   ] [TRADER] received order status for order 9 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:18,103 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 4
+2023-03-11 19:54:18,201 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 10
+2023-03-11 19:54:18,201 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 10
+2023-03-11 19:54:18,201 [INFO   ] [TRADER] received order status for order 8 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:18,201 [INFO   ] [TRADER] received order status for order 9 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:18,202 [INFO   ] [TRADER] received order status for order 10 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:18,202 [INFO   ] [TRADER] received order status for order 11 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:18,438 [INFO   ] [TRADER] received order filled for order 10 with price 146700 and volume 10
+2023-03-11 19:54:18,439 [INFO   ] [TRADER] received order status for order 10 with fill volume 10 remaining 0 and fees -147
+2023-03-11 19:54:18,439 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 3
+2023-03-11 19:54:18,440 [INFO   ] [TRADER] received hedge filled for order 12 with average price 146800 and volume 10
+2023-03-11 19:54:18,445 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 11
+2023-03-11 19:54:18,445 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 11
+2023-03-11 19:54:18,445 [INFO   ] [TRADER] received order status for order 11 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:18,445 [INFO   ] [TRADER] received order status for order 13 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:18,446 [INFO   ] [TRADER] received order status for order 14 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:18,736 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 12
+2023-03-11 19:54:18,736 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 12
+2023-03-11 19:54:18,736 [INFO   ] [TRADER] received order status for order 13 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:18,737 [INFO   ] [TRADER] received order status for order 15 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:18,959 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 13
+2023-03-11 19:54:18,959 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 13
+2023-03-11 19:54:19,184 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 14
+2023-03-11 19:54:19,184 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 14
+2023-03-11 19:54:19,186 [INFO   ] [TRADER] received order status for order 15 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:19,186 [INFO   ] [TRADER] received order status for order 16 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:19,342 [INFO   ] [TRADER] received order filled for order 14 with price 147300 and volume 10
+2023-03-11 19:54:19,342 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 4
+2023-03-11 19:54:19,342 [INFO   ] [TRADER] received order status for order 14 with fill volume 10 remaining 0 and fees -147
+2023-03-11 19:54:19,342 [INFO   ] [TRADER] received hedge filled for order 17 with average price 147000 and volume 10
+2023-03-11 19:54:19,483 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 15
+2023-03-11 19:54:19,484 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 15
+2023-03-11 19:54:19,485 [INFO   ] [TRADER] received order status for order 16 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:19,485 [INFO   ] [TRADER] received order status for order 18 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:19,485 [INFO   ] [TRADER] received order status for order 19 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:19,588 [INFO   ] [TRADER] received order filled for order 18 with price 146600 and volume 10
+2023-03-11 19:54:19,588 [INFO   ] [TRADER] received order status for order 18 with fill volume 10 remaining 0 and fees -147
+2023-03-11 19:54:19,589 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 5
+2023-03-11 19:54:19,589 [INFO   ] [TRADER] received hedge filled for order 20 with average price 146800 and volume 10
+2023-03-11 19:54:19,719 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 16
+2023-03-11 19:54:19,719 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 16
+2023-03-11 19:54:19,720 [INFO   ] [TRADER] received order status for order 19 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:19,720 [INFO   ] [TRADER] received order status for order 21 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:19,720 [INFO   ] [TRADER] received order status for order 22 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:19,965 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 17
+2023-03-11 19:54:19,965 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 17
+2023-03-11 19:54:20,226 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 18
+2023-03-11 19:54:20,226 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 18
+2023-03-11 19:54:20,439 [INFO   ] [TRADER] received order filled for order 21 with price 146500 and volume 10
+2023-03-11 19:54:20,439 [INFO   ] [TRADER] received order status for order 21 with fill volume 10 remaining 0 and fees -146
+2023-03-11 19:54:20,439 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 6
+2023-03-11 19:54:20,440 [INFO   ] [TRADER] received hedge filled for order 23 with average price 146800 and volume 10
+2023-03-11 19:54:20,457 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 19
+2023-03-11 19:54:20,457 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 19
+2023-03-11 19:54:20,457 [INFO   ] [TRADER] received order status for order 22 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:20,458 [INFO   ] [TRADER] received order status for order 24 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:20,458 [INFO   ] [TRADER] received order status for order 25 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:20,742 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 20
+2023-03-11 19:54:20,743 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 20
+2023-03-11 19:54:20,743 [INFO   ] [TRADER] received order status for order 24 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:20,743 [INFO   ] [TRADER] received order status for order 25 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:20,744 [INFO   ] [TRADER] received order status for order 26 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:20,744 [INFO   ] [TRADER] received order status for order 27 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:20,991 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 21
+2023-03-11 19:54:20,991 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 21
+2023-03-11 19:54:20,993 [INFO   ] [TRADER] received order status for order 27 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:20,993 [INFO   ] [TRADER] received order status for order 28 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:21,156 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 5
+2023-03-11 19:54:21,156 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 22
+2023-03-11 19:54:21,156 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 22
+2023-03-11 19:54:21,156 [INFO   ] [TRADER] received order status for order 26 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:21,157 [INFO   ] [TRADER] received order status for order 28 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:21,157 [INFO   ] [TRADER] received order status for order 29 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:21,157 [INFO   ] [TRADER] received order status for order 30 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:21,495 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 23
+2023-03-11 19:54:21,495 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 23
+2023-03-11 19:54:21,495 [INFO   ] [TRADER] received order status for order 29 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:21,495 [INFO   ] [TRADER] received order status for order 30 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:21,495 [INFO   ] [TRADER] received order status for order 31 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:21,495 [INFO   ] [TRADER] received order status for order 32 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:21,734 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 24
+2023-03-11 19:54:21,734 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 24
+2023-03-11 19:54:21,734 [INFO   ] [TRADER] received order status for order 31 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:21,734 [INFO   ] [TRADER] received order status for order 32 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:21,735 [INFO   ] [TRADER] received order status for order 33 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:21,735 [INFO   ] [TRADER] received order status for order 34 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:21,912 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 25
+2023-03-11 19:54:21,913 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 25
+2023-03-11 19:54:21,996 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 6
+2023-03-11 19:54:22,230 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 26
+2023-03-11 19:54:22,231 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 26
+2023-03-11 19:54:22,234 [INFO   ] [TRADER] received order status for order 33 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:22,234 [INFO   ] [TRADER] received order status for order 34 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:22,234 [INFO   ] [TRADER] received order status for order 35 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:22,234 [INFO   ] [TRADER] received order filled for order 36 with price 147000 and volume 10
+2023-03-11 19:54:22,234 [INFO   ] [TRADER] received order status for order 36 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,234 [INFO   ] [TRADER] received order filled for order 37 with price 147000 and volume 10
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order status for order 37 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order filled for order 38 with price 147000 and volume 10
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order status for order 38 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order filled for order 39 with price 147000 and volume 10
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order status for order 39 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order filled for order 40 with price 147000 and volume 10
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order status for order 40 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order filled for order 41 with price 147000 and volume 10
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order status for order 41 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order filled for order 42 with price 147000 and volume 10
+2023-03-11 19:54:22,235 [INFO   ] [TRADER] received order status for order 42 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received order filled for order 43 with price 147000 and volume 10
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received order status for order 43 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received order filled for order 44 with price 147000 and volume 10
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received order status for order 44 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received order filled for order 45 with price 147000 and volume 8
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received order status for order 45 with fill volume 8 remaining 2 and fees 235
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received order status for order 45 with fill volume 8 remaining 0 and fees 235
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 7
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received order status for order 46 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received hedge filled for order 47 with average price 146700 and volume 10
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received hedge filled for order 48 with average price 146700 and volume 10
+2023-03-11 19:54:22,236 [INFO   ] [TRADER] received hedge filled for order 49 with average price 146700 and volume 10
+2023-03-11 19:54:22,237 [INFO   ] [TRADER] received hedge filled for order 50 with average price 146700 and volume 10
+2023-03-11 19:54:22,237 [INFO   ] [TRADER] received hedge filled for order 51 with average price 146700 and volume 10
+2023-03-11 19:54:22,237 [INFO   ] [TRADER] received hedge filled for order 52 with average price 146700 and volume 10
+2023-03-11 19:54:22,237 [INFO   ] [TRADER] received hedge filled for order 53 with average price 146700 and volume 10
+2023-03-11 19:54:22,237 [INFO   ] [TRADER] received hedge filled for order 54 with average price 146700 and volume 10
+2023-03-11 19:54:22,237 [INFO   ] [TRADER] received hedge filled for order 55 with average price 146700 and volume 10
+2023-03-11 19:54:22,237 [INFO   ] [TRADER] received hedge filled for order 56 with average price 146700 and volume 8
+2023-03-11 19:54:22,413 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 27
+2023-03-11 19:54:22,413 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 27
+2023-03-11 19:54:22,414 [INFO   ] [TRADER] received order status for order 35 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:22,414 [INFO   ] [TRADER] received order filled for order 57 with price 147200 and volume 10
+2023-03-11 19:54:22,415 [INFO   ] [TRADER] received order status for order 57 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,415 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 8
+2023-03-11 19:54:22,415 [INFO   ] [TRADER] received order status for order 58 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:22,415 [INFO   ] [TRADER] received hedge filled for order 59 with average price 146600 and volume 10
+2023-03-11 19:54:22,534 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 9
+2023-03-11 19:54:22,607 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 7
+2023-03-11 19:54:22,675 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 28
+2023-03-11 19:54:22,675 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 28
+2023-03-11 19:54:22,677 [INFO   ] [TRADER] received order status for order 58 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:22,677 [INFO   ] [TRADER] received order filled for order 60 with price 147200 and volume 10
+2023-03-11 19:54:22,677 [INFO   ] [TRADER] received order status for order 60 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:54:22,677 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 10
+2023-03-11 19:54:22,677 [INFO   ] [TRADER] received order status for order 61 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:22,678 [INFO   ] [TRADER] received hedge filled for order 62 with average price 146700 and volume 10
+2023-03-11 19:54:22,900 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 8
+2023-03-11 19:54:22,979 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 29
+2023-03-11 19:54:22,980 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 29
+2023-03-11 19:54:22,982 [INFO   ] [TRADER] received order status for order 61 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:22,982 [INFO   ] [TRADER] received order status for order 63 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:22,982 [INFO   ] [TRADER] received order status for order 64 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:23,228 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 30
+2023-03-11 19:54:23,228 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 30
+2023-03-11 19:54:23,230 [WARNING] [TRADER] error with order 65: order rejected: in cross with an existing order
+2023-03-11 19:54:23,230 [INFO   ] [TRADER] received order status for order 65 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:23,230 [WARNING] [TRADER] error with order 66: order rejected: in cross with an existing order
+2023-03-11 19:54:23,230 [INFO   ] [TRADER] received order status for order 66 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:23,422 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 31
+2023-03-11 19:54:23,422 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 31
+2023-03-11 19:54:23,423 [INFO   ] [TRADER] received order status for order 67 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:23,423 [WARNING] [TRADER] error with order 68: order rejected: in cross with an existing order
+2023-03-11 19:54:23,423 [INFO   ] [TRADER] received order status for order 68 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:23,423 [WARNING] [TRADER] error with order 69: order rejected: in cross with an existing order
+2023-03-11 19:54:23,423 [INFO   ] [TRADER] received order status for order 69 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:23,737 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 32
+2023-03-11 19:54:23,737 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 32
+2023-03-11 19:54:23,738 [INFO   ] [TRADER] received order status for order 70 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:23,738 [WARNING] [TRADER] error with order 71: order rejected: in cross with an existing order
+2023-03-11 19:54:23,738 [INFO   ] [TRADER] received order status for order 71 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:23,738 [WARNING] [TRADER] error with order 72: order rejected: in cross with an existing order
+2023-03-11 19:54:23,738 [INFO   ] [TRADER] received order status for order 72 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:23,939 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 33
+2023-03-11 19:54:23,939 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 33
+2023-03-11 19:54:23,942 [INFO   ] [TRADER] received order status for order 73 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:23,942 [WARNING] [TRADER] error with order 74: order rejected: in cross with an existing order
+2023-03-11 19:54:23,942 [INFO   ] [TRADER] received order status for order 74 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:23,943 [WARNING] [TRADER] error with order 75: order rejected: in cross with an existing order
+2023-03-11 19:54:23,943 [INFO   ] [TRADER] received order status for order 75 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:24,084 [INFO   ] [TRADER] received order filled for order 63 with price 147200 and volume 10
+2023-03-11 19:54:24,084 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 11
+2023-03-11 19:54:24,084 [INFO   ] [TRADER] received order status for order 63 with fill volume 10 remaining 0 and fees -147
+2023-03-11 19:54:24,084 [INFO   ] [TRADER] received hedge filled for order 76 with average price 146800 and volume 10
+2023-03-11 19:54:24,172 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 34
+2023-03-11 19:54:24,172 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 34
+2023-03-11 19:54:24,172 [INFO   ] [TRADER] received order status for order 77 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:24,172 [INFO   ] [TRADER] received order status for order 78 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:24,480 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 35
+2023-03-11 19:54:24,480 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 35
+2023-03-11 19:54:24,480 [WARNING] [TRADER] error with order 79: order rejected: in cross with an existing order
+2023-03-11 19:54:24,480 [INFO   ] [TRADER] received order status for order 79 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:24,480 [WARNING] [TRADER] error with order 80: order rejected: in cross with an existing order
+2023-03-11 19:54:24,480 [INFO   ] [TRADER] received order status for order 80 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:24,689 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 36
+2023-03-11 19:54:24,690 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 36
+2023-03-11 19:54:24,691 [INFO   ] [TRADER] received order status for order 77 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:24,691 [INFO   ] [TRADER] received order status for order 81 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:24,691 [INFO   ] [TRADER] received order status for order 82 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:24,692 [INFO   ] [TRADER] received order status for order 83 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:24,692 [INFO   ] [TRADER] received order status for order 84 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:24,835 [INFO   ] [TRADER] received order filled for order 81 with price 147000 and volume 10
+2023-03-11 19:54:24,835 [INFO   ] [TRADER] received order status for order 81 with fill volume 10 remaining 0 and fees -147
+2023-03-11 19:54:24,835 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 12
+2023-03-11 19:54:24,836 [INFO   ] [TRADER] received hedge filled for order 85 with average price 146700 and volume 10
+2023-03-11 19:54:24,936 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 37
+2023-03-11 19:54:24,937 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 37
+2023-03-11 19:54:24,937 [INFO   ] [TRADER] received order filled for order 86 with price 146400 and volume 10
+2023-03-11 19:54:24,937 [INFO   ] [TRADER] received order status for order 86 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,937 [INFO   ] [TRADER] received order status for order 87 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:24,937 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 13
+2023-03-11 19:54:24,938 [INFO   ] [TRADER] received order filled for order 88 with price 146400 and volume 10
+2023-03-11 19:54:24,938 [INFO   ] [TRADER] received order status for order 88 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,938 [INFO   ] [TRADER] received order filled for order 89 with price 146400 and volume 10
+2023-03-11 19:54:24,938 [INFO   ] [TRADER] received order status for order 89 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,938 [INFO   ] [TRADER] received order filled for order 90 with price 146400 and volume 10
+2023-03-11 19:54:24,938 [INFO   ] [TRADER] received order status for order 90 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,938 [INFO   ] [TRADER] received order filled for order 91 with price 146400 and volume 10
+2023-03-11 19:54:24,938 [INFO   ] [TRADER] received order status for order 91 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,938 [INFO   ] [TRADER] received order filled for order 92 with price 146400 and volume 10
+2023-03-11 19:54:24,938 [INFO   ] [TRADER] received order status for order 92 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order filled for order 93 with price 146400 and volume 10
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order status for order 93 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order filled for order 94 with price 146400 and volume 10
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order status for order 94 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order filled for order 95 with price 146400 and volume 10
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order status for order 95 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order filled for order 96 with price 146400 and volume 10
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order status for order 96 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order filled for order 97 with price 146400 and volume 10
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order status for order 97 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:54:24,939 [INFO   ] [TRADER] received order filled for order 98 with price 146400 and volume 9
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received order status for order 98 with fill volume 9 remaining 1 and fees 264
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received order status for order 98 with fill volume 9 remaining 0 and fees 264
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received order status for order 99 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received hedge filled for order 100 with average price 146700 and volume 10
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 14
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received hedge filled for order 101 with average price 146700 and volume 10
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received hedge filled for order 102 with average price 146700 and volume 10
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received hedge filled for order 103 with average price 146700 and volume 10
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received hedge filled for order 104 with average price 146700 and volume 10
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received hedge filled for order 105 with average price 146700 and volume 10
+2023-03-11 19:54:24,940 [INFO   ] [TRADER] received hedge filled for order 106 with average price 146700 and volume 10
+2023-03-11 19:54:24,941 [INFO   ] [TRADER] received hedge filled for order 107 with average price 146700 and volume 10
+2023-03-11 19:54:24,941 [INFO   ] [TRADER] received hedge filled for order 108 with average price 146700 and volume 10
+2023-03-11 19:54:24,941 [INFO   ] [TRADER] received hedge filled for order 109 with average price 146700 and volume 10
+2023-03-11 19:54:24,941 [INFO   ] [TRADER] received hedge filled for order 110 with average price 146700 and volume 10
+2023-03-11 19:54:24,941 [INFO   ] [TRADER] received hedge filled for order 111 with average price 146700 and volume 9
+2023-03-11 19:54:25,225 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 38
+2023-03-11 19:54:25,225 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 38
+2023-03-11 19:54:25,226 [INFO   ] [TRADER] received order status for order 87 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:25,226 [INFO   ] [TRADER] received order status for order 112 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:25,226 [INFO   ] [TRADER] received order status for order 113 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:25,474 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 39
+2023-03-11 19:54:25,474 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 39
+2023-03-11 19:54:25,475 [INFO   ] [TRADER] received order status for order 112 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:25,475 [INFO   ] [TRADER] received order status for order 113 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:25,476 [INFO   ] [TRADER] received order status for order 114 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:25,476 [INFO   ] [TRADER] received order status for order 115 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:25,476 [WARNING] [TRADER] error with order 116: order rejected: in cross with an existing order
+2023-03-11 19:54:25,476 [INFO   ] [TRADER] received order status for order 116 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:25,476 [WARNING] [TRADER] error with order 117: order rejected: in cross with an existing order
+2023-03-11 19:54:25,476 [INFO   ] [TRADER] received order status for order 117 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:25,671 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 40
+2023-03-11 19:54:25,671 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 40
+2023-03-11 19:54:25,671 [INFO   ] [TRADER] received order status for order 115 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:25,671 [INFO   ] [TRADER] received order status for order 118 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:25,672 [INFO   ] [TRADER] received order status for order 119 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:25,672 [WARNING] [TRADER] error with order 120: order rejected: in cross with an existing order
+2023-03-11 19:54:25,672 [INFO   ] [TRADER] received order status for order 120 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:25,672 [WARNING] [TRADER] error with order 121: order rejected: in cross with an existing order
+2023-03-11 19:54:25,672 [INFO   ] [TRADER] received order status for order 121 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:25,990 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 41
+2023-03-11 19:54:25,990 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 41
+2023-03-11 19:54:25,993 [INFO   ] [TRADER] received order status for order 119 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:25,994 [INFO   ] [TRADER] received order status for order 122 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:25,994 [INFO   ] [TRADER] received order status for order 123 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:25,994 [WARNING] [TRADER] error with order 124: order rejected: active order count limit breached
+2023-03-11 19:54:25,994 [INFO   ] [TRADER] received order status for order 124 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:25,994 [WARNING] [TRADER] error with order 125: order rejected: active order count limit breached
+2023-03-11 19:54:25,994 [INFO   ] [TRADER] received order status for order 125 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:26,179 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 42
+2023-03-11 19:54:26,179 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 42
+2023-03-11 19:54:26,179 [INFO   ] [TRADER] received order status for order 123 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:26,179 [INFO   ] [TRADER] received order status for order 126 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:54:26,180 [WARNING] [TRADER] error with order 127: order rejected: active order count limit breached
+2023-03-11 19:54:26,180 [INFO   ] [TRADER] received order status for order 127 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:26,180 [WARNING] [TRADER] error with order 128: order rejected: active order count limit breached
+2023-03-11 19:54:26,180 [INFO   ] [TRADER] received order status for order 128 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:26,180 [WARNING] [TRADER] error with order 129: order rejected: active order count limit breached
+2023-03-11 19:54:26,180 [INFO   ] [TRADER] received order status for order 129 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:26,432 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 43
+2023-03-11 19:54:26,432 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 43
+2023-03-11 19:54:26,436 [WARNING] [TRADER] error with order 130: order rejected: active order count limit breached
+2023-03-11 19:54:26,436 [INFO   ] [TRADER] received order status for order 130 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:26,436 [WARNING] [TRADER] error with order 131: order rejected: active order count limit breached
+2023-03-11 19:54:26,436 [INFO   ] [TRADER] received order status for order 131 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:26,436 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 9
+2023-03-11 19:54:26,599 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 15
+2023-03-11 19:54:26,599 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 10
+2023-03-11 19:54:26,693 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 44
+2023-03-11 19:54:26,694 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 44
+2023-03-11 19:54:26,695 [WARNING] [TRADER] error with order 132: order rejected: active order count limit breached
+2023-03-11 19:54:26,695 [INFO   ] [TRADER] received order status for order 132 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:26,695 [WARNING] [TRADER] error with order 133: order rejected: active order count limit breached
+2023-03-11 19:54:26,695 [INFO   ] [TRADER] received order status for order 133 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:26,736 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 16
+2023-03-11 19:54:26,982 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 45
+2023-03-11 19:54:26,982 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 45
+2023-03-11 19:54:26,987 [WARNING] [TRADER] error with order 134: order rejected: active order count limit breached
+2023-03-11 19:54:26,987 [INFO   ] [TRADER] received order status for order 134 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:26,988 [WARNING] [TRADER] error with order 135: order rejected: active order count limit breached
+2023-03-11 19:54:26,988 [INFO   ] [TRADER] received order status for order 135 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:27,153 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 46
+2023-03-11 19:54:27,153 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 46
+2023-03-11 19:54:27,153 [WARNING] [TRADER] error with order 136: order rejected: active order count limit breached
+2023-03-11 19:54:27,154 [INFO   ] [TRADER] received order status for order 136 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:27,154 [WARNING] [TRADER] error with order 137: order rejected: active order count limit breached
+2023-03-11 19:54:27,154 [INFO   ] [TRADER] received order status for order 137 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:27,439 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 47
+2023-03-11 19:54:27,439 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 47
+2023-03-11 19:54:27,439 [WARNING] [TRADER] error with order 138: order rejected: active order count limit breached
+2023-03-11 19:54:27,440 [INFO   ] [TRADER] received order status for order 138 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:27,440 [WARNING] [TRADER] error with order 139: order rejected: active order count limit breached
+2023-03-11 19:54:27,440 [INFO   ] [TRADER] received order status for order 139 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:27,554 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 11
+2023-03-11 19:54:27,702 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 17
+2023-03-11 19:54:27,749 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 48
+2023-03-11 19:54:27,749 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 48
+2023-03-11 19:54:27,749 [WARNING] [TRADER] error with order 140: order rejected: active order count limit breached
+2023-03-11 19:54:27,749 [INFO   ] [TRADER] received order status for order 140 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:27,749 [WARNING] [TRADER] error with order 141: order rejected: active order count limit breached
+2023-03-11 19:54:27,749 [INFO   ] [TRADER] received order status for order 141 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:27,994 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 49
+2023-03-11 19:54:27,994 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 49
+2023-03-11 19:54:27,999 [WARNING] [TRADER] error with order 142: order rejected: active order count limit breached
+2023-03-11 19:54:27,999 [INFO   ] [TRADER] received order status for order 142 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:28,000 [WARNING] [TRADER] error with order 143: order rejected: active order count limit breached
+2023-03-11 19:54:28,000 [INFO   ] [TRADER] received order status for order 143 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:28,156 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 50
+2023-03-11 19:54:28,156 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 50
+2023-03-11 19:54:28,157 [WARNING] [TRADER] error with order 144: order rejected: active order count limit breached
+2023-03-11 19:54:28,157 [INFO   ] [TRADER] received order status for order 144 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:28,159 [WARNING] [TRADER] error with order 145: order rejected: active order count limit breached
+2023-03-11 19:54:28,159 [INFO   ] [TRADER] received order status for order 145 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:28,440 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 51
+2023-03-11 19:54:28,440 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 51
+2023-03-11 19:54:28,440 [WARNING] [TRADER] error with order 146: order rejected: active order count limit breached
+2023-03-11 19:54:28,440 [INFO   ] [TRADER] received order status for order 146 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:28,440 [WARNING] [TRADER] error with order 147: order rejected: active order count limit breached
+2023-03-11 19:54:28,440 [INFO   ] [TRADER] received order status for order 147 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:28,720 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 52
+2023-03-11 19:54:28,721 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 52
+2023-03-11 19:54:28,721 [WARNING] [TRADER] error with order 148: order rejected: active order count limit breached
+2023-03-11 19:54:28,721 [INFO   ] [TRADER] received order status for order 148 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:28,721 [WARNING] [TRADER] error with order 149: order rejected: active order count limit breached
+2023-03-11 19:54:28,721 [INFO   ] [TRADER] received order status for order 149 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:28,980 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 53
+2023-03-11 19:54:28,980 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 53
+2023-03-11 19:54:28,981 [WARNING] [TRADER] error with order 150: order rejected: active order count limit breached
+2023-03-11 19:54:28,982 [INFO   ] [TRADER] received order status for order 150 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:28,982 [WARNING] [TRADER] error with order 151: order rejected: active order count limit breached
+2023-03-11 19:54:28,982 [INFO   ] [TRADER] received order status for order 151 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:29,092 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 18
+2023-03-11 19:54:29,210 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 54
+2023-03-11 19:54:29,211 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 54
+2023-03-11 19:54:29,211 [WARNING] [TRADER] error with order 152: order rejected: active order count limit breached
+2023-03-11 19:54:29,211 [INFO   ] [TRADER] received order status for order 152 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:29,211 [WARNING] [TRADER] error with order 153: order rejected: active order count limit breached
+2023-03-11 19:54:29,211 [INFO   ] [TRADER] received order status for order 153 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:29,426 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 55
+2023-03-11 19:54:29,426 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 55
+2023-03-11 19:54:29,427 [WARNING] [TRADER] error with order 154: order rejected: active order count limit breached
+2023-03-11 19:54:29,427 [INFO   ] [TRADER] received order status for order 154 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:29,427 [WARNING] [TRADER] error with order 155: order rejected: active order count limit breached
+2023-03-11 19:54:29,427 [INFO   ] [TRADER] received order status for order 155 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:29,707 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 56
+2023-03-11 19:54:29,707 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 56
+2023-03-11 19:54:29,708 [WARNING] [TRADER] error with order 156: order rejected: active order count limit breached
+2023-03-11 19:54:29,708 [INFO   ] [TRADER] received order status for order 156 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:29,708 [WARNING] [TRADER] error with order 157: order rejected: active order count limit breached
+2023-03-11 19:54:29,708 [INFO   ] [TRADER] received order status for order 157 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:29,975 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 57
+2023-03-11 19:54:29,976 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 57
+2023-03-11 19:54:29,976 [WARNING] [TRADER] error with order 158: order rejected: active order count limit breached
+2023-03-11 19:54:29,976 [INFO   ] [TRADER] received order status for order 158 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:29,976 [WARNING] [TRADER] error with order 159: order rejected: active order count limit breached
+2023-03-11 19:54:29,976 [INFO   ] [TRADER] received order status for order 159 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:30,138 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 12
+2023-03-11 19:54:30,242 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 58
+2023-03-11 19:54:30,243 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 58
+2023-03-11 19:54:30,243 [WARNING] [TRADER] error with order 160: order rejected: active order count limit breached
+2023-03-11 19:54:30,243 [INFO   ] [TRADER] received order status for order 160 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:30,243 [WARNING] [TRADER] error with order 161: order rejected: active order count limit breached
+2023-03-11 19:54:30,243 [INFO   ] [TRADER] received order status for order 161 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:30,445 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 59
+2023-03-11 19:54:30,445 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 59
+2023-03-11 19:54:30,445 [WARNING] [TRADER] error with order 162: order rejected: active order count limit breached
+2023-03-11 19:54:30,445 [INFO   ] [TRADER] received order status for order 162 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:30,445 [WARNING] [TRADER] error with order 163: order rejected: active order count limit breached
+2023-03-11 19:54:30,445 [INFO   ] [TRADER] received order status for order 163 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:30,704 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 60
+2023-03-11 19:54:30,704 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 60
+2023-03-11 19:54:30,704 [WARNING] [TRADER] error with order 164: order rejected: active order count limit breached
+2023-03-11 19:54:30,704 [INFO   ] [TRADER] received order status for order 164 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:30,704 [WARNING] [TRADER] error with order 165: order rejected: active order count limit breached
+2023-03-11 19:54:30,704 [INFO   ] [TRADER] received order status for order 165 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:30,966 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 61
+2023-03-11 19:54:30,966 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 61
+2023-03-11 19:54:30,968 [WARNING] [TRADER] error with order 166: order rejected: active order count limit breached
+2023-03-11 19:54:30,968 [INFO   ] [TRADER] received order status for order 166 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:30,968 [WARNING] [TRADER] error with order 167: order rejected: active order count limit breached
+2023-03-11 19:54:30,968 [INFO   ] [TRADER] received order status for order 167 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:31,198 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 62
+2023-03-11 19:54:31,199 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 62
+2023-03-11 19:54:31,201 [WARNING] [TRADER] error with order 168: order rejected: active order count limit breached
+2023-03-11 19:54:31,201 [INFO   ] [TRADER] received order status for order 168 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:31,201 [WARNING] [TRADER] error with order 169: order rejected: active order count limit breached
+2023-03-11 19:54:31,201 [INFO   ] [TRADER] received order status for order 169 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:31,305 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 19
+2023-03-11 19:54:31,418 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 13
+2023-03-11 19:54:31,432 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 63
+2023-03-11 19:54:31,433 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 63
+2023-03-11 19:54:31,436 [WARNING] [TRADER] error with order 170: order rejected: active order count limit breached
+2023-03-11 19:54:31,436 [INFO   ] [TRADER] received order status for order 170 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:31,436 [WARNING] [TRADER] error with order 171: order rejected: active order count limit breached
+2023-03-11 19:54:31,436 [INFO   ] [TRADER] received order status for order 171 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:31,685 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 64
+2023-03-11 19:54:31,685 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 64
+2023-03-11 19:54:31,687 [WARNING] [TRADER] error with order 172: order rejected: active order count limit breached
+2023-03-11 19:54:31,687 [INFO   ] [TRADER] received order status for order 172 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:31,688 [WARNING] [TRADER] error with order 173: order rejected: active order count limit breached
+2023-03-11 19:54:31,688 [INFO   ] [TRADER] received order status for order 173 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:31,754 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 14
+2023-03-11 19:54:31,754 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 20
+2023-03-11 19:54:31,894 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 15
+2023-03-11 19:54:31,932 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 65
+2023-03-11 19:54:31,932 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 65
+2023-03-11 19:54:31,935 [WARNING] [TRADER] error with order 174: order rejected: active order count limit breached
+2023-03-11 19:54:31,935 [INFO   ] [TRADER] received order status for order 174 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:31,935 [WARNING] [TRADER] error with order 175: order rejected: active order count limit breached
+2023-03-11 19:54:31,935 [INFO   ] [TRADER] received order status for order 175 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:32,200 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 66
+2023-03-11 19:54:32,200 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 66
+2023-03-11 19:54:32,200 [WARNING] [TRADER] error with order 176: order rejected: active order count limit breached
+2023-03-11 19:54:32,200 [INFO   ] [TRADER] received order status for order 176 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:32,200 [WARNING] [TRADER] error with order 177: order rejected: active order count limit breached
+2023-03-11 19:54:32,201 [INFO   ] [TRADER] received order status for order 177 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:32,436 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 67
+2023-03-11 19:54:32,436 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 67
+2023-03-11 19:54:32,437 [WARNING] [TRADER] error with order 178: order rejected: active order count limit breached
+2023-03-11 19:54:32,437 [INFO   ] [TRADER] received order status for order 178 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:32,437 [WARNING] [TRADER] error with order 179: order rejected: active order count limit breached
+2023-03-11 19:54:32,437 [INFO   ] [TRADER] received order status for order 179 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:32,717 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 68
+2023-03-11 19:54:32,717 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 68
+2023-03-11 19:54:32,717 [WARNING] [TRADER] error with order 180: order rejected: active order count limit breached
+2023-03-11 19:54:32,717 [INFO   ] [TRADER] received order status for order 180 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:32,718 [WARNING] [TRADER] error with order 181: order rejected: active order count limit breached
+2023-03-11 19:54:32,718 [INFO   ] [TRADER] received order status for order 181 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:32,847 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 16
+2023-03-11 19:54:32,965 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 69
+2023-03-11 19:54:32,966 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 69
+2023-03-11 19:54:32,966 [WARNING] [TRADER] error with order 182: order rejected: active order count limit breached
+2023-03-11 19:54:32,966 [INFO   ] [TRADER] received order status for order 182 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:32,966 [WARNING] [TRADER] error with order 183: order rejected: active order count limit breached
+2023-03-11 19:54:32,966 [INFO   ] [TRADER] received order status for order 183 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,199 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 70
+2023-03-11 19:54:33,199 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 70
+2023-03-11 19:54:33,199 [WARNING] [TRADER] error with order 184: order rejected: active order count limit breached
+2023-03-11 19:54:33,199 [INFO   ] [TRADER] received order status for order 184 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,199 [WARNING] [TRADER] error with order 185: order rejected: active order count limit breached
+2023-03-11 19:54:33,199 [INFO   ] [TRADER] received order status for order 185 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,473 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 71
+2023-03-11 19:54:33,473 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 71
+2023-03-11 19:54:33,475 [WARNING] [TRADER] error with order 186: order rejected: active order count limit breached
+2023-03-11 19:54:33,475 [INFO   ] [TRADER] received order status for order 186 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,476 [WARNING] [TRADER] error with order 187: order rejected: active order count limit breached
+2023-03-11 19:54:33,476 [INFO   ] [TRADER] received order status for order 187 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,476 [WARNING] [TRADER] error with order 188: order rejected: active order count limit breached
+2023-03-11 19:54:33,476 [INFO   ] [TRADER] received order status for order 188 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,476 [WARNING] [TRADER] error with order 189: order rejected: active order count limit breached
+2023-03-11 19:54:33,476 [INFO   ] [TRADER] received order status for order 189 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,723 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 72
+2023-03-11 19:54:33,723 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 72
+2023-03-11 19:54:33,724 [WARNING] [TRADER] error with order 190: order rejected: active order count limit breached
+2023-03-11 19:54:33,725 [INFO   ] [TRADER] received order status for order 190 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,725 [WARNING] [TRADER] error with order 191: order rejected: active order count limit breached
+2023-03-11 19:54:33,725 [INFO   ] [TRADER] received order status for order 191 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,725 [WARNING] [TRADER] error with order 192: order rejected: active order count limit breached
+2023-03-11 19:54:33,725 [INFO   ] [TRADER] received order status for order 192 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,725 [WARNING] [TRADER] error with order 193: order rejected: active order count limit breached
+2023-03-11 19:54:33,725 [INFO   ] [TRADER] received order status for order 193 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,897 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 21
+2023-03-11 19:54:33,941 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 73
+2023-03-11 19:54:33,941 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 73
+2023-03-11 19:54:33,943 [WARNING] [TRADER] error with order 194: order rejected: active order count limit breached
+2023-03-11 19:54:33,943 [INFO   ] [TRADER] received order status for order 194 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,943 [WARNING] [TRADER] error with order 195: order rejected: active order count limit breached
+2023-03-11 19:54:33,943 [INFO   ] [TRADER] received order status for order 195 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,943 [WARNING] [TRADER] error with order 196: order rejected: active order count limit breached
+2023-03-11 19:54:33,943 [INFO   ] [TRADER] received order status for order 196 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:33,943 [WARNING] [TRADER] error with order 197: order rejected: active order count limit breached
+2023-03-11 19:54:33,943 [INFO   ] [TRADER] received order status for order 197 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,158 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 74
+2023-03-11 19:54:34,158 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 74
+2023-03-11 19:54:34,158 [WARNING] [TRADER] error with order 198: order rejected: active order count limit breached
+2023-03-11 19:54:34,158 [INFO   ] [TRADER] received order status for order 198 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,158 [WARNING] [TRADER] error with order 199: order rejected: active order count limit breached
+2023-03-11 19:54:34,158 [INFO   ] [TRADER] received order status for order 199 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,158 [WARNING] [TRADER] error with order 200: order rejected: active order count limit breached
+2023-03-11 19:54:34,158 [INFO   ] [TRADER] received order status for order 200 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,159 [WARNING] [TRADER] error with order 201: order rejected: active order count limit breached
+2023-03-11 19:54:34,159 [INFO   ] [TRADER] received order status for order 201 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,340 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 17
+2023-03-11 19:54:34,411 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 75
+2023-03-11 19:54:34,412 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 75
+2023-03-11 19:54:34,414 [WARNING] [TRADER] error with order 202: order rejected: active order count limit breached
+2023-03-11 19:54:34,414 [INFO   ] [TRADER] received order status for order 202 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,414 [WARNING] [TRADER] error with order 203: order rejected: active order count limit breached
+2023-03-11 19:54:34,414 [INFO   ] [TRADER] received order status for order 203 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,414 [WARNING] [TRADER] error with order 204: order rejected: active order count limit breached
+2023-03-11 19:54:34,414 [INFO   ] [TRADER] received order status for order 204 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,414 [WARNING] [TRADER] error with order 205: order rejected: active order count limit breached
+2023-03-11 19:54:34,414 [INFO   ] [TRADER] received order status for order 205 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,720 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 76
+2023-03-11 19:54:34,720 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 76
+2023-03-11 19:54:34,721 [WARNING] [TRADER] error with order 206: order rejected: active order count limit breached
+2023-03-11 19:54:34,721 [INFO   ] [TRADER] received order status for order 206 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,721 [WARNING] [TRADER] error with order 207: order rejected: active order count limit breached
+2023-03-11 19:54:34,721 [INFO   ] [TRADER] received order status for order 207 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,721 [WARNING] [TRADER] error with order 208: order rejected: active order count limit breached
+2023-03-11 19:54:34,721 [INFO   ] [TRADER] received order status for order 208 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,721 [WARNING] [TRADER] error with order 209: order rejected: active order count limit breached
+2023-03-11 19:54:34,721 [INFO   ] [TRADER] received order status for order 209 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,909 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 77
+2023-03-11 19:54:34,909 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 77
+2023-03-11 19:54:34,910 [WARNING] [TRADER] error with order 210: order rejected: active order count limit breached
+2023-03-11 19:54:34,910 [INFO   ] [TRADER] received order status for order 210 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:34,911 [WARNING] [TRADER] error with order 211: order rejected: active order count limit breached
+2023-03-11 19:54:34,911 [INFO   ] [TRADER] received order status for order 211 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,243 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 78
+2023-03-11 19:54:35,243 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 78
+2023-03-11 19:54:35,245 [WARNING] [TRADER] error with order 212: order rejected: active order count limit breached
+2023-03-11 19:54:35,245 [INFO   ] [TRADER] received order status for order 212 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,246 [WARNING] [TRADER] error with order 213: order rejected: active order count limit breached
+2023-03-11 19:54:35,246 [INFO   ] [TRADER] received order status for order 213 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,388 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 18
+2023-03-11 19:54:35,470 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 79
+2023-03-11 19:54:35,470 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 79
+2023-03-11 19:54:35,471 [WARNING] [TRADER] error with order 214: order rejected: active order count limit breached
+2023-03-11 19:54:35,471 [INFO   ] [TRADER] received order status for order 214 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,471 [WARNING] [TRADER] error with order 215: order rejected: active order count limit breached
+2023-03-11 19:54:35,471 [INFO   ] [TRADER] received order status for order 215 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,471 [WARNING] [TRADER] error with order 216: order rejected: active order count limit breached
+2023-03-11 19:54:35,471 [INFO   ] [TRADER] received order status for order 216 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,472 [WARNING] [TRADER] error with order 217: order rejected: active order count limit breached
+2023-03-11 19:54:35,472 [INFO   ] [TRADER] received order status for order 217 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,740 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 80
+2023-03-11 19:54:35,741 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 80
+2023-03-11 19:54:35,741 [WARNING] [TRADER] error with order 218: order rejected: active order count limit breached
+2023-03-11 19:54:35,741 [INFO   ] [TRADER] received order status for order 218 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,741 [WARNING] [TRADER] error with order 219: order rejected: active order count limit breached
+2023-03-11 19:54:35,741 [INFO   ] [TRADER] received order status for order 219 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,741 [WARNING] [TRADER] error with order 220: order rejected: active order count limit breached
+2023-03-11 19:54:35,741 [INFO   ] [TRADER] received order status for order 220 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,741 [WARNING] [TRADER] error with order 221: order rejected: active order count limit breached
+2023-03-11 19:54:35,742 [INFO   ] [TRADER] received order status for order 221 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,896 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 19
+2023-03-11 19:54:35,974 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 81
+2023-03-11 19:54:35,974 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 81
+2023-03-11 19:54:35,976 [WARNING] [TRADER] error with order 222: order rejected: active order count limit breached
+2023-03-11 19:54:35,976 [INFO   ] [TRADER] received order status for order 222 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,976 [WARNING] [TRADER] error with order 223: order rejected: active order count limit breached
+2023-03-11 19:54:35,976 [INFO   ] [TRADER] received order status for order 223 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,976 [WARNING] [TRADER] error with order 224: order rejected: active order count limit breached
+2023-03-11 19:54:35,976 [INFO   ] [TRADER] received order status for order 224 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:35,976 [WARNING] [TRADER] error with order 225: order rejected: active order count limit breached
+2023-03-11 19:54:35,976 [INFO   ] [TRADER] received order status for order 225 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,212 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 82
+2023-03-11 19:54:36,212 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 82
+2023-03-11 19:54:36,213 [WARNING] [TRADER] error with order 226: order rejected: active order count limit breached
+2023-03-11 19:54:36,213 [INFO   ] [TRADER] received order status for order 226 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,213 [WARNING] [TRADER] error with order 227: order rejected: active order count limit breached
+2023-03-11 19:54:36,214 [INFO   ] [TRADER] received order status for order 227 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,214 [WARNING] [TRADER] error with order 228: order rejected: active order count limit breached
+2023-03-11 19:54:36,214 [INFO   ] [TRADER] received order status for order 228 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,214 [WARNING] [TRADER] error with order 229: order rejected: active order count limit breached
+2023-03-11 19:54:36,214 [INFO   ] [TRADER] received order status for order 229 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,249 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 22
+2023-03-11 19:54:36,368 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 20
+2023-03-11 19:54:36,401 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 21
+2023-03-11 19:54:36,436 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 83
+2023-03-11 19:54:36,437 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 83
+2023-03-11 19:54:36,438 [WARNING] [TRADER] error with order 230: order rejected: active order count limit breached
+2023-03-11 19:54:36,438 [INFO   ] [TRADER] received order status for order 230 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,438 [WARNING] [TRADER] error with order 231: order rejected: active order count limit breached
+2023-03-11 19:54:36,438 [INFO   ] [TRADER] received order status for order 231 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,438 [WARNING] [TRADER] error with order 232: order rejected: active order count limit breached
+2023-03-11 19:54:36,438 [INFO   ] [TRADER] received order status for order 232 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,438 [WARNING] [TRADER] error with order 233: order rejected: active order count limit breached
+2023-03-11 19:54:36,438 [INFO   ] [TRADER] received order status for order 233 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,552 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 23
+2023-03-11 19:54:36,653 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 22
+2023-03-11 19:54:36,697 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 24
+2023-03-11 19:54:36,727 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 84
+2023-03-11 19:54:36,727 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 84
+2023-03-11 19:54:36,729 [WARNING] [TRADER] error with order 234: order rejected: active order count limit breached
+2023-03-11 19:54:36,729 [INFO   ] [TRADER] received order status for order 234 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,729 [WARNING] [TRADER] error with order 235: order rejected: active order count limit breached
+2023-03-11 19:54:36,729 [INFO   ] [TRADER] received order status for order 235 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,730 [WARNING] [TRADER] error with order 236: order rejected: active order count limit breached
+2023-03-11 19:54:36,730 [INFO   ] [TRADER] received order status for order 236 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,730 [WARNING] [TRADER] error with order 237: order rejected: active order count limit breached
+2023-03-11 19:54:36,730 [INFO   ] [TRADER] received order status for order 237 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,933 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 85
+2023-03-11 19:54:36,933 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 85
+2023-03-11 19:54:36,933 [WARNING] [TRADER] error with order 238: order rejected: active order count limit breached
+2023-03-11 19:54:36,933 [INFO   ] [TRADER] received order status for order 238 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,933 [WARNING] [TRADER] error with order 239: order rejected: active order count limit breached
+2023-03-11 19:54:36,933 [INFO   ] [TRADER] received order status for order 239 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,933 [WARNING] [TRADER] error with order 240: order rejected: active order count limit breached
+2023-03-11 19:54:36,933 [INFO   ] [TRADER] received order status for order 240 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:36,933 [WARNING] [TRADER] error with order 241: order rejected: active order count limit breached
+2023-03-11 19:54:36,933 [INFO   ] [TRADER] received order status for order 241 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,038 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 23
+2023-03-11 19:54:37,202 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 86
+2023-03-11 19:54:37,202 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 86
+2023-03-11 19:54:37,204 [WARNING] [TRADER] error with order 242: order rejected: active order count limit breached
+2023-03-11 19:54:37,204 [INFO   ] [TRADER] received order status for order 242 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,204 [WARNING] [TRADER] error with order 243: order rejected: active order count limit breached
+2023-03-11 19:54:37,204 [INFO   ] [TRADER] received order status for order 243 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,204 [WARNING] [TRADER] error with order 244: order rejected: active order count limit breached
+2023-03-11 19:54:37,204 [INFO   ] [TRADER] received order status for order 244 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,204 [WARNING] [TRADER] error with order 245: order rejected: active order count limit breached
+2023-03-11 19:54:37,204 [INFO   ] [TRADER] received order status for order 245 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,474 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 87
+2023-03-11 19:54:37,474 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 87
+2023-03-11 19:54:37,474 [WARNING] [TRADER] error with order 246: order rejected: active order count limit breached
+2023-03-11 19:54:37,474 [INFO   ] [TRADER] received order status for order 246 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,475 [WARNING] [TRADER] error with order 247: order rejected: active order count limit breached
+2023-03-11 19:54:37,475 [INFO   ] [TRADER] received order status for order 247 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,475 [WARNING] [TRADER] error with order 248: order rejected: active order count limit breached
+2023-03-11 19:54:37,475 [INFO   ] [TRADER] received order status for order 248 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,475 [WARNING] [TRADER] error with order 249: order rejected: active order count limit breached
+2023-03-11 19:54:37,475 [INFO   ] [TRADER] received order status for order 249 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,660 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 88
+2023-03-11 19:54:37,661 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 88
+2023-03-11 19:54:37,661 [WARNING] [TRADER] error with order 250: order rejected: active order count limit breached
+2023-03-11 19:54:37,661 [INFO   ] [TRADER] received order status for order 250 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,661 [WARNING] [TRADER] error with order 251: order rejected: active order count limit breached
+2023-03-11 19:54:37,661 [INFO   ] [TRADER] received order status for order 251 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,661 [WARNING] [TRADER] error with order 252: order rejected: active order count limit breached
+2023-03-11 19:54:37,661 [INFO   ] [TRADER] received order status for order 252 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,662 [WARNING] [TRADER] error with order 253: order rejected: active order count limit breached
+2023-03-11 19:54:37,662 [INFO   ] [TRADER] received order status for order 253 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:37,907 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 24
+2023-03-11 19:54:38,001 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 89
+2023-03-11 19:54:38,001 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 89
+2023-03-11 19:54:38,005 [WARNING] [TRADER] error with order 254: order rejected: active order count limit breached
+2023-03-11 19:54:38,006 [INFO   ] [TRADER] received order status for order 254 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,006 [WARNING] [TRADER] error with order 255: order rejected: active order count limit breached
+2023-03-11 19:54:38,006 [INFO   ] [TRADER] received order status for order 255 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,006 [WARNING] [TRADER] error with order 256: order rejected: active order count limit breached
+2023-03-11 19:54:38,006 [INFO   ] [TRADER] received order status for order 256 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,006 [WARNING] [TRADER] error with order 257: order rejected: active order count limit breached
+2023-03-11 19:54:38,006 [INFO   ] [TRADER] received order status for order 257 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,248 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 90
+2023-03-11 19:54:38,249 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 90
+2023-03-11 19:54:38,253 [WARNING] [TRADER] error with order 258: order rejected: active order count limit breached
+2023-03-11 19:54:38,254 [INFO   ] [TRADER] received order status for order 258 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,255 [WARNING] [TRADER] error with order 259: order rejected: active order count limit breached
+2023-03-11 19:54:38,255 [INFO   ] [TRADER] received order status for order 259 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,255 [WARNING] [TRADER] error with order 260: order rejected: active order count limit breached
+2023-03-11 19:54:38,255 [INFO   ] [TRADER] received order status for order 260 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,255 [WARNING] [TRADER] error with order 261: order rejected: active order count limit breached
+2023-03-11 19:54:38,255 [INFO   ] [TRADER] received order status for order 261 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,255 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 25
+2023-03-11 19:54:38,397 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 26
+2023-03-11 19:54:38,486 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 91
+2023-03-11 19:54:38,486 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 91
+2023-03-11 19:54:38,489 [WARNING] [TRADER] error with order 262: order rejected: active order count limit breached
+2023-03-11 19:54:38,489 [INFO   ] [TRADER] received order status for order 262 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,490 [WARNING] [TRADER] error with order 263: order rejected: active order count limit breached
+2023-03-11 19:54:38,490 [INFO   ] [TRADER] received order status for order 263 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,490 [WARNING] [TRADER] error with order 264: order rejected: active order count limit breached
+2023-03-11 19:54:38,490 [INFO   ] [TRADER] received order status for order 264 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,490 [WARNING] [TRADER] error with order 265: order rejected: active order count limit breached
+2023-03-11 19:54:38,490 [INFO   ] [TRADER] received order status for order 265 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,659 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 27
+2023-03-11 19:54:38,692 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 92
+2023-03-11 19:54:38,692 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 92
+2023-03-11 19:54:38,692 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 28
+2023-03-11 19:54:38,692 [WARNING] [TRADER] error with order 266: order rejected: active order count limit breached
+2023-03-11 19:54:38,693 [INFO   ] [TRADER] received order status for order 266 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,693 [WARNING] [TRADER] error with order 267: order rejected: active order count limit breached
+2023-03-11 19:54:38,693 [INFO   ] [TRADER] received order status for order 267 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,693 [WARNING] [TRADER] error with order 268: order rejected: active order count limit breached
+2023-03-11 19:54:38,693 [INFO   ] [TRADER] received order status for order 268 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,693 [WARNING] [TRADER] error with order 269: order rejected: active order count limit breached
+2023-03-11 19:54:38,693 [INFO   ] [TRADER] received order status for order 269 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,849 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 29
+2023-03-11 19:54:38,957 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 93
+2023-03-11 19:54:38,957 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 93
+2023-03-11 19:54:38,957 [WARNING] [TRADER] error with order 270: order rejected: active order count limit breached
+2023-03-11 19:54:38,957 [INFO   ] [TRADER] received order status for order 270 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,958 [WARNING] [TRADER] error with order 271: order rejected: active order count limit breached
+2023-03-11 19:54:38,958 [INFO   ] [TRADER] received order status for order 271 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,958 [WARNING] [TRADER] error with order 272: order rejected: active order count limit breached
+2023-03-11 19:54:38,958 [INFO   ] [TRADER] received order status for order 272 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:38,958 [WARNING] [TRADER] error with order 273: order rejected: active order count limit breached
+2023-03-11 19:54:38,958 [INFO   ] [TRADER] received order status for order 273 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:39,158 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 94
+2023-03-11 19:54:39,159 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 94
+2023-03-11 19:54:39,164 [WARNING] [TRADER] error with order 274: order rejected: active order count limit breached
+2023-03-11 19:54:39,164 [INFO   ] [TRADER] received order status for order 274 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:39,165 [WARNING] [TRADER] error with order 275: order rejected: active order count limit breached
+2023-03-11 19:54:39,165 [INFO   ] [TRADER] received order status for order 275 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:39,356 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 30
+2023-03-11 19:54:39,452 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 95
+2023-03-11 19:54:39,452 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 95
+2023-03-11 19:54:39,453 [WARNING] [TRADER] error with order 276: order rejected: active order count limit breached
+2023-03-11 19:54:39,453 [INFO   ] [TRADER] received order status for order 276 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:39,453 [WARNING] [TRADER] error with order 277: order rejected: active order count limit breached
+2023-03-11 19:54:39,453 [INFO   ] [TRADER] received order status for order 277 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:39,593 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 31
+2023-03-11 19:54:39,730 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 96
+2023-03-11 19:54:39,730 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 96
+2023-03-11 19:54:39,730 [WARNING] [TRADER] error with order 278: order rejected: active order count limit breached
+2023-03-11 19:54:39,730 [INFO   ] [TRADER] received order status for order 278 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:39,730 [WARNING] [TRADER] error with order 279: order rejected: active order count limit breached
+2023-03-11 19:54:39,730 [INFO   ] [TRADER] received order status for order 279 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:39,850 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 25
+2023-03-11 19:54:39,977 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 97
+2023-03-11 19:54:39,977 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 97
+2023-03-11 19:54:39,978 [WARNING] [TRADER] error with order 280: order rejected: active order count limit breached
+2023-03-11 19:54:39,978 [INFO   ] [TRADER] received order status for order 280 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:39,979 [WARNING] [TRADER] error with order 281: order rejected: active order count limit breached
+2023-03-11 19:54:39,979 [INFO   ] [TRADER] received order status for order 281 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,157 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 98
+2023-03-11 19:54:40,157 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 98
+2023-03-11 19:54:40,158 [WARNING] [TRADER] error with order 282: order rejected: active order count limit breached
+2023-03-11 19:54:40,158 [INFO   ] [TRADER] received order status for order 282 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,158 [WARNING] [TRADER] error with order 283: order rejected: active order count limit breached
+2023-03-11 19:54:40,158 [INFO   ] [TRADER] received order status for order 283 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,473 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 99
+2023-03-11 19:54:40,474 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 99
+2023-03-11 19:54:40,475 [WARNING] [TRADER] error with order 284: order rejected: active order count limit breached
+2023-03-11 19:54:40,475 [INFO   ] [TRADER] received order status for order 284 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,475 [WARNING] [TRADER] error with order 285: order rejected: active order count limit breached
+2023-03-11 19:54:40,476 [INFO   ] [TRADER] received order status for order 285 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,476 [WARNING] [TRADER] error with order 286: order rejected: active order count limit breached
+2023-03-11 19:54:40,476 [INFO   ] [TRADER] received order status for order 286 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,476 [WARNING] [TRADER] error with order 287: order rejected: active order count limit breached
+2023-03-11 19:54:40,476 [INFO   ] [TRADER] received order status for order 287 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,662 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 100
+2023-03-11 19:54:40,662 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 100
+2023-03-11 19:54:40,669 [WARNING] [TRADER] error with order 288: order rejected: active order count limit breached
+2023-03-11 19:54:40,669 [INFO   ] [TRADER] received order status for order 288 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,670 [WARNING] [TRADER] error with order 289: order rejected: active order count limit breached
+2023-03-11 19:54:40,670 [INFO   ] [TRADER] received order status for order 289 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,670 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 32
+2023-03-11 19:54:40,670 [WARNING] [TRADER] error with order 290: order rejected: active order count limit breached
+2023-03-11 19:54:40,670 [INFO   ] [TRADER] received order status for order 290 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,670 [WARNING] [TRADER] error with order 291: order rejected: active order count limit breached
+2023-03-11 19:54:40,670 [INFO   ] [TRADER] received order status for order 291 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,980 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 101
+2023-03-11 19:54:40,981 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 101
+2023-03-11 19:54:40,982 [WARNING] [TRADER] error with order 292: order rejected: active order count limit breached
+2023-03-11 19:54:40,982 [INFO   ] [TRADER] received order status for order 292 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,982 [WARNING] [TRADER] error with order 293: order rejected: active order count limit breached
+2023-03-11 19:54:40,982 [INFO   ] [TRADER] received order status for order 293 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,982 [WARNING] [TRADER] error with order 294: order rejected: active order count limit breached
+2023-03-11 19:54:40,982 [INFO   ] [TRADER] received order status for order 294 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:40,983 [WARNING] [TRADER] error with order 295: order rejected: active order count limit breached
+2023-03-11 19:54:40,983 [INFO   ] [TRADER] received order status for order 295 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,100 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 33
+2023-03-11 19:54:41,204 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 26
+2023-03-11 19:54:41,219 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 102
+2023-03-11 19:54:41,219 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 102
+2023-03-11 19:54:41,219 [WARNING] [TRADER] error with order 296: order rejected: active order count limit breached
+2023-03-11 19:54:41,219 [INFO   ] [TRADER] received order status for order 296 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,219 [WARNING] [TRADER] error with order 297: order rejected: active order count limit breached
+2023-03-11 19:54:41,219 [INFO   ] [TRADER] received order status for order 297 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,219 [WARNING] [TRADER] error with order 298: order rejected: active order count limit breached
+2023-03-11 19:54:41,219 [INFO   ] [TRADER] received order status for order 298 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,219 [WARNING] [TRADER] error with order 299: order rejected: active order count limit breached
+2023-03-11 19:54:41,219 [INFO   ] [TRADER] received order status for order 299 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,416 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 34
+2023-03-11 19:54:41,433 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 103
+2023-03-11 19:54:41,433 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 103
+2023-03-11 19:54:41,447 [WARNING] [TRADER] error with order 300: order rejected: active order count limit breached
+2023-03-11 19:54:41,447 [INFO   ] [TRADER] received order status for order 300 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,452 [WARNING] [TRADER] error with order 301: order rejected: active order count limit breached
+2023-03-11 19:54:41,452 [INFO   ] [TRADER] received order status for order 301 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,452 [WARNING] [TRADER] error with order 302: order rejected: active order count limit breached
+2023-03-11 19:54:41,452 [INFO   ] [TRADER] received order status for order 302 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,452 [WARNING] [TRADER] error with order 303: order rejected: active order count limit breached
+2023-03-11 19:54:41,452 [INFO   ] [TRADER] received order status for order 303 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,594 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 27
+2023-03-11 19:54:41,672 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 104
+2023-03-11 19:54:41,672 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 104
+2023-03-11 19:54:41,673 [WARNING] [TRADER] error with order 304: order rejected: active order count limit breached
+2023-03-11 19:54:41,673 [INFO   ] [TRADER] received order status for order 304 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,674 [WARNING] [TRADER] error with order 305: order rejected: active order count limit breached
+2023-03-11 19:54:41,674 [INFO   ] [TRADER] received order status for order 305 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,674 [WARNING] [TRADER] error with order 306: order rejected: active order count limit breached
+2023-03-11 19:54:41,674 [INFO   ] [TRADER] received order status for order 306 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,674 [WARNING] [TRADER] error with order 307: order rejected: active order count limit breached
+2023-03-11 19:54:41,674 [INFO   ] [TRADER] received order status for order 307 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,940 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 105
+2023-03-11 19:54:41,940 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 105
+2023-03-11 19:54:41,944 [WARNING] [TRADER] error with order 308: order rejected: active order count limit breached
+2023-03-11 19:54:41,944 [INFO   ] [TRADER] received order status for order 308 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,944 [WARNING] [TRADER] error with order 309: order rejected: active order count limit breached
+2023-03-11 19:54:41,945 [INFO   ] [TRADER] received order status for order 309 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,945 [WARNING] [TRADER] error with order 310: order rejected: active order count limit breached
+2023-03-11 19:54:41,945 [INFO   ] [TRADER] received order status for order 310 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:41,945 [WARNING] [TRADER] error with order 311: order rejected: active order count limit breached
+2023-03-11 19:54:41,945 [INFO   ] [TRADER] received order status for order 311 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,182 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 106
+2023-03-11 19:54:42,183 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 106
+2023-03-11 19:54:42,184 [WARNING] [TRADER] error with order 312: order rejected: active order count limit breached
+2023-03-11 19:54:42,184 [INFO   ] [TRADER] received order status for order 312 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,184 [WARNING] [TRADER] error with order 313: order rejected: active order count limit breached
+2023-03-11 19:54:42,184 [INFO   ] [TRADER] received order status for order 313 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,184 [WARNING] [TRADER] error with order 314: order rejected: active order count limit breached
+2023-03-11 19:54:42,184 [INFO   ] [TRADER] received order status for order 314 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,184 [WARNING] [TRADER] error with order 315: order rejected: active order count limit breached
+2023-03-11 19:54:42,184 [INFO   ] [TRADER] received order status for order 315 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,250 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 35
+2023-03-11 19:54:42,341 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 28
+2023-03-11 19:54:42,431 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 107
+2023-03-11 19:54:42,431 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 107
+2023-03-11 19:54:42,433 [WARNING] [TRADER] error with order 316: order rejected: active order count limit breached
+2023-03-11 19:54:42,433 [INFO   ] [TRADER] received order status for order 316 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,433 [WARNING] [TRADER] error with order 317: order rejected: active order count limit breached
+2023-03-11 19:54:42,433 [INFO   ] [TRADER] received order status for order 317 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,433 [WARNING] [TRADER] error with order 318: order rejected: active order count limit breached
+2023-03-11 19:54:42,433 [INFO   ] [TRADER] received order status for order 318 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,434 [WARNING] [TRADER] error with order 319: order rejected: active order count limit breached
+2023-03-11 19:54:42,434 [INFO   ] [TRADER] received order status for order 319 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,672 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 108
+2023-03-11 19:54:42,672 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 108
+2023-03-11 19:54:42,672 [WARNING] [TRADER] error with order 320: order rejected: active order count limit breached
+2023-03-11 19:54:42,672 [INFO   ] [TRADER] received order status for order 320 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,672 [WARNING] [TRADER] error with order 321: order rejected: active order count limit breached
+2023-03-11 19:54:42,672 [INFO   ] [TRADER] received order status for order 321 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,672 [WARNING] [TRADER] error with order 322: order rejected: active order count limit breached
+2023-03-11 19:54:42,672 [INFO   ] [TRADER] received order status for order 322 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,672 [WARNING] [TRADER] error with order 323: order rejected: active order count limit breached
+2023-03-11 19:54:42,672 [INFO   ] [TRADER] received order status for order 323 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,946 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 109
+2023-03-11 19:54:42,946 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 109
+2023-03-11 19:54:42,946 [WARNING] [TRADER] error with order 324: order rejected: active order count limit breached
+2023-03-11 19:54:42,946 [INFO   ] [TRADER] received order status for order 324 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,946 [WARNING] [TRADER] error with order 325: order rejected: active order count limit breached
+2023-03-11 19:54:42,946 [INFO   ] [TRADER] received order status for order 325 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,946 [WARNING] [TRADER] error with order 326: order rejected: active order count limit breached
+2023-03-11 19:54:42,946 [INFO   ] [TRADER] received order status for order 326 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:42,946 [WARNING] [TRADER] error with order 327: order rejected: active order count limit breached
+2023-03-11 19:54:42,946 [INFO   ] [TRADER] received order status for order 327 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,050 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 29
+2023-03-11 19:54:43,184 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 110
+2023-03-11 19:54:43,184 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 110
+2023-03-11 19:54:43,191 [WARNING] [TRADER] error with order 328: order rejected: active order count limit breached
+2023-03-11 19:54:43,191 [INFO   ] [TRADER] received order status for order 328 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,191 [WARNING] [TRADER] error with order 329: order rejected: active order count limit breached
+2023-03-11 19:54:43,191 [INFO   ] [TRADER] received order status for order 329 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,191 [WARNING] [TRADER] error with order 330: order rejected: active order count limit breached
+2023-03-11 19:54:43,191 [INFO   ] [TRADER] received order status for order 330 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,191 [WARNING] [TRADER] error with order 331: order rejected: active order count limit breached
+2023-03-11 19:54:43,191 [INFO   ] [TRADER] received order status for order 331 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,438 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 111
+2023-03-11 19:54:43,439 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 111
+2023-03-11 19:54:43,444 [WARNING] [TRADER] error with order 332: order rejected: active order count limit breached
+2023-03-11 19:54:43,444 [INFO   ] [TRADER] received order status for order 332 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,446 [WARNING] [TRADER] error with order 333: order rejected: active order count limit breached
+2023-03-11 19:54:43,446 [INFO   ] [TRADER] received order status for order 333 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,446 [WARNING] [TRADER] error with order 334: order rejected: active order count limit breached
+2023-03-11 19:54:43,446 [INFO   ] [TRADER] received order status for order 334 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,446 [WARNING] [TRADER] error with order 335: order rejected: active order count limit breached
+2023-03-11 19:54:43,446 [INFO   ] [TRADER] received order status for order 335 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,689 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 112
+2023-03-11 19:54:43,689 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 112
+2023-03-11 19:54:43,690 [WARNING] [TRADER] error with order 336: order rejected: active order count limit breached
+2023-03-11 19:54:43,690 [INFO   ] [TRADER] received order status for order 336 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,692 [WARNING] [TRADER] error with order 337: order rejected: active order count limit breached
+2023-03-11 19:54:43,692 [INFO   ] [TRADER] received order status for order 337 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,692 [WARNING] [TRADER] error with order 338: order rejected: active order count limit breached
+2023-03-11 19:54:43,692 [INFO   ] [TRADER] received order status for order 338 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,692 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 36
+2023-03-11 19:54:43,692 [WARNING] [TRADER] error with order 339: order rejected: active order count limit breached
+2023-03-11 19:54:43,692 [INFO   ] [TRADER] received order status for order 339 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,895 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 30
+2023-03-11 19:54:43,895 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 37
+2023-03-11 19:54:43,972 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 113
+2023-03-11 19:54:43,972 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 113
+2023-03-11 19:54:43,972 [WARNING] [TRADER] error with order 340: order rejected: active order count limit breached
+2023-03-11 19:54:43,972 [INFO   ] [TRADER] received order status for order 340 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:43,972 [WARNING] [TRADER] error with order 341: order rejected: active order count limit breached
+2023-03-11 19:54:43,972 [INFO   ] [TRADER] received order status for order 341 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:44,195 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 114
+2023-03-11 19:54:44,196 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 114
+2023-03-11 19:54:44,198 [WARNING] [TRADER] error with order 342: order rejected: active order count limit breached
+2023-03-11 19:54:44,198 [INFO   ] [TRADER] received order status for order 342 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:44,199 [WARNING] [TRADER] error with order 343: order rejected: active order count limit breached
+2023-03-11 19:54:44,199 [INFO   ] [TRADER] received order status for order 343 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:44,250 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 31
+2023-03-11 19:54:44,493 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 115
+2023-03-11 19:54:44,493 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 115
+2023-03-11 19:54:44,494 [WARNING] [TRADER] error with order 344: order rejected: active order count limit breached
+2023-03-11 19:54:44,494 [INFO   ] [TRADER] received order status for order 344 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:44,494 [WARNING] [TRADER] error with order 345: order rejected: active order count limit breached
+2023-03-11 19:54:44,494 [INFO   ] [TRADER] received order status for order 345 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:44,638 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 38
+2023-03-11 19:54:44,691 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 116
+2023-03-11 19:54:44,691 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 116
+2023-03-11 19:54:44,692 [WARNING] [TRADER] error with order 346: order rejected: active order count limit breached
+2023-03-11 19:54:44,692 [INFO   ] [TRADER] received order status for order 346 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:44,692 [WARNING] [TRADER] error with order 347: order rejected: active order count limit breached
+2023-03-11 19:54:44,692 [INFO   ] [TRADER] received order status for order 347 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:44,942 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 117
+2023-03-11 19:54:44,943 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 117
+2023-03-11 19:54:44,943 [WARNING] [TRADER] error with order 348: order rejected: active order count limit breached
+2023-03-11 19:54:44,943 [INFO   ] [TRADER] received order status for order 348 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:44,943 [WARNING] [TRADER] error with order 349: order rejected: active order count limit breached
+2023-03-11 19:54:44,943 [INFO   ] [TRADER] received order status for order 349 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:45,193 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 118
+2023-03-11 19:54:45,193 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 118
+2023-03-11 19:54:45,193 [WARNING] [TRADER] error with order 350: order rejected: active order count limit breached
+2023-03-11 19:54:45,193 [INFO   ] [TRADER] received order status for order 350 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:45,193 [WARNING] [TRADER] error with order 351: order rejected: active order count limit breached
+2023-03-11 19:54:45,193 [INFO   ] [TRADER] received order status for order 351 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:45,465 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 39
+2023-03-11 19:54:45,472 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 119
+2023-03-11 19:54:45,473 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 119
+2023-03-11 19:54:45,474 [WARNING] [TRADER] error with order 352: order rejected: active order count limit breached
+2023-03-11 19:54:45,474 [INFO   ] [TRADER] received order status for order 352 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:45,474 [WARNING] [TRADER] error with order 353: order rejected: active order count limit breached
+2023-03-11 19:54:45,474 [INFO   ] [TRADER] received order status for order 353 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:45,660 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 120
+2023-03-11 19:54:45,661 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 120
+2023-03-11 19:54:45,661 [WARNING] [TRADER] error with order 354: order rejected: active order count limit breached
+2023-03-11 19:54:45,661 [INFO   ] [TRADER] received order status for order 354 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:45,661 [WARNING] [TRADER] error with order 355: order rejected: active order count limit breached
+2023-03-11 19:54:45,661 [INFO   ] [TRADER] received order status for order 355 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:45,847 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 32
+2023-03-11 19:54:45,968 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 121
+2023-03-11 19:54:45,968 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 121
+2023-03-11 19:54:45,969 [WARNING] [TRADER] error with order 356: order rejected: active order count limit breached
+2023-03-11 19:54:45,969 [INFO   ] [TRADER] received order status for order 356 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:45,969 [WARNING] [TRADER] error with order 357: order rejected: active order count limit breached
+2023-03-11 19:54:45,969 [INFO   ] [TRADER] received order status for order 357 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,240 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 122
+2023-03-11 19:54:46,240 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 122
+2023-03-11 19:54:46,240 [WARNING] [TRADER] error with order 358: order rejected: active order count limit breached
+2023-03-11 19:54:46,240 [INFO   ] [TRADER] received order status for order 358 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,240 [WARNING] [TRADER] error with order 359: order rejected: active order count limit breached
+2023-03-11 19:54:46,240 [INFO   ] [TRADER] received order status for order 359 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,240 [WARNING] [TRADER] error with order 360: order rejected: active order count limit breached
+2023-03-11 19:54:46,240 [INFO   ] [TRADER] received order status for order 360 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,240 [WARNING] [TRADER] error with order 361: order rejected: active order count limit breached
+2023-03-11 19:54:46,240 [INFO   ] [TRADER] received order status for order 361 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,440 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 123
+2023-03-11 19:54:46,440 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 123
+2023-03-11 19:54:46,441 [WARNING] [TRADER] error with order 362: order rejected: active order count limit breached
+2023-03-11 19:54:46,441 [INFO   ] [TRADER] received order status for order 362 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,442 [WARNING] [TRADER] error with order 363: order rejected: active order count limit breached
+2023-03-11 19:54:46,442 [INFO   ] [TRADER] received order status for order 363 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,442 [WARNING] [TRADER] error with order 364: order rejected: active order count limit breached
+2023-03-11 19:54:46,442 [INFO   ] [TRADER] received order status for order 364 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,442 [WARNING] [TRADER] error with order 365: order rejected: active order count limit breached
+2023-03-11 19:54:46,442 [INFO   ] [TRADER] received order status for order 365 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,636 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 40
+2023-03-11 19:54:46,657 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 124
+2023-03-11 19:54:46,657 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 124
+2023-03-11 19:54:46,658 [WARNING] [TRADER] error with order 366: order rejected: active order count limit breached
+2023-03-11 19:54:46,658 [INFO   ] [TRADER] received order status for order 366 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,658 [WARNING] [TRADER] error with order 367: order rejected: active order count limit breached
+2023-03-11 19:54:46,658 [INFO   ] [TRADER] received order status for order 367 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,658 [WARNING] [TRADER] error with order 368: order rejected: active order count limit breached
+2023-03-11 19:54:46,658 [INFO   ] [TRADER] received order status for order 368 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,658 [WARNING] [TRADER] error with order 369: order rejected: active order count limit breached
+2023-03-11 19:54:46,658 [INFO   ] [TRADER] received order status for order 369 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,950 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 41
+2023-03-11 19:54:46,950 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 125
+2023-03-11 19:54:46,951 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 125
+2023-03-11 19:54:46,951 [WARNING] [TRADER] error with order 370: order rejected: active order count limit breached
+2023-03-11 19:54:46,951 [INFO   ] [TRADER] received order status for order 370 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,951 [WARNING] [TRADER] error with order 371: order rejected: active order count limit breached
+2023-03-11 19:54:46,951 [INFO   ] [TRADER] received order status for order 371 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,951 [WARNING] [TRADER] error with order 372: order rejected: active order count limit breached
+2023-03-11 19:54:46,951 [INFO   ] [TRADER] received order status for order 372 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:46,951 [WARNING] [TRADER] error with order 373: order rejected: active order count limit breached
+2023-03-11 19:54:46,951 [INFO   ] [TRADER] received order status for order 373 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:47,189 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 126
+2023-03-11 19:54:47,189 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 126
+2023-03-11 19:54:47,191 [WARNING] [TRADER] error with order 374: order rejected: active order count limit breached
+2023-03-11 19:54:47,191 [INFO   ] [TRADER] received order status for order 374 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:47,191 [WARNING] [TRADER] error with order 375: order rejected: active order count limit breached
+2023-03-11 19:54:47,192 [INFO   ] [TRADER] received order status for order 375 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:47,192 [WARNING] [TRADER] error with order 376: order rejected: active order count limit breached
+2023-03-11 19:54:47,192 [INFO   ] [TRADER] received order status for order 376 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:47,192 [WARNING] [TRADER] error with order 377: order rejected: active order count limit breached
+2023-03-11 19:54:47,192 [INFO   ] [TRADER] received order status for order 377 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:47,345 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 33
+2023-03-11 19:54:47,479 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 127
+2023-03-11 19:54:47,479 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 127
+2023-03-11 19:54:47,481 [WARNING] [TRADER] error with order 378: order rejected: active order count limit breached
+2023-03-11 19:54:47,481 [INFO   ] [TRADER] received order status for order 378 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:47,481 [WARNING] [TRADER] error with order 379: order rejected: active order count limit breached
+2023-03-11 19:54:47,481 [INFO   ] [TRADER] received order status for order 379 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:47,713 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 128
+2023-03-11 19:54:47,713 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 128
+2023-03-11 19:54:47,713 [WARNING] [TRADER] error with order 380: order rejected: active order count limit breached
+2023-03-11 19:54:47,713 [INFO   ] [TRADER] received order status for order 380 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:47,713 [WARNING] [TRADER] error with order 381: order rejected: active order count limit breached
+2023-03-11 19:54:47,713 [INFO   ] [TRADER] received order status for order 381 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:47,851 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 34
+2023-03-11 19:54:47,998 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 129
+2023-03-11 19:54:47,998 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 129
+2023-03-11 19:54:47,998 [WARNING] [TRADER] error with order 382: order rejected: active order count limit breached
+2023-03-11 19:54:47,998 [INFO   ] [TRADER] received order status for order 382 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:47,998 [WARNING] [TRADER] error with order 383: order rejected: active order count limit breached
+2023-03-11 19:54:47,998 [INFO   ] [TRADER] received order status for order 383 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:48,227 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 130
+2023-03-11 19:54:48,228 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 130
+2023-03-11 19:54:48,232 [WARNING] [TRADER] error with order 384: order rejected: active order count limit breached
+2023-03-11 19:54:48,233 [INFO   ] [TRADER] received order status for order 384 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:48,233 [WARNING] [TRADER] error with order 385: order rejected: active order count limit breached
+2023-03-11 19:54:48,233 [INFO   ] [TRADER] received order status for order 385 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:48,481 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 131
+2023-03-11 19:54:48,482 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 131
+2023-03-11 19:54:48,484 [WARNING] [TRADER] error with order 386: order rejected: active order count limit breached
+2023-03-11 19:54:48,484 [INFO   ] [TRADER] received order status for order 386 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:48,484 [WARNING] [TRADER] error with order 387: order rejected: active order count limit breached
+2023-03-11 19:54:48,484 [INFO   ] [TRADER] received order status for order 387 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:48,654 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 42
+2023-03-11 19:54:48,674 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 132
+2023-03-11 19:54:48,674 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 132
+2023-03-11 19:54:48,675 [WARNING] [TRADER] error with order 388: order rejected: active order count limit breached
+2023-03-11 19:54:48,676 [INFO   ] [TRADER] received order status for order 388 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:48,676 [WARNING] [TRADER] error with order 389: order rejected: active order count limit breached
+2023-03-11 19:54:48,676 [INFO   ] [TRADER] received order status for order 389 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:48,999 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 133
+2023-03-11 19:54:49,000 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 133
+2023-03-11 19:54:49,000 [WARNING] [TRADER] error with order 390: order rejected: active order count limit breached
+2023-03-11 19:54:49,000 [INFO   ] [TRADER] received order status for order 390 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,000 [WARNING] [TRADER] error with order 391: order rejected: active order count limit breached
+2023-03-11 19:54:49,000 [INFO   ] [TRADER] received order status for order 391 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,231 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 134
+2023-03-11 19:54:49,231 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 134
+2023-03-11 19:54:49,237 [WARNING] [TRADER] error with order 392: order rejected: active order count limit breached
+2023-03-11 19:54:49,237 [INFO   ] [TRADER] received order status for order 392 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,237 [WARNING] [TRADER] error with order 393: order rejected: active order count limit breached
+2023-03-11 19:54:49,237 [INFO   ] [TRADER] received order status for order 393 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,413 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 135
+2023-03-11 19:54:49,413 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 135
+2023-03-11 19:54:49,413 [WARNING] [TRADER] error with order 394: order rejected: active order count limit breached
+2023-03-11 19:54:49,413 [INFO   ] [TRADER] received order status for order 394 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,413 [WARNING] [TRADER] error with order 395: order rejected: active order count limit breached
+2023-03-11 19:54:49,413 [INFO   ] [TRADER] received order status for order 395 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,584 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 35
+2023-03-11 19:54:49,692 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 136
+2023-03-11 19:54:49,692 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 136
+2023-03-11 19:54:49,692 [WARNING] [TRADER] error with order 396: order rejected: active order count limit breached
+2023-03-11 19:54:49,692 [INFO   ] [TRADER] received order status for order 396 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,692 [WARNING] [TRADER] error with order 397: order rejected: active order count limit breached
+2023-03-11 19:54:49,692 [INFO   ] [TRADER] received order status for order 397 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,921 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 137
+2023-03-11 19:54:49,922 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 137
+2023-03-11 19:54:49,922 [WARNING] [TRADER] error with order 398: order rejected: active order count limit breached
+2023-03-11 19:54:49,922 [INFO   ] [TRADER] received order status for order 398 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,922 [WARNING] [TRADER] error with order 399: order rejected: active order count limit breached
+2023-03-11 19:54:49,922 [INFO   ] [TRADER] received order status for order 399 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,922 [WARNING] [TRADER] error with order 400: order rejected: active order count limit breached
+2023-03-11 19:54:49,922 [INFO   ] [TRADER] received order status for order 400 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,922 [WARNING] [TRADER] error with order 401: order rejected: active order count limit breached
+2023-03-11 19:54:49,922 [INFO   ] [TRADER] received order status for order 401 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:49,999 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 43
+2023-03-11 19:54:50,155 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 138
+2023-03-11 19:54:50,155 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 138
+2023-03-11 19:54:50,155 [WARNING] [TRADER] error with order 402: order rejected: active order count limit breached
+2023-03-11 19:54:50,155 [INFO   ] [TRADER] received order status for order 402 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:50,155 [WARNING] [TRADER] error with order 403: order rejected: active order count limit breached
+2023-03-11 19:54:50,155 [INFO   ] [TRADER] received order status for order 403 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:50,420 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 139
+2023-03-11 19:54:50,420 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 139
+2023-03-11 19:54:50,420 [WARNING] [TRADER] error with order 404: order rejected: active order count limit breached
+2023-03-11 19:54:50,420 [INFO   ] [TRADER] received order status for order 404 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:50,420 [WARNING] [TRADER] error with order 405: order rejected: active order count limit breached
+2023-03-11 19:54:50,420 [INFO   ] [TRADER] received order status for order 405 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:50,690 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 36
+2023-03-11 19:54:50,694 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 140
+2023-03-11 19:54:50,695 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 140
+2023-03-11 19:54:50,695 [WARNING] [TRADER] error with order 406: order rejected: active order count limit breached
+2023-03-11 19:54:50,695 [INFO   ] [TRADER] received order status for order 406 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:50,695 [WARNING] [TRADER] error with order 407: order rejected: active order count limit breached
+2023-03-11 19:54:50,695 [INFO   ] [TRADER] received order status for order 407 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:50,977 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 141
+2023-03-11 19:54:50,978 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 141
+2023-03-11 19:54:50,979 [WARNING] [TRADER] error with order 408: order rejected: active order count limit breached
+2023-03-11 19:54:50,979 [INFO   ] [TRADER] received order status for order 408 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:50,979 [WARNING] [TRADER] error with order 409: order rejected: active order count limit breached
+2023-03-11 19:54:50,979 [INFO   ] [TRADER] received order status for order 409 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:51,091 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 44
+2023-03-11 19:54:51,249 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 142
+2023-03-11 19:54:51,250 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 142
+2023-03-11 19:54:51,252 [WARNING] [TRADER] error with order 410: order rejected: active order count limit breached
+2023-03-11 19:54:51,252 [INFO   ] [TRADER] received order status for order 410 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:51,252 [WARNING] [TRADER] error with order 411: order rejected: active order count limit breached
+2023-03-11 19:54:51,252 [INFO   ] [TRADER] received order status for order 411 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:51,252 [WARNING] [TRADER] error with order 412: order rejected: active order count limit breached
+2023-03-11 19:54:51,253 [INFO   ] [TRADER] received order status for order 412 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:51,253 [WARNING] [TRADER] error with order 413: order rejected: active order count limit breached
+2023-03-11 19:54:51,253 [INFO   ] [TRADER] received order status for order 413 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:51,304 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 45
+2023-03-11 19:54:51,345 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 37
+2023-03-11 19:54:51,398 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 46
+2023-03-11 19:54:51,453 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 47
+2023-03-11 19:54:51,453 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 143
+2023-03-11 19:54:51,453 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 143
+2023-03-11 19:54:51,473 [WARNING] [TRADER] error with order 414: order rejected: active order count limit breached
+2023-03-11 19:54:51,474 [INFO   ] [TRADER] received order status for order 414 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:51,478 [WARNING] [TRADER] error with order 415: order rejected: active order count limit breached
+2023-03-11 19:54:51,478 [INFO   ] [TRADER] received order status for order 415 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:51,478 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 48
+2023-03-11 19:54:51,709 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 144
+2023-03-11 19:54:51,709 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 144
+2023-03-11 19:54:51,709 [WARNING] [TRADER] error with order 416: order rejected: active order count limit breached
+2023-03-11 19:54:51,709 [INFO   ] [TRADER] received order status for order 416 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:51,709 [WARNING] [TRADER] error with order 417: order rejected: active order count limit breached
+2023-03-11 19:54:51,709 [INFO   ] [TRADER] received order status for order 417 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:51,952 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 145
+2023-03-11 19:54:51,952 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 145
+2023-03-11 19:54:51,952 [WARNING] [TRADER] error with order 418: order rejected: active order count limit breached
+2023-03-11 19:54:51,952 [INFO   ] [TRADER] received order status for order 418 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:51,952 [WARNING] [TRADER] error with order 419: order rejected: active order count limit breached
+2023-03-11 19:54:51,952 [INFO   ] [TRADER] received order status for order 419 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:52,238 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 146
+2023-03-11 19:54:52,238 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 146
+2023-03-11 19:54:52,240 [WARNING] [TRADER] error with order 420: order rejected: active order count limit breached
+2023-03-11 19:54:52,241 [INFO   ] [TRADER] received order status for order 420 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:52,241 [WARNING] [TRADER] error with order 421: order rejected: active order count limit breached
+2023-03-11 19:54:52,241 [INFO   ] [TRADER] received order status for order 421 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:52,421 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 147
+2023-03-11 19:54:52,421 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 147
+2023-03-11 19:54:52,424 [WARNING] [TRADER] error with order 422: order rejected: active order count limit breached
+2023-03-11 19:54:52,424 [INFO   ] [TRADER] received order status for order 422 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:52,425 [WARNING] [TRADER] error with order 423: order rejected: active order count limit breached
+2023-03-11 19:54:52,425 [INFO   ] [TRADER] received order status for order 423 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:52,707 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 148
+2023-03-11 19:54:52,708 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 148
+2023-03-11 19:54:52,709 [WARNING] [TRADER] error with order 424: order rejected: active order count limit breached
+2023-03-11 19:54:52,709 [INFO   ] [TRADER] received order status for order 424 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:52,709 [WARNING] [TRADER] error with order 425: order rejected: active order count limit breached
+2023-03-11 19:54:52,709 [INFO   ] [TRADER] received order status for order 425 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:52,929 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 149
+2023-03-11 19:54:52,929 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 149
+2023-03-11 19:54:52,929 [WARNING] [TRADER] error with order 426: order rejected: active order count limit breached
+2023-03-11 19:54:52,929 [INFO   ] [TRADER] received order status for order 426 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:52,929 [WARNING] [TRADER] error with order 427: order rejected: active order count limit breached
+2023-03-11 19:54:52,929 [INFO   ] [TRADER] received order status for order 427 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:53,225 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 150
+2023-03-11 19:54:53,225 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 150
+2023-03-11 19:54:53,225 [WARNING] [TRADER] error with order 428: order rejected: active order count limit breached
+2023-03-11 19:54:53,225 [INFO   ] [TRADER] received order status for order 428 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:53,225 [WARNING] [TRADER] error with order 429: order rejected: active order count limit breached
+2023-03-11 19:54:53,225 [INFO   ] [TRADER] received order status for order 429 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:53,293 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 49
+2023-03-11 19:54:53,438 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 151
+2023-03-11 19:54:53,438 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 151
+2023-03-11 19:54:53,438 [WARNING] [TRADER] error with order 430: order rejected: active order count limit breached
+2023-03-11 19:54:53,438 [INFO   ] [TRADER] received order status for order 430 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:53,438 [WARNING] [TRADER] error with order 431: order rejected: active order count limit breached
+2023-03-11 19:54:53,438 [INFO   ] [TRADER] received order status for order 431 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:53,663 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 152
+2023-03-11 19:54:53,663 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 152
+2023-03-11 19:54:53,663 [WARNING] [TRADER] error with order 432: order rejected: active order count limit breached
+2023-03-11 19:54:53,663 [INFO   ] [TRADER] received order status for order 432 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:53,664 [WARNING] [TRADER] error with order 433: order rejected: active order count limit breached
+2023-03-11 19:54:53,664 [INFO   ] [TRADER] received order status for order 433 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:53,983 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 153
+2023-03-11 19:54:53,983 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 153
+2023-03-11 19:54:53,984 [WARNING] [TRADER] error with order 434: order rejected: active order count limit breached
+2023-03-11 19:54:53,984 [INFO   ] [TRADER] received order status for order 434 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:53,984 [WARNING] [TRADER] error with order 435: order rejected: active order count limit breached
+2023-03-11 19:54:53,984 [INFO   ] [TRADER] received order status for order 435 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:54,223 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 154
+2023-03-11 19:54:54,223 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 154
+2023-03-11 19:54:54,223 [WARNING] [TRADER] error with order 436: order rejected: active order count limit breached
+2023-03-11 19:54:54,223 [INFO   ] [TRADER] received order status for order 436 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:54,223 [WARNING] [TRADER] error with order 437: order rejected: active order count limit breached
+2023-03-11 19:54:54,223 [INFO   ] [TRADER] received order status for order 437 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:54,412 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 155
+2023-03-11 19:54:54,412 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 155
+2023-03-11 19:54:54,413 [WARNING] [TRADER] error with order 438: order rejected: active order count limit breached
+2023-03-11 19:54:54,413 [INFO   ] [TRADER] received order status for order 438 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:54,413 [WARNING] [TRADER] error with order 439: order rejected: active order count limit breached
+2023-03-11 19:54:54,413 [INFO   ] [TRADER] received order status for order 439 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:54,718 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 156
+2023-03-11 19:54:54,718 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 156
+2023-03-11 19:54:54,718 [WARNING] [TRADER] error with order 440: order rejected: active order count limit breached
+2023-03-11 19:54:54,718 [INFO   ] [TRADER] received order status for order 440 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:54,718 [WARNING] [TRADER] error with order 441: order rejected: active order count limit breached
+2023-03-11 19:54:54,718 [INFO   ] [TRADER] received order status for order 441 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:54,968 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 157
+2023-03-11 19:54:54,968 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 157
+2023-03-11 19:54:54,970 [WARNING] [TRADER] error with order 442: order rejected: active order count limit breached
+2023-03-11 19:54:54,970 [INFO   ] [TRADER] received order status for order 442 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:54,970 [WARNING] [TRADER] error with order 443: order rejected: active order count limit breached
+2023-03-11 19:54:54,970 [INFO   ] [TRADER] received order status for order 443 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:55,041 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 38
+2023-03-11 19:54:55,204 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 39
+2023-03-11 19:54:55,249 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 158
+2023-03-11 19:54:55,249 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 158
+2023-03-11 19:54:55,249 [WARNING] [TRADER] error with order 444: order rejected: active order count limit breached
+2023-03-11 19:54:55,249 [INFO   ] [TRADER] received order status for order 444 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:55,249 [WARNING] [TRADER] error with order 445: order rejected: active order count limit breached
+2023-03-11 19:54:55,249 [INFO   ] [TRADER] received order status for order 445 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:55,296 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 40
+2023-03-11 19:54:55,495 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 159
+2023-03-11 19:54:55,496 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 159
+2023-03-11 19:54:55,496 [WARNING] [TRADER] error with order 446: order rejected: active order count limit breached
+2023-03-11 19:54:55,496 [INFO   ] [TRADER] received order status for order 446 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:55,496 [WARNING] [TRADER] error with order 447: order rejected: active order count limit breached
+2023-03-11 19:54:55,496 [INFO   ] [TRADER] received order status for order 447 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:55,669 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 160
+2023-03-11 19:54:55,669 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 160
+2023-03-11 19:54:55,669 [WARNING] [TRADER] error with order 448: order rejected: active order count limit breached
+2023-03-11 19:54:55,669 [INFO   ] [TRADER] received order status for order 448 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:55,670 [WARNING] [TRADER] error with order 449: order rejected: active order count limit breached
+2023-03-11 19:54:55,670 [INFO   ] [TRADER] received order status for order 449 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:55,975 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 161
+2023-03-11 19:54:55,975 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 161
+2023-03-11 19:54:55,975 [WARNING] [TRADER] error with order 450: order rejected: active order count limit breached
+2023-03-11 19:54:55,975 [INFO   ] [TRADER] received order status for order 450 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:55,975 [WARNING] [TRADER] error with order 451: order rejected: active order count limit breached
+2023-03-11 19:54:55,975 [INFO   ] [TRADER] received order status for order 451 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:56,237 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 162
+2023-03-11 19:54:56,238 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 162
+2023-03-11 19:54:56,239 [WARNING] [TRADER] error with order 452: order rejected: active order count limit breached
+2023-03-11 19:54:56,239 [INFO   ] [TRADER] received order status for order 452 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:56,239 [WARNING] [TRADER] error with order 453: order rejected: active order count limit breached
+2023-03-11 19:54:56,239 [INFO   ] [TRADER] received order status for order 453 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:56,335 [INFO   ] [TRADER] received order filled for order 82 with price 147800 and volume 9
+2023-03-11 19:54:56,335 [INFO   ] [TRADER] received order status for order 82 with fill volume 9 remaining 1 and fees -133
+2023-03-11 19:54:56,336 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 41
+2023-03-11 19:54:56,339 [INFO   ] [TRADER] received hedge filled for order 454 with average price 147400 and volume 9
+2023-03-11 19:54:56,339 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 50
+2023-03-11 19:54:56,477 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 163
+2023-03-11 19:54:56,477 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 163
+2023-03-11 19:54:56,477 [WARNING] [TRADER] error with order 455: order rejected: active order count limit breached
+2023-03-11 19:54:56,477 [INFO   ] [TRADER] received order status for order 455 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:56,478 [WARNING] [TRADER] error with order 456: order rejected: active order count limit breached
+2023-03-11 19:54:56,478 [INFO   ] [TRADER] received order status for order 456 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:56,692 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 164
+2023-03-11 19:54:56,693 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 164
+2023-03-11 19:54:56,693 [WARNING] [TRADER] error with order 457: order rejected: active order count limit breached
+2023-03-11 19:54:56,693 [INFO   ] [TRADER] received order status for order 457 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:56,693 [WARNING] [TRADER] error with order 458: order rejected: active order count limit breached
+2023-03-11 19:54:56,693 [INFO   ] [TRADER] received order status for order 458 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:56,922 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 165
+2023-03-11 19:54:56,922 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 165
+2023-03-11 19:54:56,925 [WARNING] [TRADER] error with order 459: order rejected: active order count limit breached
+2023-03-11 19:54:56,925 [INFO   ] [TRADER] received order status for order 459 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:56,925 [WARNING] [TRADER] error with order 460: order rejected: active order count limit breached
+2023-03-11 19:54:56,925 [INFO   ] [TRADER] received order status for order 460 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:57,150 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 166
+2023-03-11 19:54:57,151 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 166
+2023-03-11 19:54:57,151 [WARNING] [TRADER] error with order 461: order rejected: active order count limit breached
+2023-03-11 19:54:57,151 [INFO   ] [TRADER] received order status for order 461 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:57,151 [WARNING] [TRADER] error with order 462: order rejected: active order count limit breached
+2023-03-11 19:54:57,151 [INFO   ] [TRADER] received order status for order 462 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:57,462 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 167
+2023-03-11 19:54:57,462 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 167
+2023-03-11 19:54:57,464 [WARNING] [TRADER] error with order 463: order rejected: active order count limit breached
+2023-03-11 19:54:57,464 [INFO   ] [TRADER] received order status for order 463 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:57,464 [WARNING] [TRADER] error with order 464: order rejected: active order count limit breached
+2023-03-11 19:54:57,464 [INFO   ] [TRADER] received order status for order 464 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:57,658 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 168
+2023-03-11 19:54:57,658 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 168
+2023-03-11 19:54:57,660 [WARNING] [TRADER] error with order 465: order rejected: active order count limit breached
+2023-03-11 19:54:57,661 [INFO   ] [TRADER] received order status for order 465 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:57,661 [WARNING] [TRADER] error with order 466: order rejected: active order count limit breached
+2023-03-11 19:54:57,661 [INFO   ] [TRADER] received order status for order 466 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:57,947 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 169
+2023-03-11 19:54:57,948 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 169
+2023-03-11 19:54:57,956 [WARNING] [TRADER] error with order 467: order rejected: active order count limit breached
+2023-03-11 19:54:57,956 [INFO   ] [TRADER] received order status for order 467 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:57,956 [WARNING] [TRADER] error with order 468: order rejected: active order count limit breached
+2023-03-11 19:54:57,956 [INFO   ] [TRADER] received order status for order 468 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:57,956 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 51
+2023-03-11 19:54:58,040 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 42
+2023-03-11 19:54:58,180 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 170
+2023-03-11 19:54:58,181 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 170
+2023-03-11 19:54:58,185 [WARNING] [TRADER] error with order 469: order rejected: active order count limit breached
+2023-03-11 19:54:58,185 [INFO   ] [TRADER] received order status for order 469 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:58,186 [WARNING] [TRADER] error with order 470: order rejected: active order count limit breached
+2023-03-11 19:54:58,186 [INFO   ] [TRADER] received order status for order 470 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:58,408 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 171
+2023-03-11 19:54:58,408 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 171
+2023-03-11 19:54:58,408 [WARNING] [TRADER] error with order 471: order rejected: active order count limit breached
+2023-03-11 19:54:58,408 [INFO   ] [TRADER] received order status for order 471 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:58,409 [WARNING] [TRADER] error with order 472: order rejected: active order count limit breached
+2023-03-11 19:54:58,409 [INFO   ] [TRADER] received order status for order 472 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:58,726 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 172
+2023-03-11 19:54:58,726 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 172
+2023-03-11 19:54:58,731 [WARNING] [TRADER] error with order 473: order rejected: active order count limit breached
+2023-03-11 19:54:58,731 [INFO   ] [TRADER] received order status for order 473 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:58,731 [WARNING] [TRADER] error with order 474: order rejected: active order count limit breached
+2023-03-11 19:54:58,731 [INFO   ] [TRADER] received order status for order 474 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:58,985 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 173
+2023-03-11 19:54:58,985 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 173
+2023-03-11 19:54:58,985 [WARNING] [TRADER] error with order 475: order rejected: active order count limit breached
+2023-03-11 19:54:58,985 [INFO   ] [TRADER] received order status for order 475 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:58,985 [WARNING] [TRADER] error with order 476: order rejected: active order count limit breached
+2023-03-11 19:54:58,985 [INFO   ] [TRADER] received order status for order 476 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:59,243 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 174
+2023-03-11 19:54:59,243 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 174
+2023-03-11 19:54:59,243 [WARNING] [TRADER] error with order 477: order rejected: active order count limit breached
+2023-03-11 19:54:59,243 [INFO   ] [TRADER] received order status for order 477 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:59,243 [WARNING] [TRADER] error with order 478: order rejected: active order count limit breached
+2023-03-11 19:54:59,243 [INFO   ] [TRADER] received order status for order 478 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:59,419 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 175
+2023-03-11 19:54:59,419 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 175
+2023-03-11 19:54:59,419 [WARNING] [TRADER] error with order 479: order rejected: active order count limit breached
+2023-03-11 19:54:59,419 [INFO   ] [TRADER] received order status for order 479 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:59,420 [WARNING] [TRADER] error with order 480: order rejected: active order count limit breached
+2023-03-11 19:54:59,420 [INFO   ] [TRADER] received order status for order 480 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:59,588 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 52
+2023-03-11 19:54:59,665 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 176
+2023-03-11 19:54:59,665 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 176
+2023-03-11 19:54:59,669 [WARNING] [TRADER] error with order 481: order rejected: active order count limit breached
+2023-03-11 19:54:59,669 [INFO   ] [TRADER] received order status for order 481 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:59,670 [WARNING] [TRADER] error with order 482: order rejected: active order count limit breached
+2023-03-11 19:54:59,670 [INFO   ] [TRADER] received order status for order 482 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:59,931 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 177
+2023-03-11 19:54:59,931 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 177
+2023-03-11 19:54:59,932 [WARNING] [TRADER] error with order 483: order rejected: active order count limit breached
+2023-03-11 19:54:59,932 [INFO   ] [TRADER] received order status for order 483 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:54:59,932 [WARNING] [TRADER] error with order 484: order rejected: active order count limit breached
+2023-03-11 19:54:59,932 [INFO   ] [TRADER] received order status for order 484 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:00,240 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 178
+2023-03-11 19:55:00,240 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 178
+2023-03-11 19:55:00,240 [WARNING] [TRADER] error with order 485: order rejected: active order count limit breached
+2023-03-11 19:55:00,240 [INFO   ] [TRADER] received order status for order 485 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:00,241 [WARNING] [TRADER] error with order 486: order rejected: active order count limit breached
+2023-03-11 19:55:00,241 [INFO   ] [TRADER] received order status for order 486 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:00,447 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 179
+2023-03-11 19:55:00,447 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 179
+2023-03-11 19:55:00,451 [WARNING] [TRADER] error with order 487: order rejected: active order count limit breached
+2023-03-11 19:55:00,451 [INFO   ] [TRADER] received order status for order 487 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:00,452 [WARNING] [TRADER] error with order 488: order rejected: active order count limit breached
+2023-03-11 19:55:00,452 [INFO   ] [TRADER] received order status for order 488 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:00,663 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 180
+2023-03-11 19:55:00,663 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 180
+2023-03-11 19:55:00,664 [WARNING] [TRADER] error with order 489: order rejected: active order count limit breached
+2023-03-11 19:55:00,664 [INFO   ] [TRADER] received order status for order 489 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:00,664 [WARNING] [TRADER] error with order 490: order rejected: active order count limit breached
+2023-03-11 19:55:00,664 [INFO   ] [TRADER] received order status for order 490 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:00,908 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 43
+2023-03-11 19:55:00,999 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 181
+2023-03-11 19:55:00,999 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 181
+2023-03-11 19:55:01,000 [WARNING] [TRADER] error with order 491: order rejected: active order count limit breached
+2023-03-11 19:55:01,001 [INFO   ] [TRADER] received order status for order 491 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,001 [WARNING] [TRADER] error with order 492: order rejected: active order count limit breached
+2023-03-11 19:55:01,001 [INFO   ] [TRADER] received order status for order 492 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,193 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 53
+2023-03-11 19:55:01,220 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 182
+2023-03-11 19:55:01,221 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 182
+2023-03-11 19:55:01,222 [WARNING] [TRADER] error with order 493: order rejected: active order count limit breached
+2023-03-11 19:55:01,222 [INFO   ] [TRADER] received order status for order 493 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,222 [WARNING] [TRADER] error with order 494: order rejected: active order count limit breached
+2023-03-11 19:55:01,222 [INFO   ] [TRADER] received order status for order 494 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,411 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 183
+2023-03-11 19:55:01,411 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 183
+2023-03-11 19:55:01,423 [WARNING] [TRADER] error with order 495: order rejected: active order count limit breached
+2023-03-11 19:55:01,423 [INFO   ] [TRADER] received order status for order 495 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,425 [WARNING] [TRADER] error with order 496: order rejected: active order count limit breached
+2023-03-11 19:55:01,425 [INFO   ] [TRADER] received order status for order 496 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,425 [WARNING] [TRADER] error with order 497: order rejected: active order count limit breached
+2023-03-11 19:55:01,425 [INFO   ] [TRADER] received order status for order 497 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,425 [WARNING] [TRADER] error with order 498: order rejected: active order count limit breached
+2023-03-11 19:55:01,425 [INFO   ] [TRADER] received order status for order 498 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,689 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 184
+2023-03-11 19:55:01,689 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 184
+2023-03-11 19:55:01,691 [WARNING] [TRADER] error with order 499: order rejected: active order count limit breached
+2023-03-11 19:55:01,691 [INFO   ] [TRADER] received order status for order 499 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,691 [WARNING] [TRADER] error with order 500: order rejected: active order count limit breached
+2023-03-11 19:55:01,691 [INFO   ] [TRADER] received order status for order 500 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,966 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 185
+2023-03-11 19:55:01,966 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 185
+2023-03-11 19:55:01,967 [WARNING] [TRADER] error with order 501: order rejected: active order count limit breached
+2023-03-11 19:55:01,967 [INFO   ] [TRADER] received order status for order 501 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:01,967 [WARNING] [TRADER] error with order 502: order rejected: active order count limit breached
+2023-03-11 19:55:01,967 [INFO   ] [TRADER] received order status for order 502 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,190 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 186
+2023-03-11 19:55:02,190 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 186
+2023-03-11 19:55:02,198 [WARNING] [TRADER] error with order 503: order rejected: active order count limit breached
+2023-03-11 19:55:02,198 [INFO   ] [TRADER] received order status for order 503 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,199 [WARNING] [TRADER] error with order 504: order rejected: active order count limit breached
+2023-03-11 19:55:02,199 [INFO   ] [TRADER] received order status for order 504 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,403 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 187
+2023-03-11 19:55:02,403 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 187
+2023-03-11 19:55:02,403 [WARNING] [TRADER] error with order 505: order rejected: active order count limit breached
+2023-03-11 19:55:02,403 [INFO   ] [TRADER] received order status for order 505 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,403 [WARNING] [TRADER] error with order 506: order rejected: active order count limit breached
+2023-03-11 19:55:02,403 [INFO   ] [TRADER] received order status for order 506 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,686 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 188
+2023-03-11 19:55:02,686 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 188
+2023-03-11 19:55:02,688 [WARNING] [TRADER] error with order 507: order rejected: active order count limit breached
+2023-03-11 19:55:02,688 [INFO   ] [TRADER] received order status for order 507 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,688 [WARNING] [TRADER] error with order 508: order rejected: active order count limit breached
+2023-03-11 19:55:02,688 [INFO   ] [TRADER] received order status for order 508 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,689 [WARNING] [TRADER] error with order 509: order rejected: active order count limit breached
+2023-03-11 19:55:02,689 [INFO   ] [TRADER] received order status for order 509 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,689 [WARNING] [TRADER] error with order 510: order rejected: active order count limit breached
+2023-03-11 19:55:02,689 [INFO   ] [TRADER] received order status for order 510 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,969 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 189
+2023-03-11 19:55:02,970 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 189
+2023-03-11 19:55:02,970 [WARNING] [TRADER] error with order 511: order rejected: active order count limit breached
+2023-03-11 19:55:02,970 [INFO   ] [TRADER] received order status for order 511 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,971 [WARNING] [TRADER] error with order 512: order rejected: active order count limit breached
+2023-03-11 19:55:02,971 [INFO   ] [TRADER] received order status for order 512 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,971 [WARNING] [TRADER] error with order 513: order rejected: active order count limit breached
+2023-03-11 19:55:02,971 [INFO   ] [TRADER] received order status for order 513 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:02,971 [WARNING] [TRADER] error with order 514: order rejected: active order count limit breached
+2023-03-11 19:55:02,971 [INFO   ] [TRADER] received order status for order 514 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,207 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 190
+2023-03-11 19:55:03,207 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 190
+2023-03-11 19:55:03,208 [WARNING] [TRADER] error with order 515: order rejected: active order count limit breached
+2023-03-11 19:55:03,208 [INFO   ] [TRADER] received order status for order 515 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,208 [WARNING] [TRADER] error with order 516: order rejected: active order count limit breached
+2023-03-11 19:55:03,208 [INFO   ] [TRADER] received order status for order 516 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,208 [WARNING] [TRADER] error with order 517: order rejected: active order count limit breached
+2023-03-11 19:55:03,208 [INFO   ] [TRADER] received order status for order 517 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,208 [WARNING] [TRADER] error with order 518: order rejected: active order count limit breached
+2023-03-11 19:55:03,208 [INFO   ] [TRADER] received order status for order 518 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,464 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 191
+2023-03-11 19:55:03,464 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 191
+2023-03-11 19:55:03,464 [WARNING] [TRADER] error with order 519: order rejected: active order count limit breached
+2023-03-11 19:55:03,465 [INFO   ] [TRADER] received order status for order 519 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,465 [WARNING] [TRADER] error with order 520: order rejected: active order count limit breached
+2023-03-11 19:55:03,465 [INFO   ] [TRADER] received order status for order 520 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,465 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 44
+2023-03-11 19:55:03,732 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 192
+2023-03-11 19:55:03,732 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 192
+2023-03-11 19:55:03,732 [WARNING] [TRADER] error with order 521: order rejected: active order count limit breached
+2023-03-11 19:55:03,732 [INFO   ] [TRADER] received order status for order 521 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,732 [WARNING] [TRADER] error with order 522: order rejected: active order count limit breached
+2023-03-11 19:55:03,732 [INFO   ] [TRADER] received order status for order 522 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,944 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 193
+2023-03-11 19:55:03,944 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 193
+2023-03-11 19:55:03,944 [WARNING] [TRADER] error with order 523: order rejected: active order count limit breached
+2023-03-11 19:55:03,944 [INFO   ] [TRADER] received order status for order 523 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,944 [WARNING] [TRADER] error with order 524: order rejected: active order count limit breached
+2023-03-11 19:55:03,944 [INFO   ] [TRADER] received order status for order 524 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,944 [WARNING] [TRADER] error with order 525: order rejected: active order count limit breached
+2023-03-11 19:55:03,944 [INFO   ] [TRADER] received order status for order 525 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:03,944 [WARNING] [TRADER] error with order 526: order rejected: active order count limit breached
+2023-03-11 19:55:03,944 [INFO   ] [TRADER] received order status for order 526 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,197 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 45
+2023-03-11 19:55:04,243 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 194
+2023-03-11 19:55:04,243 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 194
+2023-03-11 19:55:04,244 [WARNING] [TRADER] error with order 527: order rejected: active order count limit breached
+2023-03-11 19:55:04,244 [INFO   ] [TRADER] received order status for order 527 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,244 [WARNING] [TRADER] error with order 528: order rejected: active order count limit breached
+2023-03-11 19:55:04,244 [INFO   ] [TRADER] received order status for order 528 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,244 [WARNING] [TRADER] error with order 529: order rejected: active order count limit breached
+2023-03-11 19:55:04,244 [INFO   ] [TRADER] received order status for order 529 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,443 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 195
+2023-03-11 19:55:04,443 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 195
+2023-03-11 19:55:04,443 [WARNING] [TRADER] error with order 530: order rejected: active order count limit breached
+2023-03-11 19:55:04,443 [INFO   ] [TRADER] received order status for order 530 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,443 [WARNING] [TRADER] error with order 531: order rejected: active order count limit breached
+2023-03-11 19:55:04,443 [INFO   ] [TRADER] received order status for order 531 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,443 [WARNING] [TRADER] error with order 532: order rejected: active order count limit breached
+2023-03-11 19:55:04,443 [INFO   ] [TRADER] received order status for order 532 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,744 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 196
+2023-03-11 19:55:04,744 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 196
+2023-03-11 19:55:04,744 [WARNING] [TRADER] error with order 533: order rejected: active order count limit breached
+2023-03-11 19:55:04,744 [INFO   ] [TRADER] received order status for order 533 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,744 [WARNING] [TRADER] error with order 534: order rejected: active order count limit breached
+2023-03-11 19:55:04,744 [INFO   ] [TRADER] received order status for order 534 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,744 [WARNING] [TRADER] error with order 535: order rejected: active order count limit breached
+2023-03-11 19:55:04,744 [INFO   ] [TRADER] received order status for order 535 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,949 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 197
+2023-03-11 19:55:04,950 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 197
+2023-03-11 19:55:04,952 [WARNING] [TRADER] error with order 536: order rejected: active order count limit breached
+2023-03-11 19:55:04,952 [INFO   ] [TRADER] received order status for order 536 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,952 [WARNING] [TRADER] error with order 537: order rejected: active order count limit breached
+2023-03-11 19:55:04,952 [INFO   ] [TRADER] received order status for order 537 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:04,952 [WARNING] [TRADER] error with order 538: order rejected: active order count limit breached
+2023-03-11 19:55:04,952 [INFO   ] [TRADER] received order status for order 538 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:05,163 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 198
+2023-03-11 19:55:05,163 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 198
+2023-03-11 19:55:05,163 [WARNING] [TRADER] error with order 539: order rejected: active order count limit breached
+2023-03-11 19:55:05,163 [INFO   ] [TRADER] received order status for order 539 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:05,163 [WARNING] [TRADER] error with order 540: order rejected: active order count limit breached
+2023-03-11 19:55:05,163 [INFO   ] [TRADER] received order status for order 540 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:05,423 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 199
+2023-03-11 19:55:05,424 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 199
+2023-03-11 19:55:05,425 [WARNING] [TRADER] error with order 541: order rejected: active order count limit breached
+2023-03-11 19:55:05,425 [INFO   ] [TRADER] received order status for order 541 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:05,425 [WARNING] [TRADER] error with order 542: order rejected: active order count limit breached
+2023-03-11 19:55:05,425 [INFO   ] [TRADER] received order status for order 542 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:05,672 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 200
+2023-03-11 19:55:05,672 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 200
+2023-03-11 19:55:05,673 [WARNING] [TRADER] error with order 543: order rejected: active order count limit breached
+2023-03-11 19:55:05,673 [INFO   ] [TRADER] received order status for order 543 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:05,673 [WARNING] [TRADER] error with order 544: order rejected: active order count limit breached
+2023-03-11 19:55:05,673 [INFO   ] [TRADER] received order status for order 544 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:05,982 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 201
+2023-03-11 19:55:05,982 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 201
+2023-03-11 19:55:05,984 [WARNING] [TRADER] error with order 545: order rejected: active order count limit breached
+2023-03-11 19:55:05,984 [INFO   ] [TRADER] received order status for order 545 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:05,984 [WARNING] [TRADER] error with order 546: order rejected: active order count limit breached
+2023-03-11 19:55:05,984 [INFO   ] [TRADER] received order status for order 546 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:06,044 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 54
+2023-03-11 19:55:06,217 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 202
+2023-03-11 19:55:06,217 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 202
+2023-03-11 19:55:06,218 [WARNING] [TRADER] error with order 547: order rejected: active order count limit breached
+2023-03-11 19:55:06,218 [INFO   ] [TRADER] received order status for order 547 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:06,218 [WARNING] [TRADER] error with order 548: order rejected: active order count limit breached
+2023-03-11 19:55:06,218 [INFO   ] [TRADER] received order status for order 548 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:06,299 [INFO   ] [TRADER] received order filled for order 82 with price 147800 and volume 1
+2023-03-11 19:55:06,299 [INFO   ] [TRADER] received order status for order 82 with fill volume 10 remaining 0 and fees -148
+2023-03-11 19:55:06,299 [INFO   ] [TRADER] received order filled for order 78 with price 147900 and volume 6
+2023-03-11 19:55:06,299 [INFO   ] [TRADER] received order status for order 78 with fill volume 6 remaining 4 and fees -89
+2023-03-11 19:55:06,301 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 46
+2023-03-11 19:55:06,302 [INFO   ] [TRADER] received hedge filled for order 549 with average price 147500 and volume 1
+2023-03-11 19:55:06,302 [INFO   ] [TRADER] received hedge filled for order 550 with average price 147500 and volume 6
+2023-03-11 19:55:06,496 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 203
+2023-03-11 19:55:06,497 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 203
+2023-03-11 19:55:06,497 [INFO   ] [TRADER] received order status for order 551 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:55:06,497 [WARNING] [TRADER] error with order 552: order rejected: active order count limit breached
+2023-03-11 19:55:06,497 [INFO   ] [TRADER] received order status for order 552 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:06,704 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 204
+2023-03-11 19:55:06,704 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 204
+2023-03-11 19:55:06,706 [WARNING] [TRADER] error with order 553: order rejected: active order count limit breached
+2023-03-11 19:55:06,706 [INFO   ] [TRADER] received order status for order 553 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:06,938 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 205
+2023-03-11 19:55:06,939 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 205
+2023-03-11 19:55:06,941 [INFO   ] [TRADER] received order status for order 551 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:06,941 [INFO   ] [TRADER] received order status for order 554 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:55:06,941 [WARNING] [TRADER] error with order 555: order rejected: active order count limit breached
+2023-03-11 19:55:06,941 [INFO   ] [TRADER] received order status for order 555 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:07,201 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 206
+2023-03-11 19:55:07,201 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 206
+2023-03-11 19:55:07,202 [WARNING] [TRADER] error with order 556: order rejected: active order count limit breached
+2023-03-11 19:55:07,202 [INFO   ] [TRADER] received order status for order 556 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:07,202 [WARNING] [TRADER] error with order 557: order rejected: active order count limit breached
+2023-03-11 19:55:07,202 [INFO   ] [TRADER] received order status for order 557 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:07,466 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 207
+2023-03-11 19:55:07,466 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 207
+2023-03-11 19:55:07,469 [INFO   ] [TRADER] received order status for order 554 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:07,469 [INFO   ] [TRADER] received order status for order 558 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:55:07,469 [WARNING] [TRADER] error with order 559: order rejected: active order count limit breached
+2023-03-11 19:55:07,469 [INFO   ] [TRADER] received order status for order 559 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:07,714 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 208
+2023-03-11 19:55:07,714 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 208
+2023-03-11 19:55:07,714 [WARNING] [TRADER] error with order 560: order rejected: active order count limit breached
+2023-03-11 19:55:07,714 [INFO   ] [TRADER] received order status for order 560 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:07,714 [WARNING] [TRADER] error with order 561: order rejected: active order count limit breached
+2023-03-11 19:55:07,714 [INFO   ] [TRADER] received order status for order 561 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:07,845 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 55
+2023-03-11 19:55:07,936 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 209
+2023-03-11 19:55:07,936 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 209
+2023-03-11 19:55:07,938 [INFO   ] [TRADER] received order status for order 558 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:07,939 [INFO   ] [TRADER] received order status for order 562 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:55:07,939 [WARNING] [TRADER] error with order 563: order rejected: active order count limit breached
+2023-03-11 19:55:07,939 [INFO   ] [TRADER] received order status for order 563 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:08,183 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 210
+2023-03-11 19:55:08,183 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 210
+2023-03-11 19:55:08,187 [INFO   ] [TRADER] received order status for order 562 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:08,187 [INFO   ] [TRADER] received order status for order 564 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:55:08,187 [WARNING] [TRADER] error with order 565: order rejected: active order count limit breached
+2023-03-11 19:55:08,187 [INFO   ] [TRADER] received order status for order 565 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:08,446 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 211
+2023-03-11 19:55:08,447 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 211
+2023-03-11 19:55:08,447 [INFO   ] [TRADER] received order status for order 564 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:08,447 [INFO   ] [TRADER] received order status for order 566 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:55:08,447 [WARNING] [TRADER] error with order 567: order rejected: active order count limit breached
+2023-03-11 19:55:08,447 [INFO   ] [TRADER] received order status for order 567 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:08,719 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 212
+2023-03-11 19:55:08,719 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 212
+2023-03-11 19:55:08,720 [INFO   ] [TRADER] received order status for order 566 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:08,720 [INFO   ] [TRADER] received order status for order 568 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:55:08,720 [WARNING] [TRADER] error with order 569: order rejected: active order count limit breached
+2023-03-11 19:55:08,720 [INFO   ] [TRADER] received order status for order 569 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:08,929 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 213
+2023-03-11 19:55:08,929 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 213
+2023-03-11 19:55:08,932 [INFO   ] [TRADER] received order status for order 568 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:08,932 [INFO   ] [TRADER] received order status for order 570 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:55:08,932 [WARNING] [TRADER] error with order 571: order rejected: active order count limit breached
+2023-03-11 19:55:08,932 [INFO   ] [TRADER] received order status for order 571 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:09,195 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 214
+2023-03-11 19:55:09,195 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 214
+2023-03-11 19:55:09,196 [WARNING] [TRADER] error with order 572: order rejected: active order count limit breached
+2023-03-11 19:55:09,196 [INFO   ] [TRADER] received order status for order 572 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:09,465 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 215
+2023-03-11 19:55:09,466 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 215
+2023-03-11 19:55:09,466 [WARNING] [TRADER] error with order 573: order rejected: active order count limit breached
+2023-03-11 19:55:09,466 [INFO   ] [TRADER] received order status for order 573 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:09,714 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 216
+2023-03-11 19:55:09,715 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 216
+2023-03-11 19:55:09,715 [INFO   ] [TRADER] received order status for order 570 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:09,716 [INFO   ] [TRADER] received order status for order 574 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:55:09,716 [WARNING] [TRADER] error with order 575: order rejected: active order count limit breached
+2023-03-11 19:55:09,716 [INFO   ] [TRADER] received order status for order 575 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:09,943 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 217
+2023-03-11 19:55:09,943 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 217
+2023-03-11 19:55:09,943 [INFO   ] [TRADER] received order filled for order 78 with price 147900 and volume 4
+2023-03-11 19:55:09,944 [INFO   ] [TRADER] received order status for order 78 with fill volume 10 remaining 0 and fees -148
+2023-03-11 19:55:09,944 [INFO   ] [TRADER] received order filled for order 576 with price 147400 and volume 7
+2023-03-11 19:55:09,944 [INFO   ] [TRADER] received order status for order 576 with fill volume 7 remaining 3 and fees 206
+2023-03-11 19:55:09,944 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 47
+2023-03-11 19:55:09,944 [INFO   ] [TRADER] received hedge filled for order 577 with average price 147600 and volume 4
+2023-03-11 19:55:09,944 [INFO   ] [TRADER] received hedge filled for order 578 with average price 147600 and volume 7
+2023-03-11 19:55:10,236 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 218
+2023-03-11 19:55:10,237 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 218
+2023-03-11 19:55:10,245 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 56
+2023-03-11 19:55:10,245 [INFO   ] [TRADER] received order status for order 574 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:55:10,245 [INFO   ] [TRADER] received order status for order 576 with fill volume 7 remaining 0 and fees 206
+2023-03-11 19:55:10,245 [INFO   ] [TRADER] received order status for order 579 with fill volume 0 remaining 10 and fees 0
+2023-03-11 19:55:10,245 [INFO   ] [TRADER] received order filled for order 580 with price 147300 and volume 10
+2023-03-11 19:55:10,245 [INFO   ] [TRADER] received order status for order 580 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,246 [INFO   ] [TRADER] received order filled for order 581 with price 147300 and volume 10
+2023-03-11 19:55:10,246 [INFO   ] [TRADER] received order status for order 581 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,246 [INFO   ] [TRADER] received order filled for order 582 with price 147300 and volume 10
+2023-03-11 19:55:10,246 [INFO   ] [TRADER] received order status for order 582 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,246 [INFO   ] [TRADER] received order filled for order 583 with price 147300 and volume 10
+2023-03-11 19:55:10,246 [INFO   ] [TRADER] received order status for order 583 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,246 [INFO   ] [TRADER] received order filled for order 584 with price 147300 and volume 10
+2023-03-11 19:55:10,246 [INFO   ] [TRADER] received order status for order 584 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,246 [INFO   ] [TRADER] received order filled for order 585 with price 147300 and volume 10
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received order status for order 585 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 48
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received order filled for order 586 with price 147300 and volume 10
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received order status for order 586 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received order filled for order 587 with price 147300 and volume 10
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received order status for order 587 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received order filled for order 588 with price 147300 and volume 10
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received order status for order 588 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received order filled for order 589 with price 147300 and volume 10
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received order status for order 589 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,247 [INFO   ] [TRADER] received order filled for order 590 with price 147300 and volume 10
+2023-03-11 19:55:10,248 [INFO   ] [TRADER] received order status for order 590 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,248 [INFO   ] [TRADER] received order filled for order 591 with price 147300 and volume 10
+2023-03-11 19:55:10,248 [INFO   ] [TRADER] received order status for order 591 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,248 [INFO   ] [TRADER] received order filled for order 592 with price 147300 and volume 10
+2023-03-11 19:55:10,248 [INFO   ] [TRADER] received order status for order 592 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,248 [INFO   ] [TRADER] received order filled for order 593 with price 147300 and volume 10
+2023-03-11 19:55:10,248 [INFO   ] [TRADER] received order status for order 593 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,248 [INFO   ] [TRADER] received order filled for order 594 with price 147300 and volume 10
+2023-03-11 19:55:10,248 [INFO   ] [TRADER] received order status for order 594 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:55:10,248 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 49
+2023-03-11 19:55:10,248 [WARNING] [TRADER] error with order 594: ETF position limit breached
+2023-03-11 19:55:10,249 [ERROR  ] [CONNECTION] fd=16 connection lost:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 848, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2023-03-11 19:55:10,250 [INFO   ] [APP] closing event loop
+2023-03-11 19:55:10,250 [INFO   ] [RECEIVER] connection lost

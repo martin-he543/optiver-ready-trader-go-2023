@@ -135,12 +135,14 @@ class AutoTrader(BaseAutoTrader):
         self.logger.info("received order book for instrument %d with sequence number %d", instrument, sequence_number)
         # If update for ETF, won't to see if Abitrage for oppo, must check Future market info for checks
         # Otherwise, put some weighting function after, but keep in fundamental situation
-        """
         if instrument == Instrument.FUTURE:
             price_adjustment = - (self.position // LOT_SIZE) * TICK_SIZE_IN_CENTS
-            new_bid_price = bid_prices[0] + price_adjustment if bid_prices[0] != 0 else 0
-            new_ask_price = ask_prices[0] + price_adjustment if ask_prices[0] != 0 else 0
+            new_bid_price = bid_prices[0] + price_adjustment - 300 if bid_prices[0] != 0 else 0
+            new_ask_price = ask_prices[0] + price_adjustment + 300 if ask_prices[0] != 0 else 0
 
+            self.current_bid_price = new_bid_price
+            self.current_ask_price = new_ask_price
+            
             if self.bid_id != 0 and new_bid_price not in (self.bid_price, 0):
                 self.send_cancel_order(self.bid_id)
                 self.bid_id = 0
@@ -159,7 +161,6 @@ class AutoTrader(BaseAutoTrader):
                 self.ask_price = new_ask_price
                 self.send_insert_order(self.ask_id, Side.SELL, new_ask_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
                 self.asks.add(self.ask_id)
-        """
                  
         # print(instrument, ": ", ask_prices, bid_prices)            
         # list_ask_prices.append(ask_prices)
