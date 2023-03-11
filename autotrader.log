@@ -33476,3 +33476,1660 @@ TypeError: unsupported operand type(s) for /: 'list' and 'int'
 2023-03-11 19:40:06,267 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 325
 2023-03-11 19:40:06,468 [INFO   ] [APP] SIGTERM signal received - shutting down...
 2023-03-11 19:40:06,469 [INFO   ] [APP] closing event loop
+2023-03-11 19:47:01,215 [INFO   ] [APP] autotrader started with arguments={rtg.py, run, autotrader.py}
+2023-03-11 19:47:01,215 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"Type":"mmap","Name":"info.dat"},"TeamName":"TraderOne","Secret":"secret"}
+2023-03-11 19:47:01,217 [INFO   ] [CONNECTION] fd=16 connection established: peer=127.0.0.1:12345
+2023-03-11 19:47:05,613 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 1
+2023-03-11 19:47:05,613 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 1
+2023-03-11 19:47:05,850 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 2
+2023-03-11 19:47:05,850 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 2
+2023-03-11 19:47:06,131 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 3
+2023-03-11 19:47:06,131 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 3
+2023-03-11 19:47:06,390 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 4
+2023-03-11 19:47:06,391 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 4
+2023-03-11 19:47:06,393 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 2
+2023-03-11 19:47:06,595 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 5
+2023-03-11 19:47:06,595 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 5
+2023-03-11 19:47:06,600 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 2
+2023-03-11 19:47:06,823 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 6
+2023-03-11 19:47:06,823 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 6
+2023-03-11 19:47:07,117 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 7
+2023-03-11 19:47:07,118 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 7
+2023-03-11 19:47:07,357 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 8
+2023-03-11 19:47:07,357 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 8
+2023-03-11 19:47:07,588 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 9
+2023-03-11 19:47:07,588 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 9
+2023-03-11 19:47:07,669 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 3
+2023-03-11 19:47:07,761 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 4
+2023-03-11 19:47:07,861 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 10
+2023-03-11 19:47:07,861 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 10
+2023-03-11 19:47:08,103 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 3
+2023-03-11 19:47:08,119 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 11
+2023-03-11 19:47:08,119 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 11
+2023-03-11 19:47:08,354 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 12
+2023-03-11 19:47:08,354 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 12
+2023-03-11 19:47:08,625 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 13
+2023-03-11 19:47:08,625 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 13
+2023-03-11 19:47:08,905 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 14
+2023-03-11 19:47:08,905 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 14
+2023-03-11 19:47:09,049 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 4
+2023-03-11 19:47:09,130 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 15
+2023-03-11 19:47:09,130 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 15
+2023-03-11 19:47:09,255 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 5
+2023-03-11 19:47:09,370 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 16
+2023-03-11 19:47:09,370 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 16
+2023-03-11 19:47:09,605 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 17
+2023-03-11 19:47:09,605 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 17
+2023-03-11 19:47:09,841 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 18
+2023-03-11 19:47:09,842 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 18
+2023-03-11 19:47:10,094 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 6
+2023-03-11 19:47:10,108 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 19
+2023-03-11 19:47:10,108 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 19
+2023-03-11 19:47:10,372 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 20
+2023-03-11 19:47:10,372 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 20
+2023-03-11 19:47:10,661 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 21
+2023-03-11 19:47:10,661 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 21
+2023-03-11 19:47:10,809 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 5
+2023-03-11 19:47:10,878 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 22
+2023-03-11 19:47:10,878 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 22
+2023-03-11 19:47:11,140 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 23
+2023-03-11 19:47:11,140 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 23
+2023-03-11 19:47:11,342 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 24
+2023-03-11 19:47:11,342 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 24
+2023-03-11 19:47:11,659 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 25
+2023-03-11 19:47:11,659 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 25
+2023-03-11 19:47:11,666 [INFO   ] [TRADER] received order filled for order 1 with price 147000 and volume 10
+2023-03-11 19:47:11,666 [INFO   ] [TRADER] received order status for order 1 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:11,667 [INFO   ] [TRADER] received order filled for order 2 with price 147000 and volume 10
+2023-03-11 19:47:11,667 [INFO   ] [TRADER] received order status for order 2 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:11,667 [INFO   ] [TRADER] received order filled for order 3 with price 147000 and volume 10
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received order status for order 3 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 6
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 7
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received order filled for order 4 with price 147000 and volume 10
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received order status for order 4 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received order filled for order 5 with price 147000 and volume 10
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received order status for order 5 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received order filled for order 6 with price 147000 and volume 10
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received order status for order 6 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received order filled for order 7 with price 147000 and volume 10
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received order status for order 7 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:11,668 [INFO   ] [TRADER] received order filled for order 8 with price 147000 and volume 10
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received order status for order 8 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received order filled for order 9 with price 147000 and volume 4
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received order status for order 9 with fill volume 4 remaining 6 and fees 118
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received order status for order 9 with fill volume 4 remaining 0 and fees 118
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received hedge filled for order 10 with average price 146900 and volume 10
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received hedge filled for order 11 with average price 146900 and volume 10
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 8
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received hedge filled for order 12 with average price 146900 and volume 10
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received hedge filled for order 13 with average price 146900 and volume 10
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received hedge filled for order 14 with average price 146900 and volume 10
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received hedge filled for order 15 with average price 146900 and volume 10
+2023-03-11 19:47:11,669 [INFO   ] [TRADER] received hedge filled for order 16 with average price 146900 and volume 10
+2023-03-11 19:47:11,670 [INFO   ] [TRADER] received hedge filled for order 17 with average price 146900 and volume 10
+2023-03-11 19:47:11,670 [INFO   ] [TRADER] received hedge filled for order 18 with average price 146900 and volume 4
+2023-03-11 19:47:11,841 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 26
+2023-03-11 19:47:11,841 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 26
+2023-03-11 19:47:12,122 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 27
+2023-03-11 19:47:12,122 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 27
+2023-03-11 19:47:12,123 [INFO   ] [TRADER] received order filled for order 19 with price 147000 and volume 10
+2023-03-11 19:47:12,123 [INFO   ] [TRADER] received order status for order 19 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:12,123 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 9
+2023-03-11 19:47:12,123 [INFO   ] [TRADER] received hedge filled for order 20 with average price 146700 and volume 10
+2023-03-11 19:47:12,202 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 10
+2023-03-11 19:47:12,262 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 7
+2023-03-11 19:47:12,321 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 28
+2023-03-11 19:47:12,321 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 28
+2023-03-11 19:47:12,565 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 8
+2023-03-11 19:47:12,634 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 29
+2023-03-11 19:47:12,634 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 29
+2023-03-11 19:47:12,861 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 30
+2023-03-11 19:47:12,861 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 30
+2023-03-11 19:47:13,114 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 31
+2023-03-11 19:47:13,114 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 31
+2023-03-11 19:47:13,398 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 32
+2023-03-11 19:47:13,398 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 32
+2023-03-11 19:47:13,651 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 33
+2023-03-11 19:47:13,651 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 33
+2023-03-11 19:47:13,747 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 11
+2023-03-11 19:47:13,909 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 34
+2023-03-11 19:47:13,909 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 34
+2023-03-11 19:47:14,151 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 35
+2023-03-11 19:47:14,151 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 35
+2023-03-11 19:47:14,322 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 36
+2023-03-11 19:47:14,322 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 36
+2023-03-11 19:47:14,499 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 12
+2023-03-11 19:47:14,641 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 37
+2023-03-11 19:47:14,642 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 37
+2023-03-11 19:47:14,658 [INFO   ] [TRADER] received order filled for order 21 with price 146400 and volume 10
+2023-03-11 19:47:14,658 [INFO   ] [TRADER] received order status for order 21 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,658 [INFO   ] [TRADER] received order filled for order 22 with price 146400 and volume 10
+2023-03-11 19:47:14,658 [INFO   ] [TRADER] received order status for order 22 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,658 [INFO   ] [TRADER] received order filled for order 23 with price 146400 and volume 10
+2023-03-11 19:47:14,659 [INFO   ] [TRADER] received order status for order 23 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,659 [INFO   ] [TRADER] received order filled for order 24 with price 146400 and volume 10
+2023-03-11 19:47:14,659 [INFO   ] [TRADER] received order status for order 24 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,659 [INFO   ] [TRADER] received order filled for order 25 with price 146400 and volume 10
+2023-03-11 19:47:14,659 [INFO   ] [TRADER] received order status for order 25 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,659 [INFO   ] [TRADER] received order filled for order 26 with price 146400 and volume 10
+2023-03-11 19:47:14,659 [INFO   ] [TRADER] received order status for order 26 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,659 [INFO   ] [TRADER] received order filled for order 27 with price 146400 and volume 10
+2023-03-11 19:47:14,659 [INFO   ] [TRADER] received order status for order 27 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,660 [INFO   ] [TRADER] received order filled for order 28 with price 146400 and volume 10
+2023-03-11 19:47:14,660 [INFO   ] [TRADER] received order status for order 28 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,660 [INFO   ] [TRADER] received order filled for order 29 with price 146400 and volume 10
+2023-03-11 19:47:14,660 [INFO   ] [TRADER] received order status for order 29 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,660 [INFO   ] [TRADER] received order filled for order 30 with price 146400 and volume 10
+2023-03-11 19:47:14,660 [INFO   ] [TRADER] received order status for order 30 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,660 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 13
+2023-03-11 19:47:14,660 [INFO   ] [TRADER] received order filled for order 31 with price 146400 and volume 10
+2023-03-11 19:47:14,660 [INFO   ] [TRADER] received order status for order 31 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,660 [INFO   ] [TRADER] received order filled for order 32 with price 146400 and volume 10
+2023-03-11 19:47:14,661 [INFO   ] [TRADER] received order status for order 32 with fill volume 10 remaining 0 and fees 293
+2023-03-11 19:47:14,661 [INFO   ] [TRADER] received order filled for order 33 with price 146400 and volume 9
+2023-03-11 19:47:14,661 [INFO   ] [TRADER] received order status for order 33 with fill volume 9 remaining 1 and fees 264
+2023-03-11 19:47:14,661 [INFO   ] [TRADER] received order status for order 33 with fill volume 9 remaining 0 and fees 264
+2023-03-11 19:47:14,661 [INFO   ] [TRADER] received hedge filled for order 34 with average price 146700 and volume 10
+2023-03-11 19:47:14,661 [INFO   ] [TRADER] received hedge filled for order 35 with average price 146700 and volume 10
+2023-03-11 19:47:14,661 [INFO   ] [TRADER] received hedge filled for order 36 with average price 146700 and volume 10
+2023-03-11 19:47:14,661 [INFO   ] [TRADER] received hedge filled for order 37 with average price 146700 and volume 10
+2023-03-11 19:47:14,661 [INFO   ] [TRADER] received hedge filled for order 38 with average price 146700 and volume 10
+2023-03-11 19:47:14,662 [INFO   ] [TRADER] received hedge filled for order 39 with average price 146700 and volume 10
+2023-03-11 19:47:14,662 [INFO   ] [TRADER] received hedge filled for order 40 with average price 146700 and volume 10
+2023-03-11 19:47:14,662 [INFO   ] [TRADER] received hedge filled for order 41 with average price 146700 and volume 10
+2023-03-11 19:47:14,662 [INFO   ] [TRADER] received hedge filled for order 42 with average price 146700 and volume 10
+2023-03-11 19:47:14,662 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 14
+2023-03-11 19:47:14,662 [INFO   ] [TRADER] received hedge filled for order 43 with average price 146700 and volume 10
+2023-03-11 19:47:14,662 [INFO   ] [TRADER] received hedge filled for order 44 with average price 146700 and volume 10
+2023-03-11 19:47:14,662 [INFO   ] [TRADER] received hedge filled for order 45 with average price 146700 and volume 10
+2023-03-11 19:47:14,663 [INFO   ] [TRADER] received hedge filled for order 46 with average price 146700 and volume 9
+2023-03-11 19:47:14,869 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 38
+2023-03-11 19:47:14,870 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 38
+2023-03-11 19:47:15,112 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 39
+2023-03-11 19:47:15,112 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 39
+2023-03-11 19:47:15,349 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 40
+2023-03-11 19:47:15,349 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 40
+2023-03-11 19:47:15,644 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 41
+2023-03-11 19:47:15,645 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 41
+2023-03-11 19:47:15,834 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 42
+2023-03-11 19:47:15,834 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 42
+2023-03-11 19:47:16,107 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 9
+2023-03-11 19:47:16,117 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 43
+2023-03-11 19:47:16,117 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 43
+2023-03-11 19:47:16,246 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 15
+2023-03-11 19:47:16,314 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 10
+2023-03-11 19:47:16,335 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 44
+2023-03-11 19:47:16,335 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 44
+2023-03-11 19:47:16,413 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 16
+2023-03-11 19:47:16,628 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 45
+2023-03-11 19:47:16,628 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 45
+2023-03-11 19:47:16,902 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 46
+2023-03-11 19:47:16,902 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 46
+2023-03-11 19:47:17,081 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 47
+2023-03-11 19:47:17,081 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 47
+2023-03-11 19:47:17,201 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 11
+2023-03-11 19:47:17,350 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 17
+2023-03-11 19:47:17,401 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 48
+2023-03-11 19:47:17,401 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 48
+2023-03-11 19:47:17,618 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 49
+2023-03-11 19:47:17,618 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 49
+2023-03-11 19:47:17,882 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 50
+2023-03-11 19:47:17,882 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 50
+2023-03-11 19:47:18,147 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 51
+2023-03-11 19:47:18,148 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 51
+2023-03-11 19:47:18,332 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 52
+2023-03-11 19:47:18,332 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 52
+2023-03-11 19:47:18,649 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 53
+2023-03-11 19:47:18,649 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 53
+2023-03-11 19:47:18,748 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 18
+2023-03-11 19:47:18,847 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 54
+2023-03-11 19:47:18,847 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 54
+2023-03-11 19:47:19,110 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 55
+2023-03-11 19:47:19,110 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 55
+2023-03-11 19:47:19,315 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 56
+2023-03-11 19:47:19,315 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 56
+2023-03-11 19:47:19,607 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 57
+2023-03-11 19:47:19,607 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 57
+2023-03-11 19:47:19,820 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 12
+2023-03-11 19:47:19,882 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 58
+2023-03-11 19:47:19,882 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 58
+2023-03-11 19:47:20,146 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 59
+2023-03-11 19:47:20,146 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 59
+2023-03-11 19:47:20,398 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 60
+2023-03-11 19:47:20,398 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 60
+2023-03-11 19:47:20,659 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 61
+2023-03-11 19:47:20,659 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 61
+2023-03-11 19:47:20,869 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 62
+2023-03-11 19:47:20,869 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 62
+2023-03-11 19:47:20,961 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 19
+2023-03-11 19:47:21,063 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 13
+2023-03-11 19:47:21,136 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 63
+2023-03-11 19:47:21,136 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 63
+2023-03-11 19:47:21,323 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 64
+2023-03-11 19:47:21,323 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 64
+2023-03-11 19:47:21,401 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 14
+2023-03-11 19:47:21,455 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 20
+2023-03-11 19:47:21,570 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 15
+2023-03-11 19:47:21,575 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 65
+2023-03-11 19:47:21,575 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 65
+2023-03-11 19:47:21,832 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 66
+2023-03-11 19:47:21,832 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 66
+2023-03-11 19:47:22,083 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 67
+2023-03-11 19:47:22,083 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 67
+2023-03-11 19:47:22,313 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 68
+2023-03-11 19:47:22,313 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 68
+2023-03-11 19:47:22,498 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 16
+2023-03-11 19:47:22,606 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 69
+2023-03-11 19:47:22,607 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 69
+2023-03-11 19:47:22,908 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 70
+2023-03-11 19:47:22,908 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 70
+2023-03-11 19:47:23,088 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 71
+2023-03-11 19:47:23,088 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 71
+2023-03-11 19:47:23,091 [INFO   ] [TRADER] received order filled for order 47 with price 146900 and volume 10
+2023-03-11 19:47:23,091 [INFO   ] [TRADER] received order status for order 47 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received order filled for order 48 with price 146900 and volume 10
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received order status for order 48 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received order filled for order 49 with price 146900 and volume 10
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received order status for order 49 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received order filled for order 50 with price 146900 and volume 10
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received order status for order 50 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received order filled for order 51 with price 146900 and volume 4
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received order status for order 51 with fill volume 4 remaining 6 and fees 118
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received order status for order 51 with fill volume 4 remaining 0 and fees 118
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 21
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received hedge filled for order 52 with average price 147000 and volume 10
+2023-03-11 19:47:23,092 [INFO   ] [TRADER] received hedge filled for order 53 with average price 147000 and volume 10
+2023-03-11 19:47:23,093 [INFO   ] [TRADER] received hedge filled for order 54 with average price 147000 and volume 10
+2023-03-11 19:47:23,093 [INFO   ] [TRADER] received hedge filled for order 55 with average price 147000 and volume 10
+2023-03-11 19:47:23,093 [INFO   ] [TRADER] received hedge filled for order 56 with average price 147000 and volume 4
+2023-03-11 19:47:23,383 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 72
+2023-03-11 19:47:23,383 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 72
+2023-03-11 19:47:23,608 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 22
+2023-03-11 19:47:23,661 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 73
+2023-03-11 19:47:23,661 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 73
+2023-03-11 19:47:23,825 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 74
+2023-03-11 19:47:23,825 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 74
+2023-03-11 19:47:23,997 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 17
+2023-03-11 19:47:24,129 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 75
+2023-03-11 19:47:24,129 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 75
+2023-03-11 19:47:24,388 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 76
+2023-03-11 19:47:24,389 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 76
+2023-03-11 19:47:24,566 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 77
+2023-03-11 19:47:24,566 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 77
+2023-03-11 19:47:24,843 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 78
+2023-03-11 19:47:24,843 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 78
+2023-03-11 19:47:25,059 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 18
+2023-03-11 19:47:25,099 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 79
+2023-03-11 19:47:25,099 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 79
+2023-03-11 19:47:25,100 [INFO   ] [TRADER] received order filled for order 57 with price 147000 and volume 10
+2023-03-11 19:47:25,100 [INFO   ] [TRADER] received order status for order 57 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:25,100 [INFO   ] [TRADER] received order filled for order 58 with price 147000 and volume 10
+2023-03-11 19:47:25,100 [INFO   ] [TRADER] received order status for order 58 with fill volume 10 remaining 0 and fees 294
+2023-03-11 19:47:25,100 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 23
+2023-03-11 19:47:25,101 [INFO   ] [TRADER] received hedge filled for order 59 with average price 147100 and volume 10
+2023-03-11 19:47:25,101 [INFO   ] [TRADER] received hedge filled for order 60 with average price 147100 and volume 10
+2023-03-11 19:47:25,404 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 80
+2023-03-11 19:47:25,405 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 80
+2023-03-11 19:47:25,608 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 19
+2023-03-11 19:47:25,610 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 81
+2023-03-11 19:47:25,610 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 81
+2023-03-11 19:47:25,824 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 82
+2023-03-11 19:47:25,824 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 82
+2023-03-11 19:47:26,032 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 20
+2023-03-11 19:47:26,065 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 21
+2023-03-11 19:47:26,085 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 83
+2023-03-11 19:47:26,085 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 83
+2023-03-11 19:47:26,210 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 24
+2023-03-11 19:47:26,311 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 22
+2023-03-11 19:47:26,333 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 84
+2023-03-11 19:47:26,334 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 84
+2023-03-11 19:47:26,356 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 25
+2023-03-11 19:47:26,623 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 85
+2023-03-11 19:47:26,623 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 85
+2023-03-11 19:47:26,709 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 23
+2023-03-11 19:47:26,852 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 86
+2023-03-11 19:47:26,852 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 86
+2023-03-11 19:47:27,066 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 87
+2023-03-11 19:47:27,066 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 87
+2023-03-11 19:47:27,372 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 88
+2023-03-11 19:47:27,372 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 88
+2023-03-11 19:47:27,559 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 24
+2023-03-11 19:47:27,573 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 89
+2023-03-11 19:47:27,573 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 89
+2023-03-11 19:47:27,833 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 90
+2023-03-11 19:47:27,833 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 90
+2023-03-11 19:47:27,902 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 25
+2023-03-11 19:47:28,057 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 26
+2023-03-11 19:47:28,081 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 91
+2023-03-11 19:47:28,081 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 91
+2023-03-11 19:47:28,301 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 27
+2023-03-11 19:47:28,340 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 92
+2023-03-11 19:47:28,340 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 92
+2023-03-11 19:47:28,369 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 28
+2023-03-11 19:47:28,519 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 29
+2023-03-11 19:47:28,584 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 93
+2023-03-11 19:47:28,584 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 93
+2023-03-11 19:47:28,841 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 94
+2023-03-11 19:47:28,841 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 94
+2023-03-11 19:47:29,000 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 30
+2023-03-11 19:47:29,080 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 95
+2023-03-11 19:47:29,080 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 95
+2023-03-11 19:47:29,257 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 31
+2023-03-11 19:47:29,370 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 96
+2023-03-11 19:47:29,371 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 96
+2023-03-11 19:47:29,500 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 26
+2023-03-11 19:47:29,638 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 97
+2023-03-11 19:47:29,638 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 97
+2023-03-11 19:47:29,844 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 98
+2023-03-11 19:47:29,844 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 98
+2023-03-11 19:47:30,072 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 99
+2023-03-11 19:47:30,072 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 99
+2023-03-11 19:47:30,364 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 32
+2023-03-11 19:47:30,405 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 100
+2023-03-11 19:47:30,405 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 100
+2023-03-11 19:47:30,621 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 101
+2023-03-11 19:47:30,621 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 101
+2023-03-11 19:47:30,759 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 33
+2023-03-11 19:47:30,833 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 102
+2023-03-11 19:47:30,833 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 102
+2023-03-11 19:47:30,862 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 27
+2023-03-11 19:47:31,067 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 34
+2023-03-11 19:47:31,124 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 103
+2023-03-11 19:47:31,124 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 103
+2023-03-11 19:47:31,264 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 28
+2023-03-11 19:47:31,317 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 104
+2023-03-11 19:47:31,317 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 104
+2023-03-11 19:47:31,614 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 105
+2023-03-11 19:47:31,615 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 105
+2023-03-11 19:47:31,862 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 106
+2023-03-11 19:47:31,862 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 106
+2023-03-11 19:47:31,909 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 35
+2023-03-11 19:47:32,003 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 29
+2023-03-11 19:47:32,127 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 107
+2023-03-11 19:47:32,127 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 107
+2023-03-11 19:47:32,348 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 108
+2023-03-11 19:47:32,348 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 108
+2023-03-11 19:47:32,658 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 109
+2023-03-11 19:47:32,659 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 109
+2023-03-11 19:47:32,746 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 30
+2023-03-11 19:47:32,816 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 110
+2023-03-11 19:47:32,816 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 110
+2023-03-11 19:47:33,148 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 111
+2023-03-11 19:47:33,148 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 111
+2023-03-11 19:47:33,368 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 112
+2023-03-11 19:47:33,368 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 112
+2023-03-11 19:47:33,406 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 36
+2023-03-11 19:47:33,558 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 31
+2023-03-11 19:47:33,558 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 37
+2023-03-11 19:47:33,569 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 113
+2023-03-11 19:47:33,569 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 113
+2023-03-11 19:47:33,865 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 114
+2023-03-11 19:47:33,865 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 114
+2023-03-11 19:47:33,894 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 32
+2023-03-11 19:47:34,137 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 115
+2023-03-11 19:47:34,137 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 115
+2023-03-11 19:47:34,296 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 38
+2023-03-11 19:47:34,325 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 116
+2023-03-11 19:47:34,325 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 116
+2023-03-11 19:47:34,563 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 117
+2023-03-11 19:47:34,563 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 117
+2023-03-11 19:47:34,887 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 118
+2023-03-11 19:47:34,887 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 118
+2023-03-11 19:47:35,075 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 119
+2023-03-11 19:47:35,075 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 119
+2023-03-11 19:47:35,125 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 39
+2023-03-11 19:47:35,331 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 120
+2023-03-11 19:47:35,331 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 120
+2023-03-11 19:47:35,502 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 33
+2023-03-11 19:47:35,658 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 121
+2023-03-11 19:47:35,658 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 121
+2023-03-11 19:47:35,837 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 122
+2023-03-11 19:47:35,838 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 122
+2023-03-11 19:47:36,081 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 123
+2023-03-11 19:47:36,082 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 123
+2023-03-11 19:47:36,303 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 40
+2023-03-11 19:47:36,336 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 124
+2023-03-11 19:47:36,336 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 124
+2023-03-11 19:47:36,601 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 41
+2023-03-11 19:47:36,630 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 125
+2023-03-11 19:47:36,630 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 125
+2023-03-11 19:47:36,880 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 126
+2023-03-11 19:47:36,880 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 126
+2023-03-11 19:47:37,006 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 34
+2023-03-11 19:47:37,104 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 127
+2023-03-11 19:47:37,105 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 127
+2023-03-11 19:47:37,398 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 128
+2023-03-11 19:47:37,398 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 128
+2023-03-11 19:47:37,499 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 35
+2023-03-11 19:47:37,573 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 129
+2023-03-11 19:47:37,573 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 129
+2023-03-11 19:47:37,841 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 130
+2023-03-11 19:47:37,841 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 130
+2023-03-11 19:47:38,148 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 131
+2023-03-11 19:47:38,148 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 131
+2023-03-11 19:47:38,318 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 42
+2023-03-11 19:47:38,338 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 132
+2023-03-11 19:47:38,338 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 132
+2023-03-11 19:47:38,575 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 133
+2023-03-11 19:47:38,575 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 133
+2023-03-11 19:47:38,816 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 134
+2023-03-11 19:47:38,816 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 134
+2023-03-11 19:47:39,114 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 135
+2023-03-11 19:47:39,114 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 135
+2023-03-11 19:47:39,253 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 36
+2023-03-11 19:47:39,358 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 136
+2023-03-11 19:47:39,358 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 136
+2023-03-11 19:47:39,609 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 137
+2023-03-11 19:47:39,609 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 137
+2023-03-11 19:47:39,667 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 43
+2023-03-11 19:47:39,890 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 138
+2023-03-11 19:47:39,890 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 138
+2023-03-11 19:47:40,085 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 139
+2023-03-11 19:47:40,085 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 139
+2023-03-11 19:47:40,331 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 140
+2023-03-11 19:47:40,331 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 140
+2023-03-11 19:47:40,347 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 37
+2023-03-11 19:47:40,637 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 141
+2023-03-11 19:47:40,638 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 141
+2023-03-11 19:47:40,708 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 44
+2023-03-11 19:47:40,837 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 142
+2023-03-11 19:47:40,838 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 142
+2023-03-11 19:47:40,952 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 45
+2023-03-11 19:47:40,998 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 38
+2023-03-11 19:47:41,068 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 46
+2023-03-11 19:47:41,095 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 143
+2023-03-11 19:47:41,095 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 143
+2023-03-11 19:47:41,149 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 47
+2023-03-11 19:47:41,364 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 144
+2023-03-11 19:47:41,364 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 144
+2023-03-11 19:47:41,638 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 145
+2023-03-11 19:47:41,638 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 145
+2023-03-11 19:47:41,823 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 146
+2023-03-11 19:47:41,823 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 146
+2023-03-11 19:47:42,081 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 147
+2023-03-11 19:47:42,081 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 147
+2023-03-11 19:47:42,366 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 148
+2023-03-11 19:47:42,366 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 148
+2023-03-11 19:47:42,613 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 149
+2023-03-11 19:47:42,614 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 149
+2023-03-11 19:47:42,879 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 150
+2023-03-11 19:47:42,879 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 150
+2023-03-11 19:47:42,964 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 48
+2023-03-11 19:47:43,067 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 151
+2023-03-11 19:47:43,067 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 151
+2023-03-11 19:47:43,324 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 152
+2023-03-11 19:47:43,325 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 152
+2023-03-11 19:47:43,615 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 153
+2023-03-11 19:47:43,615 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 153
+2023-03-11 19:47:43,894 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 154
+2023-03-11 19:47:43,894 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 154
+2023-03-11 19:47:44,084 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 155
+2023-03-11 19:47:44,084 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 155
+2023-03-11 19:47:44,351 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 156
+2023-03-11 19:47:44,351 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 156
+2023-03-11 19:47:44,629 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 157
+2023-03-11 19:47:44,629 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 157
+2023-03-11 19:47:44,706 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 39
+2023-03-11 19:47:44,857 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 40
+2023-03-11 19:47:44,872 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 158
+2023-03-11 19:47:44,873 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 158
+2023-03-11 19:47:44,947 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 41
+2023-03-11 19:47:45,105 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 159
+2023-03-11 19:47:45,105 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 159
+2023-03-11 19:47:45,322 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 160
+2023-03-11 19:47:45,322 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 160
+2023-03-11 19:47:45,628 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 161
+2023-03-11 19:47:45,628 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 161
+2023-03-11 19:47:45,912 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 162
+2023-03-11 19:47:45,912 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 162
+2023-03-11 19:47:46,010 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 42
+2023-03-11 19:47:46,010 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 49
+2023-03-11 19:47:46,100 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 163
+2023-03-11 19:47:46,100 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 163
+2023-03-11 19:47:46,371 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 164
+2023-03-11 19:47:46,372 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 164
+2023-03-11 19:47:46,569 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 165
+2023-03-11 19:47:46,569 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 165
+2023-03-11 19:47:46,885 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 166
+2023-03-11 19:47:46,885 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 166
+2023-03-11 19:47:47,072 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 167
+2023-03-11 19:47:47,072 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 167
+2023-03-11 19:47:47,411 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 168
+2023-03-11 19:47:47,411 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 168
+2023-03-11 19:47:47,611 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 50
+2023-03-11 19:47:47,663 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 169
+2023-03-11 19:47:47,663 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 169
+2023-03-11 19:47:47,696 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 43
+2023-03-11 19:47:47,905 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 170
+2023-03-11 19:47:47,905 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 170
+2023-03-11 19:47:48,160 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 171
+2023-03-11 19:47:48,160 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 171
+2023-03-11 19:47:48,406 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 172
+2023-03-11 19:47:48,406 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 172
+2023-03-11 19:47:48,602 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 173
+2023-03-11 19:47:48,602 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 173
+2023-03-11 19:47:48,892 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 174
+2023-03-11 19:47:48,892 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 174
+2023-03-11 19:47:49,093 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 175
+2023-03-11 19:47:49,093 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 175
+2023-03-11 19:47:49,255 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 51
+2023-03-11 19:47:49,402 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 176
+2023-03-11 19:47:49,402 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 176
+2023-03-11 19:47:49,613 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 177
+2023-03-11 19:47:49,614 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 177
+2023-03-11 19:47:49,864 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 178
+2023-03-11 19:47:49,864 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 178
+2023-03-11 19:47:50,100 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 179
+2023-03-11 19:47:50,100 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 179
+2023-03-11 19:47:50,340 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 180
+2023-03-11 19:47:50,340 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 180
+2023-03-11 19:47:50,557 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 44
+2023-03-11 19:47:50,650 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 181
+2023-03-11 19:47:50,651 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 181
+2023-03-11 19:47:50,804 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 52
+2023-03-11 19:47:50,911 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 182
+2023-03-11 19:47:50,911 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 182
+2023-03-11 19:47:51,103 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 183
+2023-03-11 19:47:51,103 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 183
+2023-03-11 19:47:51,109 [INFO   ] [TRADER] received order filled for order 61 with price 147400 and volume 10
+2023-03-11 19:47:51,109 [INFO   ] [TRADER] received order status for order 61 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:51,109 [INFO   ] [TRADER] received order filled for order 62 with price 147400 and volume 8
+2023-03-11 19:47:51,109 [INFO   ] [TRADER] received order status for order 62 with fill volume 8 remaining 2 and fees 236
+2023-03-11 19:47:51,109 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 45
+2023-03-11 19:47:51,109 [INFO   ] [TRADER] received order status for order 62 with fill volume 8 remaining 0 and fees 236
+2023-03-11 19:47:51,109 [INFO   ] [TRADER] received hedge filled for order 63 with average price 147300 and volume 10
+2023-03-11 19:47:51,109 [INFO   ] [TRADER] received hedge filled for order 64 with average price 147300 and volume 8
+2023-03-11 19:47:51,349 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 184
+2023-03-11 19:47:51,349 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 184
+2023-03-11 19:47:51,630 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 185
+2023-03-11 19:47:51,630 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 185
+2023-03-11 19:47:51,848 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 186
+2023-03-11 19:47:51,848 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 186
+2023-03-11 19:47:52,088 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 187
+2023-03-11 19:47:52,088 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 187
+2023-03-11 19:47:52,407 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 188
+2023-03-11 19:47:52,407 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 188
+2023-03-11 19:47:52,625 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 189
+2023-03-11 19:47:52,625 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 189
+2023-03-11 19:47:52,829 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 190
+2023-03-11 19:47:52,829 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 190
+2023-03-11 19:47:53,063 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 191
+2023-03-11 19:47:53,063 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 191
+2023-03-11 19:47:53,149 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 46
+2023-03-11 19:47:53,339 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 192
+2023-03-11 19:47:53,339 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 192
+2023-03-11 19:47:53,594 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 193
+2023-03-11 19:47:53,594 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 193
+2023-03-11 19:47:53,833 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 194
+2023-03-11 19:47:53,833 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 194
+2023-03-11 19:47:53,847 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 47
+2023-03-11 19:47:54,092 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 195
+2023-03-11 19:47:54,092 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 195
+2023-03-11 19:47:54,316 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 196
+2023-03-11 19:47:54,316 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 196
+2023-03-11 19:47:54,573 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 197
+2023-03-11 19:47:54,574 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 197
+2023-03-11 19:47:54,900 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 198
+2023-03-11 19:47:54,900 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 198
+2023-03-11 19:47:55,082 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 199
+2023-03-11 19:47:55,082 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 199
+2023-03-11 19:47:55,388 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 200
+2023-03-11 19:47:55,388 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 200
+2023-03-11 19:47:55,651 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 201
+2023-03-11 19:47:55,651 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 201
+2023-03-11 19:47:55,707 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 53
+2023-03-11 19:47:55,894 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 202
+2023-03-11 19:47:55,894 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 202
+2023-03-11 19:47:55,946 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 48
+2023-03-11 19:47:56,102 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 203
+2023-03-11 19:47:56,102 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 203
+2023-03-11 19:47:56,378 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 204
+2023-03-11 19:47:56,378 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 204
+2023-03-11 19:47:56,601 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 205
+2023-03-11 19:47:56,601 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 205
+2023-03-11 19:47:56,905 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 206
+2023-03-11 19:47:56,905 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 206
+2023-03-11 19:47:57,087 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 207
+2023-03-11 19:47:57,087 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 207
+2023-03-11 19:47:57,357 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 208
+2023-03-11 19:47:57,357 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 208
+2023-03-11 19:47:57,517 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 54
+2023-03-11 19:47:57,563 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 209
+2023-03-11 19:47:57,563 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 209
+2023-03-11 19:47:57,822 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 210
+2023-03-11 19:47:57,822 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 210
+2023-03-11 19:47:58,093 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 211
+2023-03-11 19:47:58,093 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 211
+2023-03-11 19:47:58,354 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 212
+2023-03-11 19:47:58,354 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 212
+2023-03-11 19:47:58,563 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 213
+2023-03-11 19:47:58,563 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 213
+2023-03-11 19:47:58,873 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 214
+2023-03-11 19:47:58,873 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 214
+2023-03-11 19:47:59,124 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 215
+2023-03-11 19:47:59,124 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 215
+2023-03-11 19:47:59,377 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 216
+2023-03-11 19:47:59,377 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 216
+2023-03-11 19:47:59,657 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 217
+2023-03-11 19:47:59,657 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 217
+2023-03-11 19:47:59,659 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 49
+2023-03-11 19:47:59,869 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 218
+2023-03-11 19:47:59,869 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 218
+2023-03-11 19:47:59,878 [INFO   ] [TRADER] received order filled for order 65 with price 147300 and volume 10
+2023-03-11 19:47:59,878 [INFO   ] [TRADER] received order status for order 65 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,878 [INFO   ] [TRADER] received order filled for order 66 with price 147300 and volume 10
+2023-03-11 19:47:59,878 [INFO   ] [TRADER] received order status for order 66 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,878 [INFO   ] [TRADER] received order filled for order 67 with price 147300 and volume 10
+2023-03-11 19:47:59,878 [INFO   ] [TRADER] received order status for order 67 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,878 [INFO   ] [TRADER] received order filled for order 68 with price 147300 and volume 10
+2023-03-11 19:47:59,878 [INFO   ] [TRADER] received order status for order 68 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received order filled for order 69 with price 147300 and volume 10
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received order status for order 69 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received order filled for order 70 with price 147300 and volume 10
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received order status for order 70 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received order filled for order 71 with price 147300 and volume 10
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received order status for order 71 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received order filled for order 72 with price 147300 and volume 10
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received order status for order 72 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received order filled for order 73 with price 147300 and volume 10
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received order status for order 73 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 55
+2023-03-11 19:47:59,879 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 50
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order filled for order 74 with price 147300 and volume 10
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order status for order 74 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order filled for order 75 with price 147300 and volume 10
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order status for order 75 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order filled for order 76 with price 147300 and volume 10
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order status for order 76 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order filled for order 77 with price 147300 and volume 10
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order status for order 77 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order filled for order 78 with price 147300 and volume 10
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order status for order 78 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,880 [INFO   ] [TRADER] received order filled for order 79 with price 147300 and volume 10
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received order status for order 79 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received order filled for order 80 with price 147300 and volume 10
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received order status for order 80 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received order filled for order 81 with price 147300 and volume 10
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received order status for order 81 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received order filled for order 82 with price 147300 and volume 10
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received order status for order 82 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received hedge filled for order 83 with average price 147500 and volume 10
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received hedge filled for order 84 with average price 147500 and volume 10
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received hedge filled for order 85 with average price 147500 and volume 10
+2023-03-11 19:47:59,881 [INFO   ] [TRADER] received hedge filled for order 86 with average price 147500 and volume 10
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received hedge filled for order 87 with average price 147500 and volume 10
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received hedge filled for order 88 with average price 147500 and volume 10
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received hedge filled for order 89 with average price 147500 and volume 10
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received hedge filled for order 90 with average price 147500 and volume 10
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 51
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received hedge filled for order 91 with average price 147500 and volume 10
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received hedge filled for order 92 with average price 147500 and volume 10
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received hedge filled for order 93 with average price 147500 and volume 10
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received hedge filled for order 94 with average price 147500 and volume 10
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received hedge filled for order 95 with average price 147500 and volume 10
+2023-03-11 19:47:59,882 [INFO   ] [TRADER] received hedge filled for order 96 with average price 147500 and volume 10
+2023-03-11 19:47:59,883 [INFO   ] [TRADER] received hedge filled for order 97 with average price 147500 and volume 10
+2023-03-11 19:47:59,883 [INFO   ] [TRADER] received hedge filled for order 98 with average price 147500 and volume 10
+2023-03-11 19:47:59,883 [INFO   ] [TRADER] received hedge filled for order 99 with average price 147500 and volume 10
+2023-03-11 19:47:59,883 [INFO   ] [TRADER] received hedge filled for order 100 with average price 147500 and volume 10
+2023-03-11 19:48:00,090 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 219
+2023-03-11 19:48:00,090 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 219
+2023-03-11 19:48:00,359 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 56
+2023-03-11 19:48:00,359 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 220
+2023-03-11 19:48:00,359 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 220
+2023-03-11 19:48:00,623 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 221
+2023-03-11 19:48:00,623 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 221
+2023-03-11 19:48:00,719 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 57
+2023-03-11 19:48:00,814 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 52
+2023-03-11 19:48:00,902 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 222
+2023-03-11 19:48:00,902 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 222
+2023-03-11 19:48:01,093 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 58
+2023-03-11 19:48:01,093 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 223
+2023-03-11 19:48:01,093 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 223
+2023-03-11 19:48:01,153 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 53
+2023-03-11 19:48:01,263 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 54
+2023-03-11 19:48:01,380 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 224
+2023-03-11 19:48:01,380 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 224
+2023-03-11 19:48:01,585 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 225
+2023-03-11 19:48:01,585 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 225
+2023-03-11 19:48:01,615 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 59
+2023-03-11 19:48:01,762 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 60
+2023-03-11 19:48:01,861 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 226
+2023-03-11 19:48:01,861 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 226
+2023-03-11 19:48:02,065 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 227
+2023-03-11 19:48:02,065 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 227
+2023-03-11 19:48:02,339 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 228
+2023-03-11 19:48:02,339 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 228
+2023-03-11 19:48:02,660 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 229
+2023-03-11 19:48:02,660 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 229
+2023-03-11 19:48:02,870 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 230
+2023-03-11 19:48:02,870 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 230
+2023-03-11 19:48:02,967 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 61
+2023-03-11 19:48:03,143 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 231
+2023-03-11 19:48:03,143 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 231
+2023-03-11 19:48:03,152 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 62
+2023-03-11 19:48:03,339 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 232
+2023-03-11 19:48:03,340 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 232
+2023-03-11 19:48:03,351 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 63
+2023-03-11 19:48:03,621 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 233
+2023-03-11 19:48:03,621 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 233
+2023-03-11 19:48:03,849 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 234
+2023-03-11 19:48:03,849 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 234
+2023-03-11 19:48:03,861 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 64
+2023-03-11 19:48:04,087 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 235
+2023-03-11 19:48:04,088 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 235
+2023-03-11 19:48:04,362 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 236
+2023-03-11 19:48:04,362 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 236
+2023-03-11 19:48:04,651 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 237
+2023-03-11 19:48:04,651 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 237
+2023-03-11 19:48:04,825 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 238
+2023-03-11 19:48:04,825 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 238
+2023-03-11 19:48:04,924 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 65
+2023-03-11 19:48:05,151 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 239
+2023-03-11 19:48:05,152 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 239
+2023-03-11 19:48:05,314 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 240
+2023-03-11 19:48:05,314 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 240
+2023-03-11 19:48:05,365 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 66
+2023-03-11 19:48:05,597 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 241
+2023-03-11 19:48:05,597 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 241
+2023-03-11 19:48:05,767 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 67
+2023-03-11 19:48:05,853 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 68
+2023-03-11 19:48:05,891 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 242
+2023-03-11 19:48:05,891 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 242
+2023-03-11 19:48:06,148 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 243
+2023-03-11 19:48:06,148 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 243
+2023-03-11 19:48:06,317 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 69
+2023-03-11 19:48:06,349 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 244
+2023-03-11 19:48:06,349 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 244
+2023-03-11 19:48:06,412 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 70
+2023-03-11 19:48:06,583 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 245
+2023-03-11 19:48:06,583 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 245
+2023-03-11 19:48:06,905 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 246
+2023-03-11 19:48:06,905 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 246
+2023-03-11 19:48:07,127 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 247
+2023-03-11 19:48:07,127 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 247
+2023-03-11 19:48:07,332 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 248
+2023-03-11 19:48:07,332 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 248
+2023-03-11 19:48:07,609 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 249
+2023-03-11 19:48:07,609 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 249
+2023-03-11 19:48:07,824 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 250
+2023-03-11 19:48:07,824 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 250
+2023-03-11 19:48:07,856 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 71
+2023-03-11 19:48:07,948 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 55
+2023-03-11 19:48:08,099 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 56
+2023-03-11 19:48:08,127 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 251
+2023-03-11 19:48:08,127 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 251
+2023-03-11 19:48:08,213 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 72
+2023-03-11 19:48:08,315 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 252
+2023-03-11 19:48:08,315 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 252
+2023-03-11 19:48:08,654 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 253
+2023-03-11 19:48:08,654 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 253
+2023-03-11 19:48:08,828 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 254
+2023-03-11 19:48:08,828 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 254
+2023-03-11 19:48:09,109 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 255
+2023-03-11 19:48:09,110 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 255
+2023-03-11 19:48:09,334 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 256
+2023-03-11 19:48:09,334 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 256
+2023-03-11 19:48:09,601 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 257
+2023-03-11 19:48:09,601 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 257
+2023-03-11 19:48:09,807 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 57
+2023-03-11 19:48:09,891 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 258
+2023-03-11 19:48:09,891 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 258
+2023-03-11 19:48:10,103 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 259
+2023-03-11 19:48:10,104 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 259
+2023-03-11 19:48:10,336 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 260
+2023-03-11 19:48:10,336 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 260
+2023-03-11 19:48:10,636 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 261
+2023-03-11 19:48:10,636 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 261
+2023-03-11 19:48:10,665 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 73
+2023-03-11 19:48:10,868 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 262
+2023-03-11 19:48:10,868 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 262
+2023-03-11 19:48:11,119 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 263
+2023-03-11 19:48:11,119 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 263
+2023-03-11 19:48:11,405 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 264
+2023-03-11 19:48:11,405 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 264
+2023-03-11 19:48:11,451 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 58
+2023-03-11 19:48:11,660 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 265
+2023-03-11 19:48:11,661 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 265
+2023-03-11 19:48:11,868 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 266
+2023-03-11 19:48:11,868 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 266
+2023-03-11 19:48:12,052 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 59
+2023-03-11 19:48:12,071 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 267
+2023-03-11 19:48:12,071 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 267
+2023-03-11 19:48:12,340 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 268
+2023-03-11 19:48:12,340 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 268
+2023-03-11 19:48:12,355 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 60
+2023-03-11 19:48:12,585 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 269
+2023-03-11 19:48:12,586 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 269
+2023-03-11 19:48:12,857 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 270
+2023-03-11 19:48:12,857 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 270
+2023-03-11 19:48:13,026 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 74
+2023-03-11 19:48:13,126 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 271
+2023-03-11 19:48:13,126 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 271
+2023-03-11 19:48:13,378 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 272
+2023-03-11 19:48:13,378 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 272
+2023-03-11 19:48:13,620 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 273
+2023-03-11 19:48:13,620 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 273
+2023-03-11 19:48:13,810 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 61
+2023-03-11 19:48:13,849 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 274
+2023-03-11 19:48:13,849 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 274
+2023-03-11 19:48:13,963 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 62
+2023-03-11 19:48:14,147 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 275
+2023-03-11 19:48:14,148 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 275
+2023-03-11 19:48:14,205 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 75
+2023-03-11 19:48:14,383 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 276
+2023-03-11 19:48:14,383 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 276
+2023-03-11 19:48:14,593 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 277
+2023-03-11 19:48:14,593 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 277
+2023-03-11 19:48:14,704 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 63
+2023-03-11 19:48:14,876 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 278
+2023-03-11 19:48:14,876 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 278
+2023-03-11 19:48:14,962 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 76
+2023-03-11 19:48:15,151 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 279
+2023-03-11 19:48:15,151 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 279
+2023-03-11 19:48:15,208 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 77
+2023-03-11 19:48:15,271 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 78
+2023-03-11 19:48:15,355 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 280
+2023-03-11 19:48:15,355 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 280
+2023-03-11 19:48:15,585 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 281
+2023-03-11 19:48:15,585 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 281
+2023-03-11 19:48:15,834 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 282
+2023-03-11 19:48:15,834 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 282
+2023-03-11 19:48:16,107 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 283
+2023-03-11 19:48:16,108 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 283
+2023-03-11 19:48:16,259 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 64
+2023-03-11 19:48:16,321 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 284
+2023-03-11 19:48:16,321 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 284
+2023-03-11 19:48:16,615 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 285
+2023-03-11 19:48:16,615 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 285
+2023-03-11 19:48:16,815 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 286
+2023-03-11 19:48:16,815 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 286
+2023-03-11 19:48:17,162 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 287
+2023-03-11 19:48:17,162 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 287
+2023-03-11 19:48:17,397 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 288
+2023-03-11 19:48:17,398 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 288
+2023-03-11 19:48:17,632 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 289
+2023-03-11 19:48:17,632 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 289
+2023-03-11 19:48:17,886 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 290
+2023-03-11 19:48:17,886 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 290
+2023-03-11 19:48:18,005 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 65
+2023-03-11 19:48:18,088 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 291
+2023-03-11 19:48:18,088 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 291
+2023-03-11 19:48:18,368 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 292
+2023-03-11 19:48:18,368 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 292
+2023-03-11 19:48:18,405 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 66
+2023-03-11 19:48:18,613 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 293
+2023-03-11 19:48:18,613 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 293
+2023-03-11 19:48:18,899 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 294
+2023-03-11 19:48:18,899 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 294
+2023-03-11 19:48:18,949 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 79
+2023-03-11 19:48:19,049 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 67
+2023-03-11 19:48:19,112 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 295
+2023-03-11 19:48:19,112 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 295
+2023-03-11 19:48:19,401 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 296
+2023-03-11 19:48:19,401 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 296
+2023-03-11 19:48:19,616 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 297
+2023-03-11 19:48:19,616 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 297
+2023-03-11 19:48:19,861 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 298
+2023-03-11 19:48:19,861 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 298
+2023-03-11 19:48:20,068 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 299
+2023-03-11 19:48:20,068 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 299
+2023-03-11 19:48:20,372 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 300
+2023-03-11 19:48:20,372 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 300
+2023-03-11 19:48:20,596 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 301
+2023-03-11 19:48:20,596 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 301
+2023-03-11 19:48:20,666 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 80
+2023-03-11 19:48:20,891 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 302
+2023-03-11 19:48:20,891 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 302
+2023-03-11 19:48:20,959 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 81
+2023-03-11 19:48:21,078 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 303
+2023-03-11 19:48:21,078 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 303
+2023-03-11 19:48:21,323 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 304
+2023-03-11 19:48:21,323 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 304
+2023-03-11 19:48:21,588 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 305
+2023-03-11 19:48:21,588 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 305
+2023-03-11 19:48:21,830 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 306
+2023-03-11 19:48:21,830 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 306
+2023-03-11 19:48:21,922 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 82
+2023-03-11 19:48:22,103 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 307
+2023-03-11 19:48:22,103 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 307
+2023-03-11 19:48:22,213 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 83
+2023-03-11 19:48:22,389 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 308
+2023-03-11 19:48:22,389 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 308
+2023-03-11 19:48:22,576 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 309
+2023-03-11 19:48:22,576 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 309
+2023-03-11 19:48:22,893 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 310
+2023-03-11 19:48:22,893 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 310
+2023-03-11 19:48:23,124 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 311
+2023-03-11 19:48:23,124 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 311
+2023-03-11 19:48:23,213 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 68
+2023-03-11 19:48:23,399 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 312
+2023-03-11 19:48:23,399 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 312
+2023-03-11 19:48:23,658 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 313
+2023-03-11 19:48:23,658 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 313
+2023-03-11 19:48:23,862 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 314
+2023-03-11 19:48:23,862 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 314
+2023-03-11 19:48:24,081 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 315
+2023-03-11 19:48:24,082 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 315
+2023-03-11 19:48:24,397 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 316
+2023-03-11 19:48:24,397 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 316
+2023-03-11 19:48:24,621 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 317
+2023-03-11 19:48:24,622 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 317
+2023-03-11 19:48:24,622 [INFO   ] [TRADER] received order filled for order 101 with price 147400 and volume 1
+2023-03-11 19:48:24,622 [INFO   ] [TRADER] received order status for order 101 with fill volume 1 remaining 9 and fees 29
+2023-03-11 19:48:24,622 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 69
+2023-03-11 19:48:24,622 [INFO   ] [TRADER] received order status for order 101 with fill volume 1 remaining 0 and fees 29
+2023-03-11 19:48:24,622 [INFO   ] [TRADER] received hedge filled for order 102 with average price 147600 and volume 1
+2023-03-11 19:48:24,838 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 318
+2023-03-11 19:48:24,839 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 318
+2023-03-11 19:48:25,081 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 319
+2023-03-11 19:48:25,081 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 319
+2023-03-11 19:48:25,083 [INFO   ] [TRADER] received order filled for order 103 with price 147600 and volume 10
+2023-03-11 19:48:25,083 [INFO   ] [TRADER] received order status for order 103 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:48:25,083 [INFO   ] [TRADER] received order filled for order 104 with price 147600 and volume 10
+2023-03-11 19:48:25,083 [INFO   ] [TRADER] received order status for order 104 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:48:25,083 [INFO   ] [TRADER] received order filled for order 105 with price 147600 and volume 10
+2023-03-11 19:48:25,083 [INFO   ] [TRADER] received order status for order 105 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:48:25,083 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 70
+2023-03-11 19:48:25,083 [INFO   ] [TRADER] received order filled for order 106 with price 147600 and volume 10
+2023-03-11 19:48:25,083 [INFO   ] [TRADER] received order status for order 106 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received order filled for order 107 with price 147600 and volume 10
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received order status for order 107 with fill volume 10 remaining 0 and fees 295
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received order filled for order 108 with price 147600 and volume 7
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received order status for order 108 with fill volume 7 remaining 3 and fees 207
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received order status for order 108 with fill volume 7 remaining 0 and fees 207
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 71
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received hedge filled for order 109 with average price 147800 and volume 10
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received hedge filled for order 110 with average price 147800 and volume 10
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received hedge filled for order 111 with average price 147800 and volume 10
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received hedge filled for order 112 with average price 147800 and volume 10
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received hedge filled for order 113 with average price 147800 and volume 10
+2023-03-11 19:48:25,084 [INFO   ] [TRADER] received hedge filled for order 114 with average price 147800 and volume 7
+2023-03-11 19:48:25,170 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 84
+2023-03-11 19:48:25,327 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 85
+2023-03-11 19:48:25,357 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 320
+2023-03-11 19:48:25,357 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 320
+2023-03-11 19:48:25,376 [INFO   ] [TRADER] received order filled for order 115 with price 147900 and volume 10
+2023-03-11 19:48:25,376 [INFO   ] [TRADER] received order status for order 115 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,379 [INFO   ] [TRADER] received order filled for order 116 with price 147900 and volume 10
+2023-03-11 19:48:25,379 [INFO   ] [TRADER] received order status for order 116 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,379 [INFO   ] [TRADER] received order filled for order 117 with price 147900 and volume 10
+2023-03-11 19:48:25,379 [INFO   ] [TRADER] received order status for order 117 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,379 [INFO   ] [TRADER] received order filled for order 118 with price 147900 and volume 10
+2023-03-11 19:48:25,379 [INFO   ] [TRADER] received order status for order 118 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,379 [INFO   ] [TRADER] received order filled for order 119 with price 147900 and volume 10
+2023-03-11 19:48:25,379 [INFO   ] [TRADER] received order status for order 119 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,379 [INFO   ] [TRADER] received order filled for order 120 with price 147900 and volume 10
+2023-03-11 19:48:25,380 [INFO   ] [TRADER] received order status for order 120 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,380 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 86
+2023-03-11 19:48:25,380 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 72
+2023-03-11 19:48:25,380 [INFO   ] [TRADER] received order filled for order 121 with price 147900 and volume 10
+2023-03-11 19:48:25,380 [INFO   ] [TRADER] received order status for order 121 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,380 [INFO   ] [TRADER] received order filled for order 122 with price 147900 and volume 10
+2023-03-11 19:48:25,381 [INFO   ] [TRADER] received order status for order 122 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,381 [INFO   ] [TRADER] received order filled for order 123 with price 147900 and volume 3
+2023-03-11 19:48:25,381 [INFO   ] [TRADER] received order status for order 123 with fill volume 3 remaining 7 and fees 89
+2023-03-11 19:48:25,381 [INFO   ] [TRADER] received order status for order 123 with fill volume 3 remaining 0 and fees 89
+2023-03-11 19:48:25,383 [INFO   ] [TRADER] received hedge filled for order 124 with average price 148500 and volume 10
+2023-03-11 19:48:25,383 [INFO   ] [TRADER] received hedge filled for order 125 with average price 148500 and volume 10
+2023-03-11 19:48:25,383 [INFO   ] [TRADER] received hedge filled for order 126 with average price 148500 and volume 10
+2023-03-11 19:48:25,384 [INFO   ] [TRADER] received hedge filled for order 127 with average price 148500 and volume 10
+2023-03-11 19:48:25,384 [INFO   ] [TRADER] received hedge filled for order 128 with average price 148500 and volume 10
+2023-03-11 19:48:25,384 [INFO   ] [TRADER] received hedge filled for order 129 with average price 148500 and volume 10
+2023-03-11 19:48:25,384 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 73
+2023-03-11 19:48:25,384 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 87
+2023-03-11 19:48:25,384 [INFO   ] [TRADER] received hedge filled for order 130 with average price 148500 and volume 10
+2023-03-11 19:48:25,384 [INFO   ] [TRADER] received hedge filled for order 131 with average price 148500 and volume 10
+2023-03-11 19:48:25,384 [INFO   ] [TRADER] received hedge filled for order 132 with average price 148500 and volume 3
+2023-03-11 19:48:25,516 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 88
+2023-03-11 19:48:25,575 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 321
+2023-03-11 19:48:25,575 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 321
+2023-03-11 19:48:25,576 [INFO   ] [TRADER] received order filled for order 133 with price 148000 and volume 10
+2023-03-11 19:48:25,576 [INFO   ] [TRADER] received order status for order 133 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,576 [INFO   ] [TRADER] received order filled for order 134 with price 148000 and volume 7
+2023-03-11 19:48:25,576 [INFO   ] [TRADER] received order status for order 134 with fill volume 7 remaining 3 and fees 207
+2023-03-11 19:48:25,576 [INFO   ] [TRADER] received order status for order 134 with fill volume 7 remaining 0 and fees 207
+2023-03-11 19:48:25,576 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 74
+2023-03-11 19:48:25,577 [INFO   ] [TRADER] received hedge filled for order 135 with average price 148200 and volume 10
+2023-03-11 19:48:25,577 [INFO   ] [TRADER] received hedge filled for order 136 with average price 148200 and volume 7
+2023-03-11 19:48:25,891 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 322
+2023-03-11 19:48:25,891 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 322
+2023-03-11 19:48:25,893 [INFO   ] [TRADER] received order filled for order 137 with price 148100 and volume 10
+2023-03-11 19:48:25,893 [INFO   ] [TRADER] received order status for order 137 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,894 [INFO   ] [TRADER] received order filled for order 138 with price 148100 and volume 10
+2023-03-11 19:48:25,894 [INFO   ] [TRADER] received order status for order 138 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,894 [INFO   ] [TRADER] received order filled for order 139 with price 148100 and volume 10
+2023-03-11 19:48:25,894 [INFO   ] [TRADER] received order status for order 139 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,894 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 75
+2023-03-11 19:48:25,894 [INFO   ] [TRADER] received order filled for order 140 with price 148100 and volume 10
+2023-03-11 19:48:25,894 [INFO   ] [TRADER] received order status for order 140 with fill volume 10 remaining 0 and fees 296
+2023-03-11 19:48:25,894 [INFO   ] [TRADER] received hedge filled for order 141 with average price 148300 and volume 10
+2023-03-11 19:48:25,895 [INFO   ] [TRADER] received hedge filled for order 142 with average price 148300 and volume 10
+2023-03-11 19:48:25,895 [INFO   ] [TRADER] received hedge filled for order 143 with average price 148300 and volume 10
+2023-03-11 19:48:25,895 [INFO   ] [TRADER] received hedge filled for order 144 with average price 148300 and volume 10
+2023-03-11 19:48:26,150 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 323
+2023-03-11 19:48:26,150 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 323
+2023-03-11 19:48:26,359 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 324
+2023-03-11 19:48:26,359 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 324
+2023-03-11 19:48:26,612 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 325
+2023-03-11 19:48:26,613 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 325
+2023-03-11 19:48:26,813 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 89
+2023-03-11 19:48:26,855 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 90
+2023-03-11 19:48:26,865 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 326
+2023-03-11 19:48:26,865 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 326
+2023-03-11 19:48:27,062 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 91
+2023-03-11 19:48:27,073 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 327
+2023-03-11 19:48:27,073 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 327
+2023-03-11 19:48:27,382 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 328
+2023-03-11 19:48:27,382 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 328
+2023-03-11 19:48:27,408 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 76
+2023-03-11 19:48:27,554 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 77
+2023-03-11 19:48:27,586 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 329
+2023-03-11 19:48:27,586 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 329
+2023-03-11 19:48:27,868 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 330
+2023-03-11 19:48:27,868 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 330
+2023-03-11 19:48:27,955 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 92
+2023-03-11 19:48:27,955 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 78
+2023-03-11 19:48:28,054 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 79
+2023-03-11 19:48:28,143 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 331
+2023-03-11 19:48:28,143 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 331
+2023-03-11 19:48:28,340 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 332
+2023-03-11 19:48:28,340 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 332
+2023-03-11 19:48:28,513 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 93
+2023-03-11 19:48:28,598 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 333
+2023-03-11 19:48:28,598 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 333
+2023-03-11 19:48:28,713 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 80
+2023-03-11 19:48:28,815 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 334
+2023-03-11 19:48:28,815 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 334
+2023-03-11 19:48:29,070 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 335
+2023-03-11 19:48:29,070 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 335
+2023-03-11 19:48:29,378 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 336
+2023-03-11 19:48:29,378 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 336
+2023-03-11 19:48:29,474 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 94
+2023-03-11 19:48:29,509 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 81
+2023-03-11 19:48:29,603 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 95
+2023-03-11 19:48:29,623 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 337
+2023-03-11 19:48:29,623 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 337
+2023-03-11 19:48:29,852 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 338
+2023-03-11 19:48:29,852 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 338
+2023-03-11 19:48:30,108 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 339
+2023-03-11 19:48:30,108 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 339
+2023-03-11 19:48:30,158 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 96
+2023-03-11 19:48:30,269 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 97
+2023-03-11 19:48:30,371 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 340
+2023-03-11 19:48:30,371 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 340
+2023-03-11 19:48:30,453 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 82
+2023-03-11 19:48:30,566 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 341
+2023-03-11 19:48:30,566 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 341
+2023-03-11 19:48:30,845 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 83
+2023-03-11 19:48:30,884 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 342
+2023-03-11 19:48:30,885 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 342
+2023-03-11 19:48:31,110 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 84
+2023-03-11 19:48:31,139 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 343
+2023-03-11 19:48:31,139 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 343
+2023-03-11 19:48:31,302 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 98
+2023-03-11 19:48:31,317 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 344
+2023-03-11 19:48:31,317 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 344
+2023-03-11 19:48:31,467 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 99
+2023-03-11 19:48:31,510 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 100
+2023-03-11 19:48:31,572 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 101
+2023-03-11 19:48:31,610 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 85
+2023-03-11 19:48:31,647 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 345
+2023-03-11 19:48:31,647 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 345
+2023-03-11 19:48:31,858 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 102
+2023-03-11 19:48:31,872 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 346
+2023-03-11 19:48:31,872 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 346
+2023-03-11 19:48:31,901 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 103
+2023-03-11 19:48:32,047 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 104
+2023-03-11 19:48:32,121 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 347
+2023-03-11 19:48:32,121 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 347
+2023-03-11 19:48:32,154 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 86
+2023-03-11 19:48:32,154 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 105
+2023-03-11 19:48:32,262 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 106
+2023-03-11 19:48:32,334 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 348
+2023-03-11 19:48:32,334 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 348
+2023-03-11 19:48:32,464 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 107
+2023-03-11 19:48:32,655 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 349
+2023-03-11 19:48:32,655 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 349
+2023-03-11 19:48:32,888 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 350
+2023-03-11 19:48:32,888 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 350
+2023-03-11 19:48:32,914 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 108
+2023-03-11 19:48:33,144 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 351
+2023-03-11 19:48:33,144 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 351
+2023-03-11 19:48:33,338 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 352
+2023-03-11 19:48:33,338 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 352
+2023-03-11 19:48:33,364 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 109
+2023-03-11 19:48:33,410 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 110
+2023-03-11 19:48:33,579 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 353
+2023-03-11 19:48:33,579 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 353
+2023-03-11 19:48:33,915 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 354
+2023-03-11 19:48:33,915 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 354
+2023-03-11 19:48:34,095 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 355
+2023-03-11 19:48:34,095 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 355
+2023-03-11 19:48:34,111 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 111
+2023-03-11 19:48:34,364 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 112
+2023-03-11 19:48:34,397 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 356
+2023-03-11 19:48:34,397 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 356
+2023-03-11 19:48:34,651 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 357
+2023-03-11 19:48:34,651 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 357
+2023-03-11 19:48:34,895 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 358
+2023-03-11 19:48:34,895 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 358
+2023-03-11 19:48:35,017 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 113
+2023-03-11 19:48:35,070 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 359
+2023-03-11 19:48:35,070 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 359
+2023-03-11 19:48:35,335 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 360
+2023-03-11 19:48:35,336 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 360
+2023-03-11 19:48:35,644 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 361
+2023-03-11 19:48:35,644 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 361
+2023-03-11 19:48:35,714 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 114
+2023-03-11 19:48:35,864 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 115
+2023-03-11 19:48:35,901 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 362
+2023-03-11 19:48:35,901 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 362
+2023-03-11 19:48:36,062 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 363
+2023-03-11 19:48:36,062 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 363
+2023-03-11 19:48:36,361 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 364
+2023-03-11 19:48:36,361 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 364
+2023-03-11 19:48:36,659 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 365
+2023-03-11 19:48:36,660 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 365
+2023-03-11 19:48:36,663 [INFO   ] [TRADER] received order filled for order 145 with price 149400 and volume 10
+2023-03-11 19:48:36,663 [INFO   ] [TRADER] received order status for order 145 with fill volume 10 remaining 0 and fees 299
+2023-03-11 19:48:36,665 [INFO   ] [TRADER] received order filled for order 146 with price 149400 and volume 10
+2023-03-11 19:48:36,665 [INFO   ] [TRADER] received order status for order 146 with fill volume 10 remaining 0 and fees 299
+2023-03-11 19:48:36,665 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 87
+2023-03-11 19:48:36,666 [INFO   ] [TRADER] received order filled for order 147 with price 149400 and volume 5
+2023-03-11 19:48:36,666 [INFO   ] [TRADER] received order status for order 147 with fill volume 5 remaining 5 and fees 149
+2023-03-11 19:48:36,666 [INFO   ] [TRADER] received order status for order 147 with fill volume 5 remaining 0 and fees 149
+2023-03-11 19:48:36,666 [INFO   ] [TRADER] received hedge filled for order 148 with average price 149100 and volume 10
+2023-03-11 19:48:36,666 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 88
+2023-03-11 19:48:36,666 [INFO   ] [TRADER] received hedge filled for order 149 with average price 149100 and volume 10
+2023-03-11 19:48:36,666 [INFO   ] [TRADER] received hedge filled for order 150 with average price 149100 and volume 5
+2023-03-11 19:48:36,821 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 366
+2023-03-11 19:48:36,821 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 366
+2023-03-11 19:48:37,064 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 116
+2023-03-11 19:48:37,161 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 367
+2023-03-11 19:48:37,161 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 367
+2023-03-11 19:48:37,314 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 368
+2023-03-11 19:48:37,314 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 368
+2023-03-11 19:48:37,315 [INFO   ] [TRADER] received order filled for order 151 with price 149500 and volume 9
+2023-03-11 19:48:37,315 [INFO   ] [TRADER] received order status for order 151 with fill volume 9 remaining 1 and fees 269
+2023-03-11 19:48:37,315 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 89
+2023-03-11 19:48:37,315 [INFO   ] [TRADER] received order status for order 151 with fill volume 9 remaining 0 and fees 269
+2023-03-11 19:48:37,315 [INFO   ] [TRADER] received hedge filled for order 152 with average price 149100 and volume 9
+2023-03-11 19:48:37,635 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 369
+2023-03-11 19:48:37,635 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 369
+2023-03-11 19:48:37,701 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 90
+2023-03-11 19:48:37,864 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 370
+2023-03-11 19:48:37,864 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 370
+2023-03-11 19:48:38,112 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 371
+2023-03-11 19:48:38,112 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 371
+2023-03-11 19:48:38,356 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 372
+2023-03-11 19:48:38,356 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 372
+2023-03-11 19:48:38,562 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 373
+2023-03-11 19:48:38,562 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 373
+2023-03-11 19:48:38,605 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 117
+2023-03-11 19:48:38,816 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 374
+2023-03-11 19:48:38,816 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 374
+2023-03-11 19:48:39,065 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 375
+2023-03-11 19:48:39,065 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 375
+2023-03-11 19:48:39,351 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 376
+2023-03-11 19:48:39,352 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 376
+2023-03-11 19:48:39,624 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 377
+2023-03-11 19:48:39,624 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 377
+2023-03-11 19:48:39,908 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 378
+2023-03-11 19:48:39,908 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 378
+2023-03-11 19:48:40,130 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 379
+2023-03-11 19:48:40,130 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 379
+2023-03-11 19:48:40,340 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 380
+2023-03-11 19:48:40,340 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 380
+2023-03-11 19:48:40,596 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 381
+2023-03-11 19:48:40,596 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 381
+2023-03-11 19:48:40,832 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 382
+2023-03-11 19:48:40,832 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 382
+2023-03-11 19:48:41,107 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 383
+2023-03-11 19:48:41,107 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 383
+2023-03-11 19:48:41,382 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 384
+2023-03-11 19:48:41,383 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 384
+2023-03-11 19:48:41,580 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 385
+2023-03-11 19:48:41,580 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 385
+2023-03-11 19:48:41,863 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 386
+2023-03-11 19:48:41,863 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 386
+2023-03-11 19:48:42,144 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 387
+2023-03-11 19:48:42,144 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 387
+2023-03-11 19:48:42,402 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 388
+2023-03-11 19:48:42,402 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 388
+2023-03-11 19:48:42,612 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 389
+2023-03-11 19:48:42,612 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 389
+2023-03-11 19:48:42,860 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 390
+2023-03-11 19:48:42,860 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 390
+2023-03-11 19:48:42,914 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 91
+2023-03-11 19:48:42,998 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 118
+2023-03-11 19:48:43,045 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 92
+2023-03-11 19:48:43,127 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 391
+2023-03-11 19:48:43,127 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 391
+2023-03-11 19:48:43,370 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 119
+2023-03-11 19:48:43,377 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 392
+2023-03-11 19:48:43,377 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 392
+2023-03-11 19:48:43,402 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 120
+2023-03-11 19:48:43,562 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 121
+2023-03-11 19:48:43,659 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 393
+2023-03-11 19:48:43,659 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 393
+2023-03-11 19:48:43,829 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 394
+2023-03-11 19:48:43,829 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 394
+2023-03-11 19:48:44,062 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 93
+2023-03-11 19:48:44,105 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 94
+2023-03-11 19:48:44,124 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 395
+2023-03-11 19:48:44,125 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 395
+2023-03-11 19:48:44,336 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 396
+2023-03-11 19:48:44,336 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 396
+2023-03-11 19:48:44,561 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 122
+2023-03-11 19:48:44,637 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 397
+2023-03-11 19:48:44,637 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 397
+2023-03-11 19:48:44,638 [INFO   ] [TRADER] received order filled for order 153 with price 149800 and volume 10
+2023-03-11 19:48:44,638 [INFO   ] [TRADER] received order status for order 153 with fill volume 10 remaining 0 and fees 300
+2023-03-11 19:48:44,638 [INFO   ] [TRADER] received order filled for order 154 with price 149800 and volume 10
+2023-03-11 19:48:44,638 [INFO   ] [TRADER] received order status for order 154 with fill volume 10 remaining 0 and fees 300
+2023-03-11 19:48:44,638 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 95
+2023-03-11 19:48:44,638 [INFO   ] [TRADER] received order filled for order 155 with price 149800 and volume 2
+2023-03-11 19:48:44,638 [INFO   ] [TRADER] received order status for order 155 with fill volume 2 remaining 8 and fees 60
+2023-03-11 19:48:44,638 [INFO   ] [TRADER] received order status for order 155 with fill volume 2 remaining 0 and fees 60
+2023-03-11 19:48:44,639 [INFO   ] [TRADER] received hedge filled for order 156 with average price 149900 and volume 10
+2023-03-11 19:48:44,639 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 96
+2023-03-11 19:48:44,639 [INFO   ] [TRADER] received hedge filled for order 157 with average price 149900 and volume 10
+2023-03-11 19:48:44,639 [INFO   ] [TRADER] received hedge filled for order 158 with average price 149900 and volume 2
+2023-03-11 19:48:44,827 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 123
+2023-03-11 19:48:44,911 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 398
+2023-03-11 19:48:44,911 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 398
+2023-03-11 19:48:44,911 [INFO   ] [TRADER] received order filled for order 159 with price 149900 and volume 10
+2023-03-11 19:48:44,911 [INFO   ] [TRADER] received order status for order 159 with fill volume 10 remaining 0 and fees 300
+2023-03-11 19:48:44,911 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 97
+2023-03-11 19:48:44,911 [INFO   ] [TRADER] received hedge filled for order 160 with average price 150000 and volume 10
+2023-03-11 19:48:45,010 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 98
+2023-03-11 19:48:45,058 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 99
+2023-03-11 19:48:45,103 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 124
+2023-03-11 19:48:45,114 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 399
+2023-03-11 19:48:45,115 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 399
+2023-03-11 19:48:45,342 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 400
+2023-03-11 19:48:45,342 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 400
+2023-03-11 19:48:45,398 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 125
+2023-03-11 19:48:45,572 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 401
+2023-03-11 19:48:45,573 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 401
+2023-03-11 19:48:45,606 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 100
+2023-03-11 19:48:45,655 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 126
+2023-03-11 19:48:45,863 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 402
+2023-03-11 19:48:45,863 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 402
+2023-03-11 19:48:46,059 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 127
+2023-03-11 19:48:46,069 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 403
+2023-03-11 19:48:46,069 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 403
+2023-03-11 19:48:46,371 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 404
+2023-03-11 19:48:46,372 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 404
+2023-03-11 19:48:46,578 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 405
+2023-03-11 19:48:46,578 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 405
+2023-03-11 19:48:46,811 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 101
+2023-03-11 19:48:46,842 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 406
+2023-03-11 19:48:46,842 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 406
+2023-03-11 19:48:47,052 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 128
+2023-03-11 19:48:47,149 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 407
+2023-03-11 19:48:47,149 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 407
+2023-03-11 19:48:47,366 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 129
+2023-03-11 19:48:47,404 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 408
+2023-03-11 19:48:47,404 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 408
+2023-03-11 19:48:47,584 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 409
+2023-03-11 19:48:47,584 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 409
+2023-03-11 19:48:47,919 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 410
+2023-03-11 19:48:47,919 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 410
+2023-03-11 19:48:48,159 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 130
+2023-03-11 19:48:48,160 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 411
+2023-03-11 19:48:48,160 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 411
+2023-03-11 19:48:48,407 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 412
+2023-03-11 19:48:48,407 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 412
+2023-03-11 19:48:48,564 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 413
+2023-03-11 19:48:48,564 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 413
+2023-03-11 19:48:48,869 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 414
+2023-03-11 19:48:48,869 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 414
+2023-03-11 19:48:49,013 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 131
+2023-03-11 19:48:49,013 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 102
+2023-03-11 19:48:49,078 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 415
+2023-03-11 19:48:49,078 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 415
+2023-03-11 19:48:49,249 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 132
+2023-03-11 19:48:49,395 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 133
+2023-03-11 19:48:49,399 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 416
+2023-03-11 19:48:49,399 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 416
+2023-03-11 19:48:49,467 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 134
+2023-03-11 19:48:49,606 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 417
+2023-03-11 19:48:49,606 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 417
+2023-03-11 19:48:49,827 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 418
+2023-03-11 19:48:49,827 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 418
+2023-03-11 19:48:49,862 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 135
+2023-03-11 19:48:50,080 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 419
+2023-03-11 19:48:50,080 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 419
+2023-03-11 19:48:50,314 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 420
+2023-03-11 19:48:50,314 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 420
+2023-03-11 19:48:50,571 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 421
+2023-03-11 19:48:50,571 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 421
+2023-03-11 19:48:50,826 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 422
+2023-03-11 19:48:50,826 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 422
+2023-03-11 19:48:51,113 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 136
+2023-03-11 19:48:51,141 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 423
+2023-03-11 19:48:51,141 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 423
+2023-03-11 19:48:51,338 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 424
+2023-03-11 19:48:51,338 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 424
+2023-03-11 19:48:51,509 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 137
+2023-03-11 19:48:51,605 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 425
+2023-03-11 19:48:51,605 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 425
+2023-03-11 19:48:51,666 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 138
+2023-03-11 19:48:51,713 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 139
+2023-03-11 19:48:51,900 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 103
+2023-03-11 19:48:51,904 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 426
+2023-03-11 19:48:51,904 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 426
+2023-03-11 19:48:52,005 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 104
+2023-03-11 19:48:52,132 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 427
+2023-03-11 19:48:52,132 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 427
+2023-03-11 19:48:52,313 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 140
+2023-03-11 19:48:52,412 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 428
+2023-03-11 19:48:52,412 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 428
+2023-03-11 19:48:52,561 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 141
+2023-03-11 19:48:52,618 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 429
+2023-03-11 19:48:52,618 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 429
+2023-03-11 19:48:52,824 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 430
+2023-03-11 19:48:52,824 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 430
+2023-03-11 19:48:53,012 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 142
+2023-03-11 19:48:53,066 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 431
+2023-03-11 19:48:53,066 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 431
+2023-03-11 19:48:53,153 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 143
+2023-03-11 19:48:53,381 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 432
+2023-03-11 19:48:53,381 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 432
+2023-03-11 19:48:53,581 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 433
+2023-03-11 19:48:53,581 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 433
+2023-03-11 19:48:53,810 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 144
+2023-03-11 19:48:53,834 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 434
+2023-03-11 19:48:53,834 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 434
+2023-03-11 19:48:54,058 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 145
+2023-03-11 19:48:54,118 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 435
+2023-03-11 19:48:54,118 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 435
+2023-03-11 19:48:54,301 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 146
+2023-03-11 19:48:54,362 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 105
+2023-03-11 19:48:54,395 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 436
+2023-03-11 19:48:54,395 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 436
+2023-03-11 19:48:54,616 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 437
+2023-03-11 19:48:54,616 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 437
+2023-03-11 19:48:54,833 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 438
+2023-03-11 19:48:54,833 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 438
+2023-03-11 19:48:55,116 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 439
+2023-03-11 19:48:55,116 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 439
+2023-03-11 19:48:55,265 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 147
+2023-03-11 19:48:55,333 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 440
+2023-03-11 19:48:55,334 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 440
+2023-03-11 19:48:55,595 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 441
+2023-03-11 19:48:55,595 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 441
+2023-03-11 19:48:55,659 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 148
+2023-03-11 19:48:55,796 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 106
+2023-03-11 19:48:55,845 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 442
+2023-03-11 19:48:55,845 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 442
+2023-03-11 19:48:55,958 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 149
+2023-03-11 19:48:56,023 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 150
+2023-03-11 19:48:56,063 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 443
+2023-03-11 19:48:56,063 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 443
+2023-03-11 19:48:56,165 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 151
+2023-03-11 19:48:56,258 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 152
+2023-03-11 19:48:56,318 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 444
+2023-03-11 19:48:56,318 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 444
+2023-03-11 19:48:56,452 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 153
+2023-03-11 19:48:56,643 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 445
+2023-03-11 19:48:56,643 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 445
+2023-03-11 19:48:56,862 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 154
+2023-03-11 19:48:56,911 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 446
+2023-03-11 19:48:56,911 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 446
+2023-03-11 19:48:57,064 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 107
+2023-03-11 19:48:57,105 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 447
+2023-03-11 19:48:57,105 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 447
+2023-03-11 19:48:57,297 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 108
+2023-03-11 19:48:57,377 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 448
+2023-03-11 19:48:57,377 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 448
+2023-03-11 19:48:57,556 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 155
+2023-03-11 19:48:57,589 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 449
+2023-03-11 19:48:57,589 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 449
+2023-03-11 19:48:57,751 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 156
+2023-03-11 19:48:57,838 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 450
+2023-03-11 19:48:57,838 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 450
+2023-03-11 19:48:57,951 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 157
+2023-03-11 19:48:58,064 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 451
+2023-03-11 19:48:58,065 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 451
+2023-03-11 19:48:58,223 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 158
+2023-03-11 19:48:58,363 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 452
+2023-03-11 19:48:58,363 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 452
+2023-03-11 19:48:58,408 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 159
+2023-03-11 19:48:58,558 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 160
+2023-03-11 19:48:58,573 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 453
+2023-03-11 19:48:58,573 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 453
+2023-03-11 19:48:58,602 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 109
+2023-03-11 19:48:58,656 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 161
+2023-03-11 19:48:58,763 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 162
+2023-03-11 19:48:58,889 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 454
+2023-03-11 19:48:58,889 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 454
+2023-03-11 19:48:58,911 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 163
+2023-03-11 19:48:59,046 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 164
+2023-03-11 19:48:59,115 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 455
+2023-03-11 19:48:59,115 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 455
+2023-03-11 19:48:59,315 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 456
+2023-03-11 19:48:59,315 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 456
+2023-03-11 19:48:59,567 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 457
+2023-03-11 19:48:59,567 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 457
+2023-03-11 19:48:59,765 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 165
+2023-03-11 19:48:59,825 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 458
+2023-03-11 19:48:59,825 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 458
+2023-03-11 19:48:59,865 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 110
+2023-03-11 19:49:00,048 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 166
+2023-03-11 19:49:00,143 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 459
+2023-03-11 19:49:00,143 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 459
+2023-03-11 19:49:00,389 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 460
+2023-03-11 19:49:00,389 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 460
+2023-03-11 19:49:00,572 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 167
+2023-03-11 19:49:00,630 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 461
+2023-03-11 19:49:00,630 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 461
+2023-03-11 19:49:00,725 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 168
+2023-03-11 19:49:00,851 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 111
+2023-03-11 19:49:00,873 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 462
+2023-03-11 19:49:00,874 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 462
+2023-03-11 19:49:01,087 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 463
+2023-03-11 19:49:01,087 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 463
+2023-03-11 19:49:01,408 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 464
+2023-03-11 19:49:01,408 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 464
+2023-03-11 19:49:01,416 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 169
+2023-03-11 19:49:01,572 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 465
+2023-03-11 19:49:01,573 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 465
+2023-03-11 19:49:01,659 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 112
+2023-03-11 19:49:01,765 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 170
+2023-03-11 19:49:01,884 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 466
+2023-03-11 19:49:01,884 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 466
+2023-03-11 19:49:01,960 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 171
+2023-03-11 19:49:01,999 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 172
+2023-03-11 19:49:02,086 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 467
+2023-03-11 19:49:02,086 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 467
+2023-03-11 19:49:02,348 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 173
+2023-03-11 19:49:02,355 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 468
+2023-03-11 19:49:02,355 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 468
+2023-03-11 19:49:02,460 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 113
+2023-03-11 19:49:02,600 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 469
+2023-03-11 19:49:02,600 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 469
+2023-03-11 19:49:02,863 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 174
+2023-03-11 19:49:02,901 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 470
+2023-03-11 19:49:02,901 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 470
+2023-03-11 19:49:03,076 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 471
+2023-03-11 19:49:03,076 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 471
+2023-03-11 19:49:03,196 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 175
+2023-03-11 19:49:03,345 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 472
+2023-03-11 19:49:03,345 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 472
+2023-03-11 19:49:03,641 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 473
+2023-03-11 19:49:03,641 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 473
+2023-03-11 19:49:03,825 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 474
+2023-03-11 19:49:03,825 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 474
+2023-03-11 19:49:03,862 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 176
+2023-03-11 19:49:04,134 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 475
+2023-03-11 19:49:04,134 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 475
+2023-03-11 19:49:04,252 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 177
+2023-03-11 19:49:04,315 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 476
+2023-03-11 19:49:04,315 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 476
+2023-03-11 19:49:04,316 [INFO   ] [TRADER] received order filled for order 161 with price 150500 and volume 10
+2023-03-11 19:49:04,316 [INFO   ] [TRADER] received order status for order 161 with fill volume 10 remaining 0 and fees 301
+2023-03-11 19:49:04,317 [INFO   ] [TRADER] received order filled for order 162 with price 150500 and volume 7
+2023-03-11 19:49:04,317 [INFO   ] [TRADER] received order status for order 162 with fill volume 7 remaining 3 and fees 211
+2023-03-11 19:49:04,317 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 114
+2023-03-11 19:49:04,317 [INFO   ] [TRADER] received order status for order 162 with fill volume 7 remaining 0 and fees 211
+2023-03-11 19:49:04,317 [INFO   ] [TRADER] received hedge filled for order 163 with average price 150400 and volume 10
+2023-03-11 19:49:04,317 [INFO   ] [TRADER] received hedge filled for order 164 with average price 150400 and volume 7
+2023-03-11 19:49:04,413 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 178
+2023-03-11 19:49:04,555 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 179
+2023-03-11 19:49:04,592 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 477
+2023-03-11 19:49:04,592 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 477
+2023-03-11 19:49:04,593 [INFO   ] [TRADER] received order filled for order 165 with price 150200 and volume 10
+2023-03-11 19:49:04,593 [INFO   ] [TRADER] received order status for order 165 with fill volume 10 remaining 0 and fees 300
+2023-03-11 19:49:04,594 [INFO   ] [TRADER] received order filled for order 166 with price 150200 and volume 10
+2023-03-11 19:49:04,594 [INFO   ] [TRADER] received order status for order 166 with fill volume 10 remaining 0 and fees 300
+2023-03-11 19:49:04,594 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 115
+2023-03-11 19:49:04,594 [INFO   ] [TRADER] received hedge filled for order 167 with average price 150300 and volume 10
+2023-03-11 19:49:04,594 [INFO   ] [TRADER] received hedge filled for order 168 with average price 150300 and volume 10
+2023-03-11 19:49:04,825 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 478
+2023-03-11 19:49:04,825 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 478
+2023-03-11 19:49:04,908 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 180
+2023-03-11 19:49:05,054 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 181
+2023-03-11 19:49:05,138 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 479
+2023-03-11 19:49:05,138 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 479
+2023-03-11 19:49:05,168 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 182
+2023-03-11 19:49:05,169 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 116
+2023-03-11 19:49:05,357 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 480
+2023-03-11 19:49:05,358 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 480
+2023-03-11 19:49:05,655 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 481
+2023-03-11 19:49:05,655 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 481
+2023-03-11 19:49:05,684 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 183
+2023-03-11 19:49:05,759 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 117
+2023-03-11 19:49:05,867 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 482
+2023-03-11 19:49:05,867 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 482
+2023-03-11 19:49:05,899 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 184
+2023-03-11 19:49:06,122 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 483
+2023-03-11 19:49:06,122 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 483
+2023-03-11 19:49:06,324 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 484
+2023-03-11 19:49:06,324 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 484
+2023-03-11 19:49:06,602 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 485
+2023-03-11 19:49:06,602 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 485
+2023-03-11 19:49:06,761 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 118
+2023-03-11 19:49:06,829 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 486
+2023-03-11 19:49:06,829 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 486
+2023-03-11 19:49:07,117 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 487
+2023-03-11 19:49:07,117 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 487
+2023-03-11 19:49:07,326 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 488
+2023-03-11 19:49:07,326 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 488
+2023-03-11 19:49:07,405 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 185
+2023-03-11 19:49:07,604 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 119
+2023-03-11 19:49:07,604 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 489
+2023-03-11 19:49:07,604 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 489
+2023-03-11 19:49:07,824 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 490
+2023-03-11 19:49:07,824 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 490
+2023-03-11 19:49:07,899 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 186
+2023-03-11 19:49:08,064 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 491
+2023-03-11 19:49:08,064 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 491
+2023-03-11 19:49:08,383 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 492
+2023-03-11 19:49:08,383 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 492
+2023-03-11 19:49:08,570 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 493
+2023-03-11 19:49:08,570 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 493
+2023-03-11 19:49:08,748 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 187
+2023-03-11 19:49:08,847 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 494
+2023-03-11 19:49:08,847 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 494
+2023-03-11 19:49:09,069 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 495
+2023-03-11 19:49:09,069 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 495
+2023-03-11 19:49:09,255 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 120
+2023-03-11 19:49:09,382 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 496
+2023-03-11 19:49:09,382 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 496
+2023-03-11 19:49:09,460 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 121
+2023-03-11 19:49:09,585 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 497
+2023-03-11 19:49:09,585 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 497
+2023-03-11 19:49:09,659 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 188
+2023-03-11 19:49:09,828 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 498
+2023-03-11 19:49:09,828 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 498
+2023-03-11 19:49:09,861 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 122
+2023-03-11 19:49:10,113 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 499
+2023-03-11 19:49:10,113 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 499
+2023-03-11 19:49:10,340 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 500
+2023-03-11 19:49:10,340 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 500
+2023-03-11 19:49:10,620 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 501
+2023-03-11 19:49:10,620 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 501
+2023-03-11 19:49:10,875 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 502
+2023-03-11 19:49:10,875 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 502
+2023-03-11 19:49:11,010 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 123
+2023-03-11 19:49:11,059 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 189
+2023-03-11 19:49:11,150 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 503
+2023-03-11 19:49:11,150 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 503
+2023-03-11 19:49:11,344 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 504
+2023-03-11 19:49:11,344 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 504
+2023-03-11 19:49:11,404 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 190
+2023-03-11 19:49:11,547 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 191
+2023-03-11 19:49:11,574 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 505
+2023-03-11 19:49:11,575 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 505
+2023-03-11 19:49:11,824 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 192
+2023-03-11 19:49:11,824 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 506
+2023-03-11 19:49:11,824 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 506
+2023-03-11 19:49:11,864 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 193
+2023-03-11 19:49:11,912 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 194
+2023-03-11 19:49:12,051 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 124
+2023-03-11 19:49:12,071 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 507
+2023-03-11 19:49:12,071 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 507
+2023-03-11 19:49:12,109 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 125
+2023-03-11 19:49:12,256 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 195
+2023-03-11 19:49:12,334 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 508
+2023-03-11 19:49:12,334 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 508
+2023-03-11 19:49:12,656 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 509
+2023-03-11 19:49:12,657 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 509
+2023-03-11 19:49:12,901 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 510
+2023-03-11 19:49:12,901 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 510
+2023-03-11 19:49:12,957 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 196
+2023-03-11 19:49:13,023 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 197
+2023-03-11 19:49:13,091 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 511
+2023-03-11 19:49:13,091 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 511
+2023-03-11 19:49:13,255 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 198
+2023-03-11 19:49:13,308 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 199
+2023-03-11 19:49:13,365 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 200
+2023-03-11 19:49:13,372 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 512
+2023-03-11 19:49:13,372 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 512
+2023-03-11 19:49:13,398 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 126
+2023-03-11 19:49:13,509 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 201
+2023-03-11 19:49:13,653 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 513
+2023-03-11 19:49:13,654 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 513
+2023-03-11 19:49:13,657 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 202
+2023-03-11 19:49:13,657 [INFO   ] [TRADER] received order filled for order 169 with price 150400 and volume 10
+2023-03-11 19:49:13,657 [INFO   ] [TRADER] received order status for order 169 with fill volume 10 remaining 0 and fees 301
+2023-03-11 19:49:13,657 [INFO   ] [TRADER] received order filled for order 170 with price 150400 and volume 10
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received order status for order 170 with fill volume 10 remaining 0 and fees 301
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received order filled for order 171 with price 150400 and volume 10
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received order status for order 171 with fill volume 10 remaining 0 and fees 301
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received order filled for order 172 with price 150400 and volume 10
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received order status for order 172 with fill volume 10 remaining 0 and fees 301
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received order filled for order 173 with price 150400 and volume 10
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received order status for order 173 with fill volume 10 remaining 0 and fees 301
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 127
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received order status for order 174 with fill volume 0 remaining 0 and fees 0
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received hedge filled for order 175 with average price 150400 and volume 10
+2023-03-11 19:49:13,658 [INFO   ] [TRADER] received hedge filled for order 176 with average price 150400 and volume 10
+2023-03-11 19:49:13,659 [INFO   ] [TRADER] received hedge filled for order 177 with average price 150400 and volume 10
+2023-03-11 19:49:13,659 [INFO   ] [TRADER] received hedge filled for order 178 with average price 150400 and volume 10
+2023-03-11 19:49:13,659 [INFO   ] [TRADER] received hedge filled for order 179 with average price 150400 and volume 10
+2023-03-11 19:49:13,909 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 514
+2023-03-11 19:49:13,910 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 514
+2023-03-11 19:49:14,082 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 203
+2023-03-11 19:49:14,161 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 515
+2023-03-11 19:49:14,161 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 515
+2023-03-11 19:49:14,322 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 516
+2023-03-11 19:49:14,322 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 516
+2023-03-11 19:49:14,607 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 517
+2023-03-11 19:49:14,608 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 517
+2023-03-11 19:49:14,870 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 518
+2023-03-11 19:49:14,870 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 518
+2023-03-11 19:49:14,969 [INFO   ] [TRADER] received trade ticks for instrument 0 with sequence number 204
+2023-03-11 19:49:15,014 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 128
+2023-03-11 19:49:15,151 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 519
+2023-03-11 19:49:15,151 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 519
+2023-03-11 19:49:15,350 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 520
+2023-03-11 19:49:15,350 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 520
+2023-03-11 19:49:15,566 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 521
+2023-03-11 19:49:15,566 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 521
+2023-03-11 19:49:15,694 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-11 19:49:15,694 [INFO   ] [APP] closing event loop
