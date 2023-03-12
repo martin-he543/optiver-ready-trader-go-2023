@@ -26,7 +26,7 @@ POSITION_LIMIT = 100; MESSAGE_LIMIT = 50
 MIN_BID_NEAREST_TICK = (MINIMUM_BID + TICK_SIZE_IN_CENTS) // TICK_SIZE_IN_CENTS * TICK_SIZE_IN_CENTS
 MAX_ASK_NEAREST_TICK = MAXIMUM_ASK // TICK_SIZE_IN_CENTS * TICK_SIZE_IN_CENTS
 
-order_time = []
+order_time = []; actual_time = time.time()
 for j in range(50): order_time.append([0])
 
 class AutoTrader(BaseAutoTrader):
@@ -72,27 +72,23 @@ class AutoTrader(BaseAutoTrader):
             MAX_ORDERS_SELL_ETF = np.min([(self.position + POSITION_LIMIT)//10, ETF_BV//10 + 1])
             
             if (ETF_AP != 0) and (FUTURE_BP * 0.9998 - ETF_AP * 1.0002) > 0 and (self.position < POSITION_LIMIT - 9):
+                current_time = time.time() - actual_time
                 for i in range(MAX_ORDERS_BUY_ETF):
-                    self.bid_id = next(self.order_ids)
-                    self.send_insert_order(self.bid_id, Side.BUY, ETF_AP, LOT_SIZE, Lifespan.FILL_AND_KILL)
-                    self.bids.add(self.bid_id); #order_time.append(current_time)
-                    # current_time = time.time()
-                    # print("PRINT", current_time)
-                    # if (current_time - order_time[-39][0]) > 1:      # Check if more than 50 messages in 1 second
-                        # print(order_time)
-                        # print("WOWZERS", current_time - order_time[-39][0])
-                        #print(now, len(order_time) + 1, "ARBITRAGE OPPORTUNITY: (1) SELL FUTURE, (BUY ETF)")
+                    if (current_time - order_time[-49][0]) > 1:                                                         # CHECK if more than 50 messages in 1 second - STOP!
+                        print("BUY WOWZERS", current_time - order_time[-49][0])
+                        self.bid_id = next(self.order_ids)
+                        self.send_insert_order(self.bid_id, Side.BUY, ETF_AP, LOT_SIZE, Lifespan.FILL_AND_KILL)
+                        self.bids.add(self.bid_id); order_time.append(current_time)
                     
             if (ETF_BP * 0.9998 - FUTURE_AP * 1.0002) > 0 and (self.position > -(POSITION_LIMIT - 9)):
+                current_time = time.time() - actual_time
                 for i in range(MAX_ORDERS_SELL_ETF):
-                    self.ask_id = next(self.order_ids)
-                    self.send_insert_order(self.ask_id, Side.SELL, ETF_BP, LOT_SIZE, Lifespan.FILL_AND_KILL)
-                    self.asks.add(self.ask_id); #order_time.append(current_time)
-                    # current_time = time.time()
-                    # if (current_time - order_time[-39][0]) > 1:      # Check if more than 50 messages in 1 second
-                        # print(order_time)
-                        # print("WOWZERS", current_time - order_time[-39][0])
-                        # now = datetime.now(); #print(now, len(order_time) + 1, "ARBITRAGE OPPORTUNITY: (2) SELL ETF, (BUY FUTURE)")
+                    if (current_time - order_time[-49][0]) > 1:                                                         # CHECK if more than 50 messages in 1 second - STOP!
+                        print("SELL WOWZERS", current_time - order_time[-49][0])
+                        self.ask_id = next(self.order_ids)
+                        self.send_insert_order(self.ask_id, Side.SELL, ETF_BP, LOT_SIZE, Lifespan.FILL_AND_KILL)
+                        self.asks.add(self.ask_id); order_time.append(current_time)
+
     
         self.logger.info("received order book for instrument %d with sequence number %d", instrument, sequence_number)
         self.list_of_lists_2 = np.array([instrument, ask_prices[0], ask_volumes[0], bid_prices[0], bid_volumes[0]])                
