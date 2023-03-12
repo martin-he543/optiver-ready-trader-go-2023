@@ -4480,3 +4480,136 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2023-03-12 21:13:09,839 [INFO   ] [CONTROLLER] market open
 2023-03-12 21:13:51,600 [INFO   ] [APP] SIGTERM signal received - shutting down...
 2023-03-12 21:13:51,600 [INFO   ] [APP] closing event loop
+2023-03-12 21:15:55,153 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader.py}
+2023-03-12 21:15:55,153 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret"}}
+2023-03-12 21:15:55,157 [INFO   ] [CONTROLLER] starting the match
+2023-03-12 21:15:55,157 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-12 21:15:55,157 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-12 21:15:55,157 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-12 21:15:55,157 [INFO   ] [INFORMATION] information channel established
+2023-03-12 21:15:55,769 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:60300
+2023-03-12 21:15:55,769 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-12 21:15:56,924 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:54208
+2023-03-12 21:16:00,167 [INFO   ] [CONTROLLER] market open
+2023-03-12 21:16:00,419 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=0.251053 client_order_id=5 message='order rejected: in cross with an existing order'
+2023-03-12 21:16:00,419 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=0.251303 client_order_id=6 message='order rejected: in cross with an existing order'
+2023-03-12 21:16:00,667 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=0.499562 client_order_id=9 message='order rejected: in cross with an existing order'
+2023-03-12 21:16:00,667 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=0.499788 client_order_id=10 message='order rejected: in cross with an existing order'
+2023-03-12 21:16:00,668 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=0.499961 client_order_id=11 message='order rejected: in cross with an existing order'
+2023-03-12 21:16:00,905 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=0.737542 client_order_id=14 message='order rejected: in cross with an existing order'
+2023-03-12 21:16:00,905 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=0.737775 client_order_id=15 message='order rejected: in cross with an existing order'
+2023-03-12 21:16:00,906 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=0.737951 client_order_id=16 message='order rejected: in cross with an existing order'
+2023-03-12 21:16:00,906 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=0.738106 client_order_id=17 message='order rejected: in cross with an existing order'
+2023-03-12 21:16:01,187 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.018614 client_order_id=20 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,187 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.019281 client_order_id=21 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,187 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.019587 client_order_id=22 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,187 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.019772 client_order_id=23 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,187 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.019924 client_order_id=24 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,393 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.224678 client_order_id=26 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,393 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.225290 client_order_id=27 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,393 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.225420 client_order_id=28 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,393 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.225500 client_order_id=29 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,687 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.519256 client_order_id=30 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,688 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.520043 client_order_id=31 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,688 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.520403 client_order_id=32 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,688 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.520534 client_order_id=33 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,920 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.750232 client_order_id=34 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,921 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.753056 client_order_id=35 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,921 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.753180 client_order_id=36 message='order rejected: active order count limit breached'
+2023-03-12 21:16:01,921 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.753287 client_order_id=37 message='order rejected: active order count limit breached'
+2023-03-12 21:16:02,154 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.985719 client_order_id=38 message='order rejected: active order count limit breached'
+2023-03-12 21:16:02,154 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.986832 client_order_id=39 message='order rejected: active order count limit breached'
+2023-03-12 21:16:02,155 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.987014 client_order_id=40 message='order rejected: active order count limit breached'
+2023-03-12 21:16:02,155 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=1.987153 client_order_id=41 message='order rejected: active order count limit breached'
+2023-03-12 21:16:02,427 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=2.259066 client_order_id=42 message='order rejected: active order count limit breached'
+2023-03-12 21:16:02,427 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=2.259602 client_order_id=43 message='order rejected: active order count limit breached'
+2023-03-12 21:16:02,427 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=2.259763 client_order_id=44 message='order rejected: active order count limit breached'
+2023-03-12 21:16:02,427 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=2.259892 client_order_id=45 message='order rejected: active order count limit breached'
+2023-03-12 21:16:04,672 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=4.487208 client_order_id=58 message='ETF position limit breached'
+2023-03-12 21:16:04,672 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=4.487208
+2023-03-12 21:16:04,676 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-12 21:16:13,912 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-12 21:16:13,912 [INFO   ] [APP] closing event loop
+2023-03-12 21:17:22,083 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader.py}
+2023-03-12 21:17:22,084 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret"}}
+2023-03-12 21:17:22,087 [INFO   ] [CONTROLLER] starting the match
+2023-03-12 21:17:22,087 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-12 21:17:22,087 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-12 21:17:22,088 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-12 21:17:22,088 [INFO   ] [INFORMATION] information channel established
+2023-03-12 21:17:22,718 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:36000
+2023-03-12 21:17:22,719 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-12 21:17:23,864 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:47324
+2023-03-12 21:17:27,099 [INFO   ] [CONTROLLER] market open
+2023-03-12 21:18:24,606 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=57.506777 client_order_id=103 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:24,606 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=57.507003 client_order_id=104 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:24,827 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=57.726853 client_order_id=105 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:24,827 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=57.727842 client_order_id=106 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:25,126 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=58.027074 client_order_id=107 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:25,126 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=58.027310 client_order_id=108 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:25,406 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=58.300355 client_order_id=109 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:25,406 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=58.306736 client_order_id=110 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:25,569 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=58.469477 client_order_id=111 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:25,570 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=58.470242 client_order_id=112 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:25,909 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=58.796453 client_order_id=113 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:25,909 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=58.810327 client_order_id=114 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:26,075 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=58.976177 client_order_id=115 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:26,076 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=58.976562 client_order_id=116 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:26,404 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=59.285675 client_order_id=117 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:26,405 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=59.305378 client_order_id=118 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:26,617 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=59.517480 client_order_id=119 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:26,617 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=59.518200 client_order_id=120 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:26,878 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=59.778266 client_order_id=121 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:26,878 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=59.778635 client_order_id=122 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:27,157 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=60.057370 client_order_id=123 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:27,158 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=60.058517 client_order_id=124 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:27,316 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=60.214291 client_order_id=125 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:27,317 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=60.217486 client_order_id=126 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:27,622 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=60.522721 client_order_id=127 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:27,622 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=60.522936 client_order_id=128 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:27,898 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=60.799268 client_order_id=129 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:27,899 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=60.799491 client_order_id=130 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:28,130 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=61.031039 client_order_id=131 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:28,130 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=61.031323 client_order_id=132 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:28,346 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=61.246407 client_order_id=133 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:28,346 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=61.246608 client_order_id=134 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:28,650 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=61.550621 client_order_id=135 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:28,650 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=61.550835 client_order_id=136 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:28,855 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=61.746280 client_order_id=137 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:28,858 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=61.756655 client_order_id=138 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,141 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.040725 client_order_id=139 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,141 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.042305 client_order_id=140 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,380 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.279029 client_order_id=141 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,380 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.281156 client_order_id=142 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,638 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.538832 client_order_id=147 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,638 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.539104 client_order_id=148 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,638 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.539347 client_order_id=149 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,639 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.539534 client_order_id=150 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,639 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.539884 client_order_id=151 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,874 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.772843 client_order_id=153 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,874 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.775001 client_order_id=154 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,874 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.775369 client_order_id=155 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,875 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.775582 client_order_id=156 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:29,875 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.775714 client_order_id=157 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,099 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=62.999465 client_order_id=159 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,102 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.002470 client_order_id=160 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,102 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.002798 client_order_id=161 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,102 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.002937 client_order_id=162 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,102 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.003062 client_order_id=163 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,343 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.243379 client_order_id=164 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,343 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.243975 client_order_id=165 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,343 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.244160 client_order_id=166 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,343 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.244285 client_order_id=167 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,343 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.244371 client_order_id=168 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,602 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.501602 client_order_id=169 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,603 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.503332 client_order_id=170 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,603 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.504190 client_order_id=171 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,603 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.504388 client_order_id=172 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,604 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.504535 client_order_id=173 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,890 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.788206 client_order_id=174 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,891 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.791099 client_order_id=175 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,891 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.791834 client_order_id=176 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,891 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.791970 client_order_id=177 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:30,891 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=63.792103 client_order_id=178 message='order rejected: in cross with an existing order'
+2023-03-12 21:18:48,628 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-12 21:18:48,628 [INFO   ] [APP] closing event loop

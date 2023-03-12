@@ -153,6 +153,13 @@ class AutoTrader(BaseAutoTrader):
                 self.active_bid_orders = np.roll(self.active_bid_orders, -1, axis=1)
                 self.active_bid_orders[:,-1] = [self.bid_id, new_bid_price, LOT_SIZE]
                 
+            if self.TOTAL_ASK_VOLUME < (MARKET_CAP - 9) and (current_time - self.recent_orders[0]) > 1 and (self.etf_position > -50):
+                self.ask_id = next(self.order_ids); self.ask_price = new_ask_price
+                self.send_insert_order(self.ask_id, Side.ASK, new_ask_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
+                self.asks.add(self.ask_id)
+                self.active_ask_orders = np.roll(self.active_ask_orders, -1, axis=1)
+                self.active_ask_orders[:,-1] = [self.ask_id, new_ask_price, LOT_SIZE]
+                
             # if new_ask_price != 0 and self.etf_position > -MARKET_CAP:
             #     self.ask_id = next(self.order_ids)
             #     self.ask_price = new_ask_price
