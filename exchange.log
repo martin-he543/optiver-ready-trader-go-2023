@@ -4808,3 +4808,5 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2023-03-12 21:51:02,177 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
 2023-03-12 21:51:03,338 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:57190
 2023-03-12 21:51:06,548 [INFO   ] [CONTROLLER] market open
+2023-03-12 21:52:29,438 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-12 21:52:29,438 [INFO   ] [APP] closing event loop
