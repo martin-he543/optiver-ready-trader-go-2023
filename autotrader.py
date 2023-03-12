@@ -146,7 +146,7 @@ class AutoTrader(BaseAutoTrader):
             current_time = time.time() - start_time
             # print(TOTAL_BID_VOLUME, MARKET_CAP, current_time, self.recent_orders[0])
             
-            if self.TOTAL_BID_VOLUME < (MARKET_CAP - 9) and (current_time - self.recent_orders[0]) > 1:
+            if self.TOTAL_BID_VOLUME < (MARKET_CAP - 9) and (current_time - self.recent_orders[0]) > 1 and (self.etf_position < 50):
                 self.bid_id = next(self.order_ids); self.bid_price = new_bid_price
                 self.send_insert_order(self.bid_id, Side.BUY, new_bid_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
                 self.bids.add(self.bid_id)
