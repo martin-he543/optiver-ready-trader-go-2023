@@ -26,9 +26,9 @@ POSITION_LIMIT = 100; MESSAGE_LIMIT = 50
 MIN_BID_NEAREST_TICK = (MINIMUM_BID + TICK_SIZE_IN_CENTS) // TICK_SIZE_IN_CENTS * TICK_SIZE_IN_CENTS
 MAX_ASK_NEAREST_TICK = MAXIMUM_ASK // TICK_SIZE_IN_CENTS * TICK_SIZE_IN_CENTS
 
-order_time = []; actual_time = time.time()
-for j in range(50): order_time.append([0.0])
-
+start_time = time.time()
+# recent_orders= np.zeros((50))
+# print(recent_orders)
 class AutoTrader(BaseAutoTrader):
     """Example Auto-trader. When it starts this auto-trader places ten-lot bid and ask orders at the current best-bid and 
     best-ask prices respectively. Thereafter, if it has a long position (it has bought more lots than it has sold) it 
@@ -42,6 +42,7 @@ class AutoTrader(BaseAutoTrader):
         self.asks = set()
         self.ask_id = self.ask_price = self.bid_id = self.bid_price = self.position = 0
         # self.list_of_lists = []
+        self.recent_orders = np.zeros((50))
         self.list_of_lists_2 = np.zeros((1, 5))
 
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
@@ -72,22 +73,25 @@ class AutoTrader(BaseAutoTrader):
             MAX_ORDERS_SELL_ETF = np.min([(self.position + POSITION_LIMIT)//10, ETF_BV//10 + 1])
             
             if (ETF_AP != 0) and (FUTURE_BP * 0.9998 - ETF_AP * 1.0002) > 0 and (self.position < POSITION_LIMIT - 9):
-                current_time = time.time() - actual_time
+                current_time = time.time() - start_time
                 for i in range(MAX_ORDERS_BUY_ETF):
-                    if (current_time - order_time[-49][0]) > 1:                                                         # CHECK if more than 50 messages in 1 second - STOP!
-                        print("BUY WOWZERS", current_time - order_time[-49][0])
+                    if (current_time - self.recent_orders[0]) > 1:                                                      # CHECK if more than 50 messages in 1 second - STOP!
                         self.bid_id = next(self.order_ids)
                         self.send_insert_order(self.bid_id, Side.BUY, ETF_AP, LOT_SIZE, Lifespan.FILL_AND_KILL)
-                        self.bids.add(self.bid_id); order_time.append(current_time)
+                        self.bids.add(self.bid_id)
+                        self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
+                        self.recent_orders[-1] = current_time                                                           # Change the last value
+                        print(self.recent_orders)
                     
             if (ETF_BP * 0.9998 - FUTURE_AP * 1.0002) > 0 and (self.position > -(POSITION_LIMIT - 9)):
-                current_time = time.time() - actual_time
+                current_time = time.time() - start_time
                 for i in range(MAX_ORDERS_SELL_ETF):
-                    if (current_time - order_time[-49][0]) > 1:                                                         # CHECK if more than 50 messages in 1 second - STOP!
-                        print("SELL WOWZERS", current_time - order_time[-49][0])
+                    if (current_time - self.recent_orders[0]) > 1:                                                      # CHECK if more than 50 messages in 1 second - STOP!
                         self.ask_id = next(self.order_ids)
                         self.send_insert_order(self.ask_id, Side.SELL, ETF_BP, LOT_SIZE, Lifespan.FILL_AND_KILL)
-                        self.asks.add(self.ask_id); order_time.append(current_time)
+                        self.asks.add(self.ask_id)
+                        self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
+                        self.recent_orders[-1] = current_time                                                           # Change the last value
 
         self.logger.info("received order book for instrument %d with sequence number %d", instrument, sequence_number)
         self.list_of_lists_2 = np.array([instrument, ask_prices[0], ask_volumes[0], bid_prices[0], bid_volumes[0]])                
@@ -136,16 +140,18 @@ class AutoTrader(BaseAutoTrader):
         (partially) filled, which may be better than the order's limit price. The volume is the number of lots filled at 
         that price."""
         self.logger.info("received order filled for order %d with price %d and volume %d", client_order_id, price, volume)
-        current_time = time.time() - actual_time
+        current_time = time.time() - start_time
         if client_order_id in self.bids:
-            if (current_time - order_time[-49][0]) > 1:                                                                 # CHECK if more than 50 messages in 1 second - STOP!
-                print("HEDGE SELL FT, BUY ETF WOWZERS", current_time - order_time[-49][0])
+            if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
                 self.position += volume; self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
+                self.recent_orders= np.roll(self.recent_orders, -1)                                                     # They see Dirk rolling...
+                self.recent_orders[-1] = current_time                                                                   # Change the last value
             
         elif client_order_id in self.asks:
-            if (current_time - order_time[-49][0]) > 1:                                                                 # CHECK if more than 50 messages in 1 second - STOP!
-                print("HEDGE BUY FT, SELL ETF WOWZERS", current_time - order_time[-49][0])
+            if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
                 self.position -= volume; self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
+                self.recent_orders= np.roll(self.recent_orders, -1)                                                     # They see Dirk rolling...
+                self.recent_orders[-1] = current_time                                                                   # Change the last value
     
     def on_order_status_message(self, client_order_id: int, fill_volume: int, remaining_volume: int, fees: int) -> None:
         """Called when the status of one of your orders changes. The fill_volume is the number of lots already traded, 
