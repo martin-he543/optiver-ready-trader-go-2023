@@ -72,32 +72,32 @@ class AutoTrader(BaseAutoTrader):
                 net_position = np.abs(net_position)
                 BEST_BID_PRICE = self.market_info[3]                                                                    # HEDGE - Uses FUTURE_BP instead of MIN_BID_NEAREST_TICK
                 current_time = time.time() - start_time
-                if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
-                    for i in range(0, net_position // 10):
+                for i in range(0, net_position // 10):
+                    if (current_time - self.recent_orders[0]) > 1 and self.future_position > -90:                                                          # CHECK if more than 50 messages in 1 second - STOP!
                         self.send_hedge_order(next(self.order_ids), Side.ASK, BEST_BID_PRICE, LOT_SIZE)
                         self.future_position += LOT_SIZE
                         self.recent_orders = np.roll(self.recent_orders, -1)                                            # They see Dirk rolling...
                         self.recent_orders[-1] = current_time                                                           # Change the last value
-                    if net_position % 10 != 0:
-                        self.send_hedge_order(next(self.order_ids), Side.ASK, BEST_BID_PRICE, net_position % 10)
-                        self.future_position += (net_position % 10)
-                        self.recent_orders = np.roll(self.recent_orders, -1)                                            # They see Dirk rolling...
-                        self.recent_orders[-1] = current_time                                                           # Change the last value
+                if net_position % 10 != 0 and (current_time - self.recent_orders[0]) > 1 and self.future_position > -90:
+                    self.send_hedge_order(next(self.order_ids), Side.ASK, BEST_BID_PRICE, net_position % 10)
+                    self.future_position += (net_position % 10)
+                    self.recent_orders = np.roll(self.recent_orders, -1)                                            # They see Dirk rolling...
+                    self.recent_orders[-1] = current_time                                                           # Change the last value
             if net_position > 0:
                 BEST_ASK_PRICE = self.market_info[1]                                                                    # HEDGE - Uses FUTURE_AP instead of MIN_BID_NEAREST_TICK
                 current_time = time.time() - start_time
-                if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
-                    for i in range(0, net_position // 10):
+                for i in range(0, net_position // 10):
+                    if (current_time - self.recent_orders[0]) > 1 and self.future_position < 90:                                                          # CHECK if more than 50 messages in 1 second - STOP!
                         self.send_hedge_order(next(self.order_ids), Side.BID, BEST_ASK_PRICE, LOT_SIZE)                 # HEDGE - send an order
                         self.future_position -= LOT_SIZE
                         self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
                         self.recent_orders[-1] = current_time                                                           # Change the last value
-                    if net_position % 10 != 0:
-                        self.send_hedge_order(next(self.order_ids), Side.BID, BEST_ASK_PRICE, net_position % 10)
-                        self.future_position -= (net_position % 10)
-                        self.recent_orders = np.roll(self.recent_orders, -1)                                            # They see Dirk rolling...
-                        self.recent_orders[-1] = current_time                                                           # Change the last value
-        
+                if net_position % 10 != 0 and (current_time - self.recent_orders[0]) > 1 and self.future_position < 90:
+                    self.send_hedge_order(next(self.order_ids), Side.BID, BEST_ASK_PRICE, net_position % 10)
+                    self.future_position -= (net_position % 10)
+                    self.recent_orders = np.roll(self.recent_orders, -1)                                            # They see Dirk rolling...
+                    self.recent_orders[-1] = current_time                                                           # Change the last value
+    
         if instrument == Instrument.ETF:
             self.TOTAL_ASK_VOLUME = np.sum(self.active_ask_orders[2, :])
             self.TOTAL_BID_VOLUME = np.sum(self.active_bid_orders[2, :])
@@ -211,7 +211,7 @@ class AutoTrader(BaseAutoTrader):
                     print('post slicing orders',self.active_bid_orders[0,-5:])
             
             current_time = time.time() - start_time
-            if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
+            if (current_time - self.recent_orders[0]) > 1 and self.future_position > -90:                                                              # CHECK if more than 50 messages in 1 second - STOP!
                 self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
                 self.future_position -= volume
                 self.recent_orders = np.roll(self.recent_orders, -1)                                                    # They see Dirk rolling...
@@ -237,7 +237,7 @@ class AutoTrader(BaseAutoTrader):
                     print('post slicing orders',self.active_ask_orders[0,-5:])
             
             current_time = time.time() - start_time
-            if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
+            if (current_time - self.recent_orders[0]) > 1 and self.future_position < 90:                                                              # CHECK if more than 50 messages in 1 second - STOP!
                 self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
                 self.future_position -= volume
                 self.recent_orders = np.roll(self.recent_orders, -1)                                                    # They see Dirk rolling...
