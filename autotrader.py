@@ -25,10 +25,8 @@ LOT_SIZE = 10; TICK_SIZE_IN_CENTS = 100
 POSITION_LIMIT = 100; MESSAGE_LIMIT = 50
 MIN_BID_NEAREST_TICK = (MINIMUM_BID + TICK_SIZE_IN_CENTS) // TICK_SIZE_IN_CENTS * TICK_SIZE_IN_CENTS
 MAX_ASK_NEAREST_TICK = MAXIMUM_ASK // TICK_SIZE_IN_CENTS * TICK_SIZE_IN_CENTS
-
 start_time = time.time()
-# recent_orders= np.zeros((50))
-# print(recent_orders)
+
 class AutoTrader(BaseAutoTrader):
     """Example Auto-trader. When it starts this auto-trader places ten-lot bid and ask orders at the current best-bid and 
     best-ask prices respectively. Thereafter, if it has a long position (it has bought more lots than it has sold) it 
@@ -40,10 +38,9 @@ class AutoTrader(BaseAutoTrader):
         self.order_ids = itertools.count(1)
         self.bids = set()
         self.asks = set()
-        self.ask_id = self.ask_price = self.bid_id = self.bid_price = self.position = 0
-        # self.list_of_lists = []
-        self.recent_orders = np.zeros((50))
-        self.list_of_lists_2 = np.zeros((1, 5))
+        self.ask_id = self.ask_price = self.bid_id = self.bid_price = self.etf_position = 0
+        self.recent_orders = np.zeros((50)); self.list_of_lists_2 = np.zeros((1, 5))
+        self.future_position = 0; self.etf_position = 0; self.imaginary_position = 0
 
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
         """Called when the exchange detects an error.If the error pertains to a particular order, then the 
@@ -63,16 +60,45 @@ class AutoTrader(BaseAutoTrader):
         """Called periodically to report the status of an order book. The sequence number can be used to detect missed 
         or out-of-order messages. The five best available ask (i.e. sell) and bid (i.e. buy) prices are reported along 
         with the volume available at each of those price levels."""
+        if self.etf_position != -self.future_position:
+            net_position = self.etf_position + self.future_position                                                     # How many more ETFs we have than FUTURES
+            if net_position < 0:                                                                                        # We have more ETFs than Futures to cover - HEDGE
+                net_position = np.abs(net_position)
+                BEST_BID_PRICE = self.list_of_lists_2[3]                                                                # HEDGE - Uses FUTURE_BP instead of MIN_BID_NEAREST_TICK
+                if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
+                    for i in range(0, net_position // 10):
+                        self.send_hedge_order(next(self.order_ids), Side.ASK, BEST_BID_PRICE, LOT_SIZE)
+                        self.future_position += LOT_SIZE
+                        self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
+                        self.recent_orders[-1] = current_time                                                           # Change the last value
+                    if net_position % 10 != 0:
+                        self.send_hedge_order(next(self.order_ids), Side.ASK, BEST_BID_PRICE, net_position % 10)
+                        self.future_position += (net_position % 10)
+                        self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
+                        self.recent_orders[-1] = current_time                                                           # Change the last value
+            if net_position > 0:
+                BEST_ASK_PRICE = self.list_of_lists_2[1]                                                                # HEDGE - Uses FUTURE_AP instead of MIN_BID_NEAREST_TICK
+                if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
+                    for i in range(0, net_position // 10):
+                        self.send_hedge_order(next(self.order_ids), Side.BID, BEST_ASK_PRICE, LOT_SIZE)                 # HEDGE - send an order
+                        self.future_position -= LOT_SIZE
+                        self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
+                        self.recent_orders[-1] = current_time                                                           # Change the last value
+                    if net_position % 10 != 0:
+                        self.send_hedge_order(next(self.order_ids), Side.BID, BEST_ASK_PRICE, net_position % 10)
+                        self.future_position -= (net_position % 10)
+                        self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
+                        self.recent_orders[-1] = current_time                                                           # Change the last value
+        
         if instrument == Instrument.ETF:
             FUTURE_AP = self.list_of_lists_2[1]; FUTURE_AV = self.list_of_lists_2[2]                                    # Looks at best (low) FUTURE ask price
             FUTURE_BP = self.list_of_lists_2[3]; FUTURE_BV = self.list_of_lists_2[4]                                    # Looks at best FUTURE bid price
-            ETF_AP = ask_prices[0]; ETF_AV = ask_volumes[0]                                                             # Buy is NEGATIVE, Sell is POSITIVE
-            ETF_BP = bid_prices[0]; ETF_BV = bid_volumes[0]
+            ETF_AP = ask_prices[0]; ETF_AV = ask_volumes[0]
+            ETF_BP = bid_prices[0]; ETF_BV = bid_volumes[0]     
+            MAX_ORDERS_BUY_ETF = np.min([(POSITION_LIMIT - self.etf_position)//10, ETF_AV//10 + 1])
+            MAX_ORDERS_SELL_ETF = np.min([(self.etf_position + POSITION_LIMIT)//10, ETF_BV//10 + 1])
             
-            MAX_ORDERS_BUY_ETF = np.min([(POSITION_LIMIT - self.position)//10, ETF_AV//10 + 1])
-            MAX_ORDERS_SELL_ETF = np.min([(self.position + POSITION_LIMIT)//10, ETF_BV//10 + 1])
-            
-            if (ETF_AP != 0) and (FUTURE_BP * 0.9998 - ETF_AP * 1.0002) > 0 and (self.position < POSITION_LIMIT - 9):
+            if (ETF_AP != 0) and (FUTURE_BP * 0.9998 - ETF_AP * 1.0002) > 0 and (self.etf_position < POSITION_LIMIT - 9):
                 current_time = time.time() - start_time
                 for i in range(MAX_ORDERS_BUY_ETF):
                     if (current_time - self.recent_orders[0]) > 1:                                                      # CHECK if more than 50 messages in 1 second - STOP!
@@ -83,7 +109,7 @@ class AutoTrader(BaseAutoTrader):
                         self.recent_orders[-1] = current_time                                                           # Change the last value
                         print(self.recent_orders)
                     
-            if (ETF_BP * 0.9998 - FUTURE_AP * 1.0002) > 0 and (self.position > -(POSITION_LIMIT - 9)):
+            if (ETF_BP * 0.9998 - FUTURE_AP * 1.0002) > 0 and (self.etf_position > -(POSITION_LIMIT - 9)):
                 current_time = time.time() - start_time
                 for i in range(MAX_ORDERS_SELL_ETF):
                     if (current_time - self.recent_orders[0]) > 1:                                                      # CHECK if more than 50 messages in 1 second - STOP!
@@ -95,9 +121,11 @@ class AutoTrader(BaseAutoTrader):
 
         self.logger.info("received order book for instrument %d with sequence number %d", instrument, sequence_number)
         self.list_of_lists_2 = np.array([instrument, ask_prices[0], ask_volumes[0], bid_prices[0], bid_volumes[0]])                
+        
         # Search FUTURE updates for Market-Maker Situation
         # if instrument == Instrument.FUTURE:            
-        #     price_adjustment = - (self.position // LOT_SIZE) * TICK_SIZE_IN_CENTS
+        
+        #     price_adjustment = - (self.etf_position // LOT_SIZE) * TICK_SIZE_IN_CENTS
             # new_bid_price = bid_prices[0] - 300 if bid_prices[0] != 0 else 0
             # new_ask_price = ask_prices[0] + 300 if ask_prices[0] != 0 else 0
 
@@ -111,7 +139,7 @@ class AutoTrader(BaseAutoTrader):
         # 1. Every order is legal (quantity is correct => in last second > 50; ACTIVE ORDERS - the response time between us buying and market response: 0.125s)
         # 2. dont make more market than possible, ie dont offer to buy more ETF when already having too much ETF
                 
-            # if self.bid_id == 0 and new_bid_price != 0 and self.position < POSITION_LIMIT:  # Are BUYING, position grows
+            # if self.bid_id == 0 and new_bid_price != 0 and self.etf_position < POSITION_LIMIT:  # Are BUYING, position grows
             #     self.bid_id = next(self.order_ids)
             #     self.bid_price = new_bid_price
             #     self.send_insert_order(self.bid_id, Side.BUY, new_bid_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
@@ -119,7 +147,7 @@ class AutoTrader(BaseAutoTrader):
                 # current_active_orders.append(now)
                 # print(self.bids, ask_volumes, bid_volumes, ask_prices, bid_prices)
 
-            # if self.ask_id == 0 and new_ask_price != 0 and self.position > -POSITION_LIMIT:
+            # if self.ask_id == 0 and new_ask_price != 0 and self.etf_position > -POSITION_LIMIT:
             #     self.ask_id = next(self.order_ids)
             #     self.ask_price = new_ask_price
             #     self.send_insert_order(self.ask_id, Side.SELL, new_ask_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
@@ -142,14 +170,18 @@ class AutoTrader(BaseAutoTrader):
         self.logger.info("received order filled for order %d with price %d and volume %d", client_order_id, price, volume)
         current_time = time.time() - start_time
         if client_order_id in self.bids:
+            self.etf_position += volume                                                                                 # ETF position increases by update position
             if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
-                self.position += volume; self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
+                self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
+                self.future_position -= volume
                 self.recent_orders= np.roll(self.recent_orders, -1)                                                     # They see Dirk rolling...
                 self.recent_orders[-1] = current_time                                                                   # Change the last value
             
         elif client_order_id in self.asks:
+            self.etf_position -= volume
             if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
-                self.position -= volume; self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
+                self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
+                self.future_position += volume
                 self.recent_orders= np.roll(self.recent_orders, -1)                                                     # They see Dirk rolling...
                 self.recent_orders[-1] = current_time                                                                   # Change the last value
     
