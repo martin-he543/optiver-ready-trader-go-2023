@@ -31,8 +31,11 @@ MAX_ASK_NEAREST_TICK = MAXIMUM_ASK // TICK_SIZE_IN_CENTS * TICK_SIZE_IN_CENTS
 
 # list_ask_prices, list_ask_volumes, list_bid_prices, list_bid_volumes = [], [], [], []
 list_of_lists = []
+global list_of_lists_2
+list_of_lists_2 = np.zeros((1, 5))
 order_time = []
 for j in range(50): order_time.append([0])
+
 
 class AutoTrader(BaseAutoTrader):
     """Example Auto-trader.
@@ -42,7 +45,6 @@ class AutoTrader(BaseAutoTrader):
     bid and ask prices. Conversely, if it has a short position (it has sold
     more lots than it has bought) then it increases its bid and ask prices.
     """
-
     def __init__(self, loop: asyncio.AbstractEventLoop, team_name: str, secret: str):
         """Initialise a new instance of the AutoTrader class."""
         super().__init__(loop, team_name, secret)
@@ -50,6 +52,8 @@ class AutoTrader(BaseAutoTrader):
         self.bids = set()
         self.asks = set()
         self.ask_id = self.ask_price = self.bid_id = self.bid_price = self.position = 0
+        self.list_of_lists = []
+        self.list_of_lists_2 = np.zeros((1, 5))
 
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
         """Called when the exchange detects an error.
@@ -78,13 +82,13 @@ class AutoTrader(BaseAutoTrader):
         messages. The five best available ask (i.e. sell) and bid (i.e. buy)
         prices are reported along with the volume available at each of those
         price levels.
-        """ 
+        """
         # Search ETF updates for Arbitrage Situation
         if instrument == Instrument.ETF:
             # Looks at best (low) FUTURE ask price
-            FUTURE_AP = list_of_lists[-1][1][0]; FUTURE_AV = list_of_lists[-1][2][0]
+            FUTURE_AP = self.list_of_lists_2[1]; FUTURE_AV = self.list_of_lists_2[2]
             # Looks at best FUTURE bid price
-            FUTURE_BP = list_of_lists[-1][3][0]; FUTURE_BV = list_of_lists[-1][4][0]
+            FUTURE_BP = self.list_of_lists_2[3]; FUTURE_BV = self.list_of_lists_2[4]
             # Buy is NEGATIVE, Sell is POSITIVE
             ETF_AP = ask_prices[0]; ETF_AV = ask_volumes[0]
             ETF_BP = bid_prices[0]; ETF_BV = bid_volumes[0]
@@ -96,33 +100,33 @@ class AutoTrader(BaseAutoTrader):
             
             if (ETF_AP != 0) and (FUTURE_BP * 0.9998 - ETF_AP * 1.0002) > 0 and (self.position < POSITION_LIMIT - 9):
                 for i in range(MAX_ORDERS_BUY_ETF):
-                    current_time = time.time()
-                    print("PRINT", current_time)
-                    if (current_time - order_time[-39][0]) > 1:      # Check if more than 50 messages in 1 second
-                        print(order_time)
-                        print("WOWZERS", current_time - order_time[-39][0])
+                    # current_time = time.time()
+                    # print("PRINT", current_time)
+                    # if (current_time - order_time[-39][0]) > 1:      # Check if more than 50 messages in 1 second
+                        # print(order_time)
+                        # print("WOWZERS", current_time - order_time[-39][0])
                         #print(now, len(order_time) + 1, "ARBITRAGE OPPORTUNITY: (1) SELL FUTURE, (BUY ETF)")
-                        self.bid_id = next(self.order_ids)
-                        self.send_insert_order(self.bid_id, Side.BUY, ETF_AP, LOT_SIZE, Lifespan.FILL_AND_KILL)
+                    self.bid_id = next(self.order_ids)
+                    self.send_insert_order(self.bid_id, Side.BUY, ETF_AP, LOT_SIZE, Lifespan.FILL_AND_KILL)
                         # 1. Add every timestamp.
-                        self.bids.add(self.bid_id); order_time.append(current_time)
+                    self.bids.add(self.bid_id); #order_time.append(current_time)
                 
             if (ETF_BP * 0.9998 - FUTURE_AP * 1.0002) > 0 and (self.position > -(POSITION_LIMIT - 9)):
                 for i in range(MAX_ORDERS_SELL_ETF):
-                    current_time = time.time()
-                    if (current_time - order_time[-39][0]) > 1:      # Check if more than 50 messages in 1 second
-                        print(order_time)
-                        print("WOWZERS", current_time - order_time[-39][0])
+                    # current_time = time.time()
+                    # if (current_time - order_time[-39][0]) > 1:      # Check if more than 50 messages in 1 second
+                        # print(order_time)
+                        # print("WOWZERS", current_time - order_time[-39][0])
                         # now = datetime.now(); #print(now, len(order_time) + 1, "ARBITRAGE OPPORTUNITY: (2) SELL ETF, (BUY FUTURE)")
-                        self.ask_id = next(self.order_ids)
-                        self.send_insert_order(self.ask_id, Side.SELL, ETF_BP, LOT_SIZE, Lifespan.FILL_AND_KILL)
-                        self.asks.add(self.ask_id); order_time.append(current_time)
-        
+                    self.ask_id = next(self.order_ids)
+                    self.send_insert_order(self.ask_id, Side.SELL, ETF_BP, LOT_SIZE, Lifespan.FILL_AND_KILL)
+                    self.asks.add(self.ask_id); #order_time.append(current_time)
+    
         # Search FUTURE updates for Market-Maker Situation
-        if instrument == Instrument.FUTURE:            
+        # if instrument == Instrument.FUTURE:            
         #     price_adjustment = - (self.position // LOT_SIZE) * TICK_SIZE_IN_CENTS
-            new_bid_price = bid_prices[0] - 300 if bid_prices[0] != 0 else 0
-            new_ask_price = ask_prices[0] + 300 if ask_prices[0] != 0 else 0
+            # new_bid_price = bid_prices[0] - 300 if bid_prices[0] != 0 else 0
+            # new_ask_price = ask_prices[0] + 300 if ask_prices[0] != 0 else 0
 
         #     if self.bid_id != 0 and new_bid_price not in (self.bid_price, 0):
         #         self.send_cancel_order(self.bid_id)
@@ -152,42 +156,24 @@ class AutoTrader(BaseAutoTrader):
         self.logger.info("received order book for instrument %d with sequence number %d", instrument, sequence_number)
         # If update for ETF, won't to see if Abitrage for oppo, must check Future market info for checks
         # Otherwise, put some weighting function after, but keep in fundamental situation
-        """
-        if instrument == Instrument.FUTURE:
-            price_adjustment = - (self.position // LOT_SIZE) * TICK_SIZE_IN_CENTS
-            new_bid_price = bid_prices[0] + price_adjustment if bid_prices[0] != 0 else 0
-            new_ask_price = ask_prices[0] + price_adjustment if ask_prices[0] != 0 else 0
-
-            if self.bid_id != 0 and new_bid_price not in (self.bid_price, 0):
-                self.send_cancel_order(self.bid_id)
-                self.bid_id = 0
-            if self.ask_id != 0 and new_ask_price not in (self.ask_price, 0):
-                self.send_cancel_order(self.ask_id)
-                self.ask_id = 0
-
-            if self.bid_id == 0 and new_bid_price != 0 and self.position < POSITION_LIMIT:
-                self.bid_id = next(self.order_ids)
-                self.bid_price = new_bid_price
-                self.send_insert_order(self.bid_id, Side.BUY, new_bid_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
-                self.bids.add(self.bid_id)
-
-            if self.ask_id == 0 and new_ask_price != 0 and self.position > -POSITION_LIMIT:
-                self.ask_id = next(self.order_ids)
-                self.ask_price = new_ask_price
-                self.send_insert_order(self.ask_id, Side.SELL, new_ask_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
-                self.asks.add(self.ask_id)
-        """
-                 
+        
         # print(instrument, ": ", ask_prices, bid_prices)            
         # list_ask_prices.append(ask_prices)
         # list_ask_volumes.append(ask_volumes)
         # list_bid_prices.append(bid_prices)
         # list_bid_volumes.append(bid_volumes)
-        list_of_lists.append([instrument, ask_prices, ask_volumes, bid_prices, bid_volumes])
+        # self.list_of_lists.append([instrument, ask_prices[0], ask_volumes[0], bid_prices[0], bid_volumes[0]])
+        # print(list_of_lists[-1])
+        self.list_of_lists_2 = np.array([instrument, ask_prices[0], ask_volumes[0], bid_prices[0], bid_volumes[0]])
+        print(self.list_of_lists_2)
+        
+        # list_of_lists_2[0][:] = np.array([instrument, ask_prices, ask_volumes, bid_prices, bid_volumes])
+        # print(list_of_lists_2[0])
+        # update_market[update_number] = [instrument, ask_prices, ask_volumes, bid_prices, bid_volumes]
+
         # Safety and Stability - Don't EXPLODE
         # if len(order_time) > 50:    order_time = order_time[-50:]
         # print(order_time)
-        # print(list_of_lists[-1])
 
     def on_order_filled_message(self, client_order_id: int, price: int, volume: int) -> None:
         """Called when one of your orders is filled, partially or fully.
@@ -200,19 +186,19 @@ class AutoTrader(BaseAutoTrader):
                          price, volume)
         if client_order_id in self.bids:
             self.position += volume
-            current_time = time.time(); #print(now, len(order_time), "HEDGE ORDER: (1) SELL FUTURE, (BUY ETF)")
-            if (current_time - order_time[-39][0]) > 1:
-                print(order_time)
-                self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
-                order_time.append(time.time())
+            # current_time = time.time(); #print(now, len(order_time), "HEDGE ORDER: (1) SELL FUTURE, (BUY ETF)")
+            # if (current_time - order_time[-39][0]) > 1:
+                # print(order_time)
+            self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
+                # order_time.append(time.time())
             
         elif client_order_id in self.asks:
             self.position -= volume
-            current_time = time.time(); #print(now, len(order_time), "HEDGE ORDER: (2) BUY FUTURE, (SELL ETF)")
-            if (current_time - order_time[-39][0]) > 1:
-                print(order_time)
-                self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
-                order_time.append(time.time())
+            # current_time = time.time(); #print(now, len(order_time), "HEDGE ORDER: (2) BUY FUTURE, (SELL ETF)")
+            # if (current_time - order_time[-39][0]) > 1:
+                # print(order_time)
+            self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
+                # order_time.append(time.time())
             
     
     def on_order_status_message(self, client_order_id: int, fill_volume: int, remaining_volume: int,
@@ -255,3 +241,30 @@ class AutoTrader(BaseAutoTrader):
         the end of both the prices and volumes arrays.
         """
         self.logger.info("received trade ticks for instrument %d with sequence number %d", instrument, sequence_number)
+        
+        """
+        if instrument == Instrument.FUTURE:
+            price_adjustment = - (self.position // LOT_SIZE) * TICK_SIZE_IN_CENTS
+            new_bid_price = bid_prices[0] + price_adjustment if bid_prices[0] != 0 else 0
+            new_ask_price = ask_prices[0] + price_adjustment if ask_prices[0] != 0 else 0
+
+            if self.bid_id != 0 and new_bid_price not in (self.bid_price, 0):
+                self.send_cancel_order(self.bid_id)
+                self.bid_id = 0
+            if self.ask_id != 0 and new_ask_price not in (self.ask_price, 0):
+                self.send_cancel_order(self.ask_id)
+                self.ask_id = 0
+
+            if self.bid_id == 0 and new_bid_price != 0 and self.position < POSITION_LIMIT:
+                self.bid_id = next(self.order_ids)
+                self.bid_price = new_bid_price
+                self.send_insert_order(self.bid_id, Side.BUY, new_bid_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
+                self.bids.add(self.bid_id)
+
+            if self.ask_id == 0 and new_ask_price != 0 and self.position > -POSITION_LIMIT:
+                self.ask_id = next(self.order_ids)
+                self.ask_price = new_ask_price
+                self.send_insert_order(self.ask_id, Side.SELL, new_ask_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
+                self.asks.add(self.ask_id)
+        """
+                 
