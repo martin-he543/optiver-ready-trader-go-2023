@@ -71,6 +71,7 @@ class AutoTrader(BaseAutoTrader):
             if net_position < 0:                                                                                        # We have more ETFs than Futures to cover - HEDGE
                 net_position = np.abs(net_position)
                 BEST_BID_PRICE = self.market_info[3]                                                                    # HEDGE - Uses FUTURE_BP instead of MIN_BID_NEAREST_TICK
+                current_time = time.time() - start_time
                 if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
                     for i in range(0, net_position // 10):
                         self.send_hedge_order(next(self.order_ids), Side.ASK, BEST_BID_PRICE, LOT_SIZE)
@@ -84,6 +85,7 @@ class AutoTrader(BaseAutoTrader):
                         self.recent_orders[-1] = current_time                                                           # Change the last value
             if net_position > 0:
                 BEST_ASK_PRICE = self.market_info[1]                                                                    # HEDGE - Uses FUTURE_AP instead of MIN_BID_NEAREST_TICK
+                current_time = time.time() - start_time
                 if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
                     for i in range(0, net_position // 10):
                         self.send_hedge_order(next(self.order_ids), Side.BID, BEST_ASK_PRICE, LOT_SIZE)                 # HEDGE - send an order
@@ -142,24 +144,26 @@ class AutoTrader(BaseAutoTrader):
             #     self.send_cancel_order(self.bid_id); self.bid_id = 0
             # if self.ask_id != 0 and new_ask_price not in (self.ask_price, 0):
             #     self.send_cancel_order(self.ask_id); self.ask_id = 0
-            
-            current_time = time.time() - start_time
             # print(TOTAL_BID_VOLUME, MARKET_CAP, current_time, self.recent_orders[0])
-            
+            current_time = time.time() - start_time
             if self.TOTAL_BID_VOLUME < (MARKET_CAP - 9) and (current_time - self.recent_orders[0]) > 1 and (self.etf_position < 50):
                 self.bid_id = next(self.order_ids); self.bid_price = new_bid_price
                 self.send_insert_order(self.bid_id, Side.BUY, new_bid_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
                 self.bids.add(self.bid_id)
                 self.active_bid_orders = np.roll(self.active_bid_orders, -1, axis=1)
                 self.active_bid_orders[:,-1] = [self.bid_id, new_bid_price, LOT_SIZE]
-                
+                self.recent_orders = np.roll(self.recent_orders, -1)                                                        # They see Dirk rolling...
+                self.recent_orders[-1] = current_time                                                                       # Change the last value    
+        
+            current_time = time.time() - start_time
             if self.TOTAL_ASK_VOLUME < (MARKET_CAP - 9) and (current_time - self.recent_orders[0]) > 1 and (self.etf_position > -50):
                 self.ask_id = next(self.order_ids); self.ask_price = new_ask_price
                 self.send_insert_order(self.ask_id, Side.ASK, new_ask_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
                 self.asks.add(self.ask_id)
                 self.active_ask_orders = np.roll(self.active_ask_orders, -1, axis=1)
                 self.active_ask_orders[:,-1] = [self.ask_id, new_ask_price, LOT_SIZE]
-                
+                self.recent_orders = np.roll(self.recent_orders, -1)                                                        # They see Dirk rolling...
+                self.recent_orders[-1] = current_time                                                                       # Change the last value    
             # if new_ask_price != 0 and self.etf_position > -MARKET_CAP:
             #     self.ask_id = next(self.order_ids)
             #     self.ask_price = new_ask_price
@@ -186,7 +190,7 @@ class AutoTrader(BaseAutoTrader):
         (partially) filled, which may be better than the order's limit price. The volume is the number of lots filled at 
         that price."""
         self.logger.info("received order filled for order %d with price %d and volume %d", client_order_id, price, volume)
-        current_time = time.time() - start_time
+        
         if client_order_id in self.bids:
             self.etf_position += volume                                                                                 # ETF position increases by update position            
             
@@ -206,6 +210,7 @@ class AutoTrader(BaseAutoTrader):
                     #self.active_bid_orders[:,1:INDEX+1] = self.active_ask_orders[:,0:INDEX]
                     print('post slicing orders',self.active_bid_orders[0,-5:])
             
+            current_time = time.time() - start_time
             if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
                 self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
                 self.future_position -= volume
@@ -214,9 +219,27 @@ class AutoTrader(BaseAutoTrader):
             
         elif client_order_id in self.asks:
             self.etf_position -= volume
+            
+            print("ALIVE STILL",client_order_id)
+            #print(self.active_bid_orders[0,:])
+            #print(self.active_bid_orders[1,:])
+            #print(np.argwhere(self.active_bid_orders[0,:] == client_order_id)[0,0])
+            if len(np.argwhere(self.active_ask_orders[0,:] == client_order_id)) > 0:
+                INDEX = np.argwhere(self.active_ask_orders[0,:] == client_order_id)[0,0]
+                print("INDEX", INDEX)
+                self.active_ask_orders[2, INDEX] -= volume
+                if self.active_ask_orders[2, INDEX] == 0:                                                                   # CHECK if this order has been filled -> CLEAR.
+                    print('pre slicing orders',self.active_ask_orders[0,-5:])
+                    self.active_ask_orders= np.delete(self.active_ask_orders,INDEX,axis=1)
+                    print('post deleting arr',self.active_ask_orders[:,-5:])
+                    self.active_ask_orders=np.insert(self.active_ask_orders,0,np.array([0,0,0]),axis=1)
+                    #self.active_bid_orders[:,1:INDEX+1] = self.active_ask_orders[:,0:INDEX]
+                    print('post slicing orders',self.active_ask_orders[0,-5:])
+            
+            current_time = time.time() - start_time
             if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
                 self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
-                self.future_position += volume
+                self.future_position -= volume
                 self.recent_orders = np.roll(self.recent_orders, -1)                                                    # They see Dirk rolling...
                 self.recent_orders[-1] = current_time                                                                   # Change the last value
     
