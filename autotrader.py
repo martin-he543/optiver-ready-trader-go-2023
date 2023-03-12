@@ -41,9 +41,11 @@ class AutoTrader(BaseAutoTrader):
         self.ask_id = self.ask_price = self.bid_id = self.bid_price = self.etf_position = 0
         self.recent_orders = np.zeros((50)); self.market_info = np.zeros((1, 5))
         self.future_position = 0; self.etf_position = 0
+        self.TOTAL_ASK_VOLUME = 0
+        self.TOTAL_BID_VOLUME = 0
         
         # ORDER BOOK: [ASK_ID, ASK_PRICE, ASK_VOLUME], [BID_ID, BID_PRICE, BID_VOLUME]
-        self.active_ask_orders = np.zeros((3, 200)); self.active_bid_orders = np.zeros((3, 200))
+        self.active_ask_orders = np.zeros((3, 200),dtype=int); self.active_bid_orders = np.zeros((3, 200),dtype=int)
         
         # Discussion, do we track time? older orders could be more valuable, long term optimisation problem
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
@@ -95,6 +97,8 @@ class AutoTrader(BaseAutoTrader):
                         self.recent_orders[-1] = current_time                                                           # Change the last value
         
         if instrument == Instrument.ETF:
+            self.TOTAL_ASK_VOLUME = np.sum(self.active_ask_orders[2, :])
+            self.TOTAL_BID_VOLUME = np.sum(self.active_bid_orders[2, :])
             FUTURE_AP = self.market_info[1]; FUTURE_AV = self.market_info[2]                                            # Looks at best (low) FUTURE ask price
             FUTURE_BP = self.market_info[3]; FUTURE_BV = self.market_info[4]                                            # Looks at best FUTURE bid price
             ETF_AP = ask_prices[0]; ETF_AV = ask_volumes[0]
@@ -102,7 +106,7 @@ class AutoTrader(BaseAutoTrader):
             MAX_ORDERS_BUY_ETF = np.min([(POSITION_LIMIT - self.etf_position - ARBITRAGE_HCAP)//10, ETF_AV//10 + 1])
             MAX_ORDERS_SELL_ETF = np.min([(self.etf_position + POSITION_LIMIT - ARBITRAGE_HCAP)//10, ETF_BV//10 + 1])
             
-            if (ETF_AP != 0) and (FUTURE_BP * 0.9998 - ETF_AP * 1.0002) > 0 and (self.etf_position < POSITION_LIMIT - 9):
+            if (ETF_AP != 0) and (FUTURE_BP * 0.9998 - ETF_AP * 1.0002) > 0 and ((self.etf_position + self.TOTAL_BID_VOLUME) < (100 - 9)):
                 current_time = time.time() - start_time
                 for i in range(MAX_ORDERS_BUY_ETF):
                     if (current_time - self.recent_orders[0]) > 1:                                                      # CHECK if more than 50 messages in 1 second - STOP!
@@ -113,7 +117,7 @@ class AutoTrader(BaseAutoTrader):
                         self.recent_orders[-1] = current_time                                                           # Change the last value
                         # print(self.recent_orders)
                     
-            if (ETF_BP * 0.9998 - FUTURE_AP * 1.0002) > 0 and (self.etf_position > -(POSITION_LIMIT - 9)):
+            if (ETF_BP * 0.9998 - FUTURE_AP * 1.0002) > 0 and ((self.etf_position - self.TOTAL_ASK_VOLUME) > -(100 - 9)):
                 current_time = time.time() - start_time
                 for i in range(MAX_ORDERS_SELL_ETF):
                     if (current_time - self.recent_orders[0]) > 1:                                                      # CHECK if more than 50 messages in 1 second - STOP!
@@ -127,8 +131,8 @@ class AutoTrader(BaseAutoTrader):
         self.market_info = np.array([instrument, ask_prices[0], ask_volumes[0], bid_prices[0], bid_volumes[0]])                
         
         if instrument == Instrument.FUTURE:                                                                             # Search FUTURE updates for Market-Maker Situation
-            TOTAL_ASK_VOLUME = np.sum(self.active_ask_orders[2, :])
-            TOTAL_BID_VOLUME = np.sum(self.active_bid_orders[2, :])
+            self.TOTAL_ASK_VOLUME = np.sum(self.active_ask_orders[2, :])
+            self.TOTAL_BID_VOLUME = np.sum(self.active_bid_orders[2, :])
             # print(TOTAL_ASK_VOLUME, TOTAL_BID_VOLUME)
             new_bid_price = bid_prices[0] - 300 if bid_prices[0] != 0 else 0
             new_ask_price = ask_prices[0] + 300 if ask_prices[0] != 0 else 0
@@ -140,9 +144,9 @@ class AutoTrader(BaseAutoTrader):
             #     self.send_cancel_order(self.ask_id); self.ask_id = 0
             
             current_time = time.time() - start_time
-            print(TOTAL_BID_VOLUME, MARKET_CAP, current_time, self.recent_orders[0])
+            # print(TOTAL_BID_VOLUME, MARKET_CAP, current_time, self.recent_orders[0])
             
-            if TOTAL_BID_VOLUME < MARKET_CAP and (current_time - self.recent_orders[0]) > 1:
+            if self.TOTAL_BID_VOLUME < (MARKET_CAP - 9) and (current_time - self.recent_orders[0]) > 1:
                 self.bid_id = next(self.order_ids); self.bid_price = new_bid_price
                 self.send_insert_order(self.bid_id, Side.BUY, new_bid_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
                 self.bids.add(self.bid_id)
@@ -156,14 +160,10 @@ class AutoTrader(BaseAutoTrader):
             #     self.asks.add(self.ask_id)
             #     self.active_bid_orders = np.roll(self.active_bid_orders, -1, axis=1)
             #     self.active_ask_orders[:,-1] = [self.ask_id, new_ask_price, LOT_SIZE]
-
-                
                     
         # 1. Every order is legal (quantity is correct => in last second > 50; ACTIVE ORDERS - the response time between us buying and market response: 0.125s)
         # 2. dont make more market than possible, ie dont offer to buy more ETF when already having too much ETF
-                
 
-            
         # If update for ETF, won't to see if Abitrage for oppo, must check Future market info for checks
         # Otherwise, put some weighting function after, but keep in fundamental situation
         # self.list_of_lists.append([instrument, ask_prices[0], ask_volumes[0], bid_prices[0], bid_volumes[0]])
@@ -183,12 +183,22 @@ class AutoTrader(BaseAutoTrader):
         if client_order_id in self.bids:
             self.etf_position += volume                                                                                 # ETF position increases by update position            
             
-            INDEX = np.where(self.active_ask_orders[0,:] == client_order_id)
-            print("THE INDEX",INDEX)
-            self.active_ask_orders[2, INDEX] -= volume
-            if self.active_ask_orders[2, INDEX] == 0:                                                                   # CHECK if this order has been filled -> CLEAR.
-                self.active_ask_orders[:,1:INDEX] =self.active_ask_orders[:,0:INDEX-1]
-                print(self.active_ask_orders)                                  
+            print("ALIVE STILL",client_order_id)
+            #print(self.active_bid_orders[0,:])
+            #print(self.active_bid_orders[1,:])
+            #print(np.argwhere(self.active_bid_orders[0,:] == client_order_id)[0,0])
+            if len(np.argwhere(self.active_bid_orders[0,:] == client_order_id)) > 0:
+                INDEX = np.argwhere(self.active_bid_orders[0,:] == client_order_id)[0,0]
+                print("INDEX", INDEX)
+                self.active_bid_orders[2, INDEX] -= volume
+                if self.active_bid_orders[2, INDEX] == 0:                                                                   # CHECK if this order has been filled -> CLEAR.
+                    print('pre slicing orders',self.active_bid_orders[0,-5:])
+                    self.active_bid_orders= np.delete(self.active_bid_orders,INDEX,axis=1)
+                    print('post deleting arr',self.active_bid_orders[:,-5:])
+                    self.active_bid_orders=np.insert(self.active_bid_orders,0,np.array([0,0,0]),axis=1)
+                    #self.active_bid_orders[:,1:INDEX+1] = self.active_ask_orders[:,0:INDEX]
+                    print('post slicing orders',self.active_bid_orders[0,-5:])
+            
             if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
                 self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
                 self.future_position -= volume
