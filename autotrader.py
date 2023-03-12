@@ -27,7 +27,7 @@ MIN_BID_NEAREST_TICK = (MINIMUM_BID + TICK_SIZE_IN_CENTS) // TICK_SIZE_IN_CENTS 
 MAX_ASK_NEAREST_TICK = MAXIMUM_ASK // TICK_SIZE_IN_CENTS * TICK_SIZE_IN_CENTS
 
 order_time = []; actual_time = time.time()
-for j in range(50): order_time.append([0])
+for j in range(50): order_time.append([0.0])
 
 class AutoTrader(BaseAutoTrader):
     """Example Auto-trader. When it starts this auto-trader places ten-lot bid and ask orders at the current best-bid and 
@@ -89,7 +89,6 @@ class AutoTrader(BaseAutoTrader):
                         self.send_insert_order(self.ask_id, Side.SELL, ETF_BP, LOT_SIZE, Lifespan.FILL_AND_KILL)
                         self.asks.add(self.ask_id); order_time.append(current_time)
 
-    
         self.logger.info("received order book for instrument %d with sequence number %d", instrument, sequence_number)
         self.list_of_lists_2 = np.array([instrument, ask_prices[0], ask_volumes[0], bid_prices[0], bid_volumes[0]])                
         # Search FUTURE updates for Market-Maker Situation
@@ -107,8 +106,7 @@ class AutoTrader(BaseAutoTrader):
         
         # 1. Every order is legal (quantity is correct => in last second > 50; ACTIVE ORDERS - the response time between us buying and market response: 0.125s)
         # 2. dont make more market than possible, ie dont offer to buy more ETF when already having too much ETF
-        
-        
+                
             # if self.bid_id == 0 and new_bid_price != 0 and self.position < POSITION_LIMIT:  # Are BUYING, position grows
             #     self.bid_id = next(self.order_ids)
             #     self.bid_price = new_bid_price
@@ -138,19 +136,16 @@ class AutoTrader(BaseAutoTrader):
         (partially) filled, which may be better than the order's limit price. The volume is the number of lots filled at 
         that price."""
         self.logger.info("received order filled for order %d with price %d and volume %d", client_order_id, price, volume)
+        current_time = time.time() - actual_time
         if client_order_id in self.bids:
-            self.position += volume; self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
-            # current_time = time.time(); #print(now, len(order_time), "HEDGE ORDER: (1) SELL FUTURE, (BUY ETF)")
-            # if (current_time - order_time[-39][0]) > 1:
-                # print(order_time)
-                # order_time.append(time.time())
+            if (current_time - order_time[-49][0]) > 1:                                                                 # CHECK if more than 50 messages in 1 second - STOP!
+                print("HEDGE SELL FT, BUY ETF WOWZERS", current_time - order_time[-49][0])
+                self.position += volume; self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
             
         elif client_order_id in self.asks:
-            self.position -= volume; self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
-            # current_time = time.time(); #print(now, len(order_time), "HEDGE ORDER: (2) BUY FUTURE, (SELL ETF)")
-            # if (current_time - order_time[-39][0]) > 1:
-                # print(order_time)
-                # order_time.append(time.time())
+            if (current_time - order_time[-49][0]) > 1:                                                                 # CHECK if more than 50 messages in 1 second - STOP!
+                print("HEDGE BUY FT, SELL ETF WOWZERS", current_time - order_time[-49][0])
+                self.position -= volume; self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
     
     def on_order_status_message(self, client_order_id: int, fill_volume: int, remaining_volume: int, fees: int) -> None:
         """Called when the status of one of your orders changes. The fill_volume is the number of lots already traded, 
