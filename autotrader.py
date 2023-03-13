@@ -160,7 +160,7 @@ class AutoTrader(BaseAutoTrader):
                 self.recent_orders[-1] = current_time                                                                       # Change the last value    
         
             current_time = time.time() - start_time
-            if self.TOTAL_ASK_VOLUME < (MARKET_CAP - 9) and (current_time - self.recent_orders[0]) > 1 and (self.etf_position > -50):
+            if self.TOTAL_ASK_VOLUME < (MARKET_CAP - 9) and (current_time - self.recent_orders[0]) > 1 and (self.etf_position > -150):
                 self.ask_id = next(self.order_ids); self.ask_price = new_ask_price
                 self.send_insert_order(self.ask_id, Side.ASK, new_ask_price, LOT_SIZE, Lifespan.GOOD_FOR_DAY)
                 self.asks.add(self.ask_id)
