@@ -5577,3 +5577,351 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2023-03-13 18:48:27,172 [INFO   ] [CONTROLLER] market open
 2023-03-13 18:50:06,945 [INFO   ] [APP] SIGTERM signal received - shutting down...
 2023-03-13 18:50:06,945 [INFO   ] [APP] closing event loop
+2023-03-14 12:50:42,252 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader.py, autotrader.py}
+2023-03-14 12:50:42,252 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret"}}
+2023-03-14 12:50:42,253 [INFO   ] [CONTROLLER] starting the match
+2023-03-14 12:50:42,253 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-14 12:50:42,254 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-14 12:50:42,254 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-14 12:50:42,254 [INFO   ] [INFORMATION] information channel established
+2023-03-14 12:50:42,853 [INFO   ] [CONNECTION] fd=21 connection established: peer=127.0.0.1:38376
+2023-03-14 12:50:42,857 [INFO   ] [EXECUTION] fd=21 'TraderOne' is ready!
+2023-03-14 12:50:42,866 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:38378
+2023-03-14 12:50:42,867 [INFO   ] [EXECUTION] fd=22 login failed: name='TraderOne'
+2023-03-14 12:50:42,867 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-14 12:50:46,691 [INFO   ] [APP] SIGINT signal received - shutting down...
+2023-03-14 12:50:46,691 [INFO   ] [APP] closing event loop
+2023-03-14 12:51:37,109 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader.py, autotrader.py}
+2023-03-14 12:51:37,110 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret"}}
+2023-03-14 12:51:37,111 [INFO   ] [CONTROLLER] starting the match
+2023-03-14 12:51:37,111 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-14 12:51:37,112 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-14 12:51:37,112 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-14 12:51:37,113 [INFO   ] [INFORMATION] information channel established
+2023-03-14 12:51:37,728 [INFO   ] [CONNECTION] fd=21 connection established: peer=127.0.0.1:56110
+2023-03-14 12:51:37,729 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:56122
+2023-03-14 12:51:37,731 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-14 12:51:37,733 [INFO   ] [EXECUTION] fd=21 login failed: name='TraderOne'
+2023-03-14 12:51:37,734 [INFO   ] [CONNECTION] fd=21 connection lost
+2023-03-14 12:51:38,879 [INFO   ] [CONNECTION] fd=21 connection established: peer=127.0.0.1:59268
+2023-03-14 12:51:42,124 [INFO   ] [CONTROLLER] market open
+2023-03-14 12:51:46,267 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-14 12:51:46,267 [INFO   ] [APP] closing event loop
+2023-03-14 12:53:07,908 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader.py, autotrader2.py}
+2023-03-14 12:53:07,909 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret"}}
+2023-03-14 12:53:07,909 [INFO   ] [CONTROLLER] starting the match
+2023-03-14 12:53:07,910 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-14 12:53:07,910 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-14 12:53:07,910 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-14 12:53:07,910 [INFO   ] [INFORMATION] information channel established
+2023-03-14 12:53:08,496 [INFO   ] [CONNECTION] fd=21 connection established: peer=127.0.0.1:60390
+2023-03-14 12:53:08,496 [INFO   ] [EXECUTION] fd=21 'TraderOne' is ready!
+2023-03-14 12:53:08,497 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:60402
+2023-03-14 12:53:08,498 [INFO   ] [EXECUTION] fd=22 'TraderTwo' is ready!
+2023-03-14 12:53:09,648 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:36926
+2023-03-14 12:53:12,917 [INFO   ] [CONTROLLER] market open
+2023-03-14 12:54:43,189 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-14 12:54:43,189 [INFO   ] [APP] closing event loop
+2023-03-14 13:00:02,816 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader.py, autotrader2.py}
+2023-03-14 13:00:02,816 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret"}}
+2023-03-14 13:00:02,817 [INFO   ] [CONTROLLER] starting the match
+2023-03-14 13:00:02,817 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-14 13:00:02,818 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-14 13:00:02,818 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-14 13:00:02,819 [INFO   ] [INFORMATION] information channel established
+2023-03-14 13:00:03,412 [INFO   ] [CONNECTION] fd=21 connection established: peer=127.0.0.1:44556
+2023-03-14 13:00:03,413 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:44566
+2023-03-14 13:00:03,413 [INFO   ] [EXECUTION] fd=21 'TraderOne' is ready!
+2023-03-14 13:00:03,413 [INFO   ] [EXECUTION] fd=22 'TraderTwo' is ready!
+2023-03-14 13:00:04,620 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:58778
+2023-03-14 13:00:07,829 [INFO   ] [CONTROLLER] market open
+2023-03-14 13:00:19,119 [INFO   ] [CONNECTION] fd=21 connection lost
+2023-03-14 13:00:19,119 [WARNING] [EXECUTION] fd=21 lost connection to auto-trader:
+2023-03-14 13:00:19,120 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-14 13:00:19,120 [WARNING] [EXECUTION] fd=22 lost connection to auto-trader:
+2023-03-14 13:00:19,120 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-14 13:00:19,120 [INFO   ] [APP] closing event loop
+2023-03-14 14:07:20,622 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader.py, autotrader2.py}
+2023-03-14 14:07:20,622 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":5.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret"}}
+2023-03-14 14:07:20,623 [INFO   ] [CONTROLLER] starting the match
+2023-03-14 14:07:20,623 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-14 14:07:20,624 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-14 14:07:20,624 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-14 14:07:20,624 [INFO   ] [INFORMATION] information channel established
+2023-03-14 14:07:21,217 [INFO   ] [CONNECTION] fd=21 connection established: peer=127.0.0.1:34086
+2023-03-14 14:07:21,217 [INFO   ] [EXECUTION] fd=21 'TraderOne' is ready!
+2023-03-14 14:07:21,219 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:34100
+2023-03-14 14:07:21,219 [INFO   ] [EXECUTION] fd=22 'TraderTwo' is ready!
+2023-03-14 14:07:22,446 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:45958
+2023-03-14 14:07:25,633 [INFO   ] [CONTROLLER] market open
+2023-03-14 14:07:31,674 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=6.031123 client_order_id=38 message='order rejected: active order count limit breached'
+2023-03-14 14:07:31,675 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=6.041489 client_order_id=38 message='order rejected: active order count limit breached'
+2023-03-14 14:07:31,676 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=6.042698 client_order_id=39 message='order rejected: active order count limit breached'
+2023-03-14 14:07:31,677 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=6.043203 client_order_id=39 message='order rejected: active order count limit breached'
+2023-03-14 14:07:31,910 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=6.276011 client_order_id=40 message='order rejected: active order count limit breached'
+2023-03-14 14:07:31,910 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=6.276912 client_order_id=41 message='order rejected: active order count limit breached'
+2023-03-14 14:07:31,910 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=6.277015 client_order_id=40 message='order rejected: active order count limit breached'
+2023-03-14 14:07:31,910 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=6.277083 client_order_id=41 message='order rejected: active order count limit breached'
+2023-03-14 14:07:32,102 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=6.468583 client_order_id=42 message='order rejected: active order count limit breached'
+2023-03-14 14:07:32,102 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=6.469030 client_order_id=43 message='order rejected: active order count limit breached'
+2023-03-14 14:07:32,102 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=6.469138 client_order_id=42 message='order rejected: active order count limit breached'
+2023-03-14 14:07:32,102 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=6.469206 client_order_id=43 message='order rejected: active order count limit breached'
+2023-03-14 14:07:32,408 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=6.774665 client_order_id=44 message='order rejected: active order count limit breached'
+2023-03-14 14:07:32,408 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=6.774940 client_order_id=45 message='order rejected: active order count limit breached'
+2023-03-14 14:07:32,408 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=6.775238 client_order_id=44 message='order rejected: active order count limit breached'
+2023-03-14 14:07:32,409 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=6.775463 client_order_id=45 message='order rejected: active order count limit breached'
+2023-03-14 14:07:34,352 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=8.718332 client_order_id=46 message='order rejected: active order count limit breached'
+2023-03-14 14:07:34,352 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=8.718805 client_order_id=47 message='order rejected: active order count limit breached'
+2023-03-14 14:07:34,352 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=8.718916 client_order_id=46 message='order rejected: active order count limit breached'
+2023-03-14 14:07:34,353 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=8.720193 client_order_id=47 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,111 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=17.477107 client_order_id=70 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,112 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=17.478600 client_order_id=71 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,112 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=17.478848 client_order_id=72 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,112 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=17.478920 client_order_id=73 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,112 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=17.479072 client_order_id=74 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,112 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.479162 client_order_id=65 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,112 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.479229 client_order_id=66 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,112 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.479292 client_order_id=67 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,113 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.479830 client_order_id=68 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,113 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.479941 client_order_id=69 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,401 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=17.768232 client_order_id=75 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,402 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=17.768418 client_order_id=76 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,402 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=17.768494 client_order_id=77 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,402 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=17.768556 client_order_id=78 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,402 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=17.768612 client_order_id=79 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,403 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.769521 client_order_id=70 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,403 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.769842 client_order_id=71 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,404 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.770298 client_order_id=72 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,404 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.770796 client_order_id=73 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,404 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.771229 client_order_id=74 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,653 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.019677 client_order_id=80 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,653 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.020095 client_order_id=75 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,654 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.020308 client_order_id=76 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,654 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.020453 client_order_id=81 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,654 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.020615 client_order_id=77 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,654 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.020694 client_order_id=78 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,654 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.020758 client_order_id=79 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,654 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.020927 client_order_id=82 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,654 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.021028 client_order_id=83 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,654 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.021135 client_order_id=84 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,907 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.273990 client_order_id=85 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,907 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.274219 client_order_id=80 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,908 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.274427 client_order_id=86 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,908 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.274542 client_order_id=81 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,908 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.274609 client_order_id=82 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,908 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.274764 client_order_id=87 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,908 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.274867 client_order_id=83 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,908 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.274930 client_order_id=84 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,908 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.275078 client_order_id=88 message='order rejected: active order count limit breached'
+2023-03-14 14:07:43,908 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.275238 client_order_id=89 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,108 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.473982 client_order_id=90 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,109 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.475275 client_order_id=91 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,109 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.475637 client_order_id=92 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,109 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.475789 client_order_id=93 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,109 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.475856 client_order_id=94 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,109 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.475938 client_order_id=85 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,109 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.476019 client_order_id=86 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,109 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.476080 client_order_id=87 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,109 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.476180 client_order_id=88 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,109 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.476247 client_order_id=89 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,348 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.714892 client_order_id=95 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,348 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.715132 client_order_id=90 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,348 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.715238 client_order_id=91 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,349 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.715330 client_order_id=92 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,349 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.715395 client_order_id=93 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,349 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=18.715491 client_order_id=94 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,349 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.715698 client_order_id=96 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,349 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.715878 client_order_id=97 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,349 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.716027 client_order_id=98 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,349 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=18.716190 client_order_id=99 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,654 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.020806 client_order_id=100 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,654 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.021092 client_order_id=95 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,654 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.021197 client_order_id=96 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,655 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.021507 client_order_id=101 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,655 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.021591 client_order_id=102 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,655 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.021885 client_order_id=103 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,655 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.022015 client_order_id=104 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,655 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.022119 client_order_id=97 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,655 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.022182 client_order_id=98 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,655 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.022291 client_order_id=99 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,854 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.220590 client_order_id=105 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,854 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.220824 client_order_id=106 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,854 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.220936 client_order_id=100 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,854 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.221101 client_order_id=107 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,854 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.221199 client_order_id=101 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,855 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.221353 client_order_id=108 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,855 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.221452 client_order_id=102 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,855 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.221518 client_order_id=103 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,855 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.221661 client_order_id=109 message='order rejected: active order count limit breached'
+2023-03-14 14:07:44,855 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.221747 client_order_id=104 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,167 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.533400 client_order_id=110 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,167 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.533762 client_order_id=105 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,167 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.533842 client_order_id=106 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,167 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.534299 client_order_id=107 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,168 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.534388 client_order_id=108 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,168 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.534453 client_order_id=109 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,168 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.534553 client_order_id=111 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,168 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.534611 client_order_id=112 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,168 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.534666 client_order_id=113 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,168 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.534719 client_order_id=114 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,351 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.717239 client_order_id=115 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,351 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.717524 client_order_id=110 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,351 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.717603 client_order_id=111 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,351 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.717678 client_order_id=112 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,351 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.717743 client_order_id=113 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,351 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.717803 client_order_id=114 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,351 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.718061 client_order_id=116 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,351 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.718169 client_order_id=117 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,351 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.718309 client_order_id=118 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,352 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.718449 client_order_id=119 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,608 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.970304 client_order_id=120 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,608 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.974708 client_order_id=115 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,608 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.974872 client_order_id=116 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,608 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.975207 client_order_id=117 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,609 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.976271 client_order_id=118 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,610 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=19.976359 client_order_id=119 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,610 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.976486 client_order_id=121 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,610 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.976556 client_order_id=122 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,610 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.976618 client_order_id=123 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,610 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=19.976682 client_order_id=124 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,870 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.236377 client_order_id=120 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,871 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.237458 client_order_id=121 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,871 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.237545 client_order_id=122 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,871 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.237612 client_order_id=123 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,871 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.237675 client_order_id=124 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,871 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.237886 client_order_id=125 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,871 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.238178 client_order_id=126 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,872 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.238598 client_order_id=127 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,872 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.238857 client_order_id=128 message='order rejected: active order count limit breached'
+2023-03-14 14:07:45,872 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.239237 client_order_id=129 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,110 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.476351 client_order_id=125 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,110 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.476762 client_order_id=126 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,110 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.476884 client_order_id=127 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,110 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.476955 client_order_id=128 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,110 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.477094 client_order_id=129 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,110 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.477161 client_order_id=130 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,114 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.481090 client_order_id=130 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,115 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.481501 client_order_id=131 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,115 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.481825 client_order_id=132 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,115 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.482085 client_order_id=133 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,116 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.482398 client_order_id=134 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,118 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.484533 client_order_id=135 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,119 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.485898 client_order_id=136 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,119 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.486087 client_order_id=137 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,437 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.804187 client_order_id=131 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,438 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.804359 client_order_id=132 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,438 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.804445 client_order_id=133 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,438 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.804512 client_order_id=134 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,438 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.804576 client_order_id=135 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,438 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=20.804641 client_order_id=136 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,440 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.806553 client_order_id=138 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,440 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.807164 client_order_id=139 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,441 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.807535 client_order_id=140 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,441 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.807815 client_order_id=141 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,441 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.808058 client_order_id=142 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,441 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.808295 client_order_id=143 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,442 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.808544 client_order_id=144 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,442 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=20.808971 client_order_id=145 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,672 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.038107 client_order_id=137 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,672 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.038660 client_order_id=138 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,672 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.038743 client_order_id=139 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,672 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.038842 client_order_id=140 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,672 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.038938 client_order_id=141 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,672 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.039002 client_order_id=142 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,674 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.040718 client_order_id=146 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,674 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.041238 client_order_id=147 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,675 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.042024 client_order_id=148 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,676 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.042473 client_order_id=149 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,676 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.042847 client_order_id=150 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,676 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.043200 client_order_id=151 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,677 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.043464 client_order_id=152 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,679 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.045799 client_order_id=153 message='order rejected: active order count limit breached'
+2023-03-14 14:07:46,850 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.216546 client_order_id=146 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:46,850 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.216717 client_order_id=147 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:46,850 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.216815 client_order_id=148 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:46,850 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.216923 client_order_id=149 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:46,850 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.216987 client_order_id=150 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:46,863 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.229410 client_order_id=158 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:46,863 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.229953 client_order_id=159 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:46,864 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.230453 client_order_id=160 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:46,864 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.230707 client_order_id=161 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:46,864 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.230949 client_order_id=162 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,122 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.488690 client_order_id=152 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,122 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.488844 client_order_id=153 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,123 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.489504 client_order_id=154 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,123 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.489628 client_order_id=155 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,123 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.489697 client_order_id=156 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,123 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.489857 client_order_id=165 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,123 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.489921 client_order_id=166 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,123 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.489984 client_order_id=167 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,123 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.490043 client_order_id=168 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,123 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.490102 client_order_id=169 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,350 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.715865 client_order_id=157 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,350 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.716618 client_order_id=158 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,350 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.716696 client_order_id=159 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,350 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.716758 client_order_id=160 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,350 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=21.716814 client_order_id=161 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,362 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.728323 client_order_id=171 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,362 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.728846 client_order_id=172 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,362 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.729147 client_order_id=173 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,363 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.729427 client_order_id=174 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,363 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=21.729740 client_order_id=175 message='order rejected: in cross with an existing order'
+2023-03-14 14:07:47,656 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=22.023034 client_order_id=162 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,657 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=22.023642 client_order_id=163 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,657 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=22.023991 client_order_id=164 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,657 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=22.024078 client_order_id=165 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,657 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=22.024145 client_order_id=166 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,658 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.024641 client_order_id=177 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,658 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.024821 client_order_id=178 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,658 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.024976 client_order_id=179 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,658 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.025125 client_order_id=180 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,658 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.025271 client_order_id=181 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,920 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=22.286915 client_order_id=167 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,921 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=22.287445 client_order_id=168 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,921 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=22.287537 client_order_id=169 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,921 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=22.287601 client_order_id=170 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,921 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=22.287658 client_order_id=171 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,932 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.294896 client_order_id=182 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,933 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.298570 client_order_id=183 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,934 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.300390 client_order_id=184 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,934 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.300603 client_order_id=185 message='order rejected: active order count limit breached'
+2023-03-14 14:07:47,934 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.300691 client_order_id=186 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,118 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.483314 client_order_id=189 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,118 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.484989 client_order_id=190 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,119 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.485401 client_order_id=191 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,119 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.485722 client_order_id=192 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,119 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.485977 client_order_id=193 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,119 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.486219 client_order_id=194 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,120 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.486457 client_order_id=195 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,120 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.486691 client_order_id=196 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,120 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.486989 client_order_id=197 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,120 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.487219 client_order_id=198 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,122 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.487456 client_order_id=199 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,124 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.489115 client_order_id=200 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,124 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.491303 client_order_id=201 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,408 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.771265 client_order_id=202 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,408 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.774980 client_order_id=203 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,408 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.775270 client_order_id=204 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,409 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.775499 client_order_id=205 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,409 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.775730 client_order_id=206 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,409 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.775971 client_order_id=207 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,409 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.776210 client_order_id=208 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,410 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.776909 client_order_id=209 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,410 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.777291 client_order_id=210 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,411 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.777561 client_order_id=211 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,411 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.777911 client_order_id=212 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,411 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.778193 client_order_id=213 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,412 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.778415 client_order_id=214 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,621 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.986772 client_order_id=215 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,622 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.988004 client_order_id=216 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,622 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.988457 client_order_id=217 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,622 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.988543 client_order_id=218 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,622 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.988609 client_order_id=219 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,622 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.988671 client_order_id=220 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,622 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.988735 client_order_id=221 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,622 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.988793 client_order_id=222 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,622 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.988850 client_order_id=223 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,622 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.988907 client_order_id=224 message='order rejected: active order count limit breached'
+2023-03-14 14:07:48,622 [INFO   ] [COMPETITOR] 'TraderTwo' sent error message: time=22.989084 client_order_id=225 message='order rejected: active order count limit breached'
+2023-03-14 14:07:49,032 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-14 14:07:49,032 [INFO   ] [APP] closing event loop
