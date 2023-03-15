@@ -21,7 +21,7 @@ from typing import List
 from ready_trader_go import BaseAutoTrader, Instrument, Lifespan, MAXIMUM_ASK, MINIMUM_BID, Side
 import numpy as np; import time
 
-LOT_SIZE = 10; TICK_SIZE_IN_CENTS = 100
+LOT_SIZE = 20; TICK_SIZE_IN_CENTS = 100
 POSITION_LIMIT = 100; MESSAGE_LIMIT = 50
 ARBITRAGE_HCAP = 50; MARKET_CAP = ARBITRAGE_HCAP
 MIN_BID_NEAREST_TICK = (MINIMUM_BID + TICK_SIZE_IN_CENTS) // TICK_SIZE_IN_CENTS * TICK_SIZE_IN_CENTS
@@ -82,8 +82,9 @@ class AutoTrader(BaseAutoTrader):
                 if net_position % 10 != 0 and (current_time - self.recent_orders[0]) > 1 and self.future_position < 90:
                     self.send_hedge_order(next(self.order_ids), Side.ASK, BEST_BID_PRICE-1000, net_position % 10)
                     self.future_position -= (net_position % 10)
-                    self.recent_orders = np.roll(self.recent_orders, -1)                                            # They see Dirk rolling...
-                    self.recent_orders[-1] = current_time                                                           # Change the last value
+                    self.recent_orders = np.roll(self.recent_orders, -1)                                                # They see Dirk rolling...
+                    self.recent_orders[-1] = current_time                                                               # Change the last value
+                    print(self.recent_orders)
                     
             net_position = self.etf_position + self.future_position
             if net_position < 0:
