@@ -21,7 +21,7 @@ font = fnt.FontProperties(family='C059', weight='normal', style='normal', size=8
 team_names_96 = ['Jagiellonian5_99816','FiscalFuries_21347','Lzxssx_522213','revitpo_711911','theMoneyMakers_420698','HIMS_1453','Globetrotters_20813']
 team_names_176 = ['revitpo_711911', 'Globetrotters_20813', 'GrowmoreAP_772629', 'Hannystars_17', 'Ad2f2marmar_314159', 'ReadyTraderHoe_9698', 'Jagiellonian5_99816','FiscalFuries_21347']
 
-Time,Team,BuyVolume,SellVolume,EtfPosition,FuturePosition,EtfPrice,FuturePrice,TotalFees,AccountBalance,ProfitOrLoss = np.loadtxt("match96.csv", delimiter=",", unpack=True, skiprows=1)
+Time,Team,BuyVolume,SellVolume,EtfPosition,FuturePosition,EtfPrice,FuturePrice,TotalFees,AccountBalance,ProfitOrLoss = np.loadtxt("analysis/match96.csv", delimiter=",", unpack=True, skiprows=1)
 Team0, Team1, Team2, Team3, Team4, Team5, Team6, Team7 = [],[],[],[],[],[],[], []
 Team0_Time, Team1_Time, Team2_Time, Team3_Time, Team4_Time, Team5_Time, Team6_Time, Team7_Time = [],[],[],[],[],[],[],[]
 
@@ -58,7 +58,7 @@ plt.plot(Team4_Time, Team4, 'x', label = team_names_96[4] + ", Profit or Loss", 
 plt.plot(Team5_Time, Team5, 'x', label = team_names_96[5] + ", Profit or Loss", **pointStyleP)
 plt.plot(Team6_Time, Team6, 'x', label = team_names_96[6] + ", Profit or Loss", **pointStyleB)
 
-Time,Team,BuyVolume,SellVolume,EtfPosition,FuturePosition,EtfPrice,FuturePrice,TotalFees,AccountBalance,ProfitOrLoss = np.loadtxt("match176.csv", delimiter=",", unpack=True, skiprows=1)
+Time,Team,BuyVolume,SellVolume,EtfPosition,FuturePosition,EtfPrice,FuturePrice,TotalFees,AccountBalance,ProfitOrLoss = np.loadtxt("analysis/match176.csv", delimiter=",", unpack=True, skiprows=1)
 Team0, Team1, Team2, Team3, Team4, Team5, Team6, Team7 = [],[],[],[],[],[],[], []
 Team0_Time, Team1_Time, Team2_Time, Team3_Time, Team4_Time, Team5_Time, Team6_Time, Team7_Time = [],[],[],[],[],[],[],[]
 
