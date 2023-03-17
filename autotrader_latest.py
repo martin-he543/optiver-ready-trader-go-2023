@@ -20,6 +20,7 @@ import itertools
 from typing import List
 from ready_trader_go import BaseAutoTrader, Instrument, Lifespan, MAXIMUM_ASK, MINIMUM_BID, Side
 import numpy as np; import time
+from contextlib import suppress
 
 LOT_SIZE = 10; TICK_SIZE_IN_CENTS = 100
 POSITION_LIMIT = 100; MESSAGE_LIMIT = 50
@@ -41,7 +42,7 @@ class AutoTrader(BaseAutoTrader):
         self.recent_orders = np.zeros((50)); self.market_info = np.zeros((1, 5))
         self.future_position = 0; self.etf_position = 0
         self.legal_move = False; self.legal_trade = False; self.legality = False
-        self.previous_order_id = 0
+        self.previous_order_id = 0; self.previous_ids = []
 
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
         """Called when the exchange detects an error. If the error pertains to a particular order, then the 
@@ -161,18 +162,18 @@ class AutoTrader(BaseAutoTrader):
         that price."""
         
         # print("POSITIONS:", self.etf_position, self.future_position)
-        print("FILLED", self.previous_order_id, client_order_id)
-        
+        print("FILLED", self.previous_order_id, client_order_id, self.previous_ids)
+
         if np.abs(self.future_position) == np.abs(self.etf_position):
             self.legal_move = True
         else:
             self.legal_move = False
-            self.previous_order_id = client_order_id
-            print("CRASH AVERSION ATTEMPT")        
+            self.previous_order_id = client_order_id  
 
         current_time = time.time() - start_time
         if client_order_id in self.bids:
             self.previous_order_id = client_order_id
+            self.previous_ids.append(self.previous_order_id)
             self.etf_position += volume                                                                                 # ETF position increases by update position
             if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
                 self.send_hedge_order(next(self.order_ids), Side.ASK, MIN_BID_NEAREST_TICK, volume)
@@ -182,6 +183,7 @@ class AutoTrader(BaseAutoTrader):
             
         elif client_order_id in self.asks:
             self.previous_order_id = client_order_id
+            self.previous_ids.append(self.previous_order_id)
             self.etf_position -= volume
             if (current_time - self.recent_orders[0]) > 1:                                                              # CHECK if more than 50 messages in 1 second - STOP!
                 self.send_hedge_order(next(self.order_ids), Side.BID, MAX_ASK_NEAREST_TICK, volume)
@@ -196,12 +198,17 @@ class AutoTrader(BaseAutoTrader):
         remaining_volume is the number of lots yet to be traded and fees is the total fees for this order. Remember that
         you pay fees for being a market taker, but you receive fees for being a market maker, so fees can be negative.
         If an order is cancelled its remaining volume will be zero."""
+
+        with suppress(Exception):
+            if self.previous_order_id > self.previous_ids[-1]:
+                print("WEIRD SITUATION")
+                return None
         
         self.logger.info("received order status for order %d with fill volume %d remaining %d and fees %d",
                          client_order_id, fill_volume, remaining_volume, fees)
         
         print("FILLED", self.previous_order_id, client_order_id)
-        
+            
         # if client_order_id in self.bids:
         #     self.bids.discard(client_order_id)
         #     self.send_cancel_order(self.bid_id)
@@ -212,9 +219,11 @@ class AutoTrader(BaseAutoTrader):
         if remaining_volume == 0:
             if client_order_id == self.bid_id:
                 self.previous_order_id = client_order_id
+                self.previous_ids.append(self.previous_order_id)
                 self.bid_id = 0
             elif client_order_id == self.ask_id:
                 self.previous_order_id = client_order_id
+                self.previous_ids.append(self.previous_order_id)
                 self.ask_id = 0
             self.bids.discard(client_order_id)
             self.asks.discard(client_order_id)
