@@ -38,6 +38,8 @@
   "Traders": {
     "TraderOne": "secret",
     "TraderTwo": "secret",
-    "TraderThree": "secret"
+    "TraderThree": "secret",
+    "TradeFour": "secret",
+    "TraderFive": "secret"
   }
 }
