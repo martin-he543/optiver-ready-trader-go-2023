@@ -82,31 +82,31 @@ class AutoTrader(BaseAutoTrader):
                         self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
                         self.recent_orders[-1] = current_time                                                           # Change the last value
                     if net_position % 10 != 0:
-                        self.send_hedge_order(next(self.order_ids), Side.ASK, BEST_BID_PRICE, net_position % 10)
+                        self.send_hedge_order(next(self.order_ids), Side.ASK, BEST_BID_PRICE, net_position % LOT_SIZE)
                         self.future_position += (net_position % 10)
                         self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
                         self.recent_orders[-1] = current_time                                                           # Change the last value
             if net_position > 0:
                 BEST_ASK_PRICE = self.market_info[1]                                                                # HEDGE - Uses FUTURE_AP instead of MIN_BID_NEAREST_TICK
                 if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
-                    for i in range(0, net_position // 10):
+                    for i in range(0, net_position // LOT_SIZE):
                         self.send_hedge_order(next(self.order_ids), Side.BID, BEST_ASK_PRICE, LOT_SIZE)                 # HEDGE - send an order
                         self.future_position -= LOT_SIZE
                         self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
                         self.recent_orders[-1] = current_time                                                           # Change the last value
-                    if net_position % 10 != 0:
-                        self.send_hedge_order(next(self.order_ids), Side.BID, BEST_ASK_PRICE, net_position % 10)
-                        self.future_position -= (net_position % 10)
+                    if net_position % LOT_SIZE != 0:
+                        self.send_hedge_order(next(self.order_ids), Side.BID, BEST_ASK_PRICE, net_position % LOT_SIZE)
+                        self.future_position -= (net_position % LOT_SIZE)
                         self.recent_orders= np.roll(self.recent_orders, -1)                                             # They see Dirk rolling...
                         self.recent_orders[-1] = current_time                                                           # Change the last value
         
         if instrument == Instrument.ETF:
-            FUTURE_AP = self.market_info[1]; FUTURE_AV = self.market_info[2]                                    # Looks at best (low) FUTURE ask price
-            FUTURE_BP = self.market_info[3]; FUTURE_BV = self.market_info[4]                                    # Looks at best FUTURE bid price
+            FUTURE_AP = self.market_info[1]; FUTURE_AV = self.market_info[2]                                            # Looks at best (low) FUTURE ask price
+            FUTURE_BP = self.market_info[3]; FUTURE_BV = self.market_info[4]                                            # Looks at best FUTURE bid price
             ETF_AP = ask_prices[0]; ETF_AV = ask_volumes[0]
             ETF_BP = bid_prices[0]; ETF_BV = bid_volumes[0]     
-            MAX_ORDERS_BUY_ETF = np.min([(POSITION_LIMIT - self.etf_position)//10, ETF_AV//10 + 1])
-            MAX_ORDERS_SELL_ETF = np.min([(self.etf_position + POSITION_LIMIT)//10, ETF_BV//10 + 1])
+            MAX_ORDERS_BUY_ETF = np.min([(POSITION_LIMIT - self.etf_position)//LOT_SIZE, ETF_AV//LOT_SIZE + 1])
+            MAX_ORDERS_SELL_ETF = np.min([(self.etf_position + POSITION_LIMIT)//LOT_SIZE, ETF_BV//LOT_SIZE + 1])
             
             if (ETF_AP != 0) and (FUTURE_BP * 0.9998 - ETF_AP * 1.0002) > 0 and (self.etf_position < POSITION_LIMIT - 9):
                 current_time = time.time() - start_time
@@ -160,7 +160,11 @@ class AutoTrader(BaseAutoTrader):
         """Called when one of your orders is filled, partially or fully. The price is the price at which the order was 
         (partially) filled, which may be better than the order's limit price. The volume is the number of lots filled at 
         that price."""
-        
+        if len(self.previous_ids) > 1: 
+            # print(self.previous_order_id, self.previous_ids[-1])
+            if self.previous_ids[-1] < self.previous_ids[-2] - 1:
+                print("FUCKITY FUCK FUCK")
+                
         # print("POSITIONS:", self.etf_position, self.future_position)
         print("FILLED", self.previous_order_id, client_order_id, self.previous_ids)
 
@@ -199,15 +203,16 @@ class AutoTrader(BaseAutoTrader):
         you pay fees for being a market taker, but you receive fees for being a market maker, so fees can be negative.
         If an order is cancelled its remaining volume will be zero."""
 
-        with suppress(Exception):
-            if self.previous_order_id > self.previous_ids[-1]:
-                print("WEIRD SITUATION")
-                return None
+        # with suppress(Exception):
+        if len(self.previous_ids) > 1: 
+            # print(self.previous_order_id, self.previous_ids[-1])
+            if self.previous_ids[-1] < self.previous_ids[-2] - 1:
+                print("FUCKITY FUCK FUCK")
         
         self.logger.info("received order status for order %d with fill volume %d remaining %d and fees %d",
                          client_order_id, fill_volume, remaining_volume, fees)
         
-        print("FILLED", self.previous_order_id, client_order_id)
+        print("FILLED", self.previous_order_id, client_order_id, self.previous_ids)
             
         # if client_order_id in self.bids:
         #     self.bids.discard(client_order_id)

@@ -1727,3 +1727,445 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2023-03-17 11:53:45,887 [INFO   ] [CONNECTION] fd=21 connection lost
 2023-03-17 11:54:22,115 [INFO   ] [APP] SIGTERM signal received - shutting down...
 2023-03-17 11:54:22,116 [INFO   ] [APP] closing event loop
+2023-03-17 15:27:45,524 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_round_1.py}
+2023-03-17 15:27:45,524 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.01,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:27:45,525 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:27:45,525 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:27:45,526 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:27:45,526 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:27:45,528 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:27:46,126 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:34904
+2023-03-17 15:27:46,126 [INFO   ] [EXECUTION] fd=22 'TraderTwo' is ready!
+2023-03-17 15:27:46,538 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:27:47,281 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:55614
+2023-03-17 15:28:09,282 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:28:09,282 [INFO   ] [APP] closing event loop
+2023-03-17 15:28:29,365 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_round_1.py}
+2023-03-17 15:28:29,366 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:28:29,369 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:28:29,369 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:28:29,369 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:28:29,369 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:28:29,369 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:28:29,968 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:50330
+2023-03-17 15:28:29,968 [INFO   ] [EXECUTION] fd=22 'TraderTwo' is ready!
+2023-03-17 15:28:30,381 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:28:31,104 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:54046
+2023-03-17 15:28:49,404 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:28:49,405 [INFO   ] [APP] closing event loop
+2023-03-17 15:30:23,020 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_round_1.py}
+2023-03-17 15:30:23,020 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:30:23,023 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:30:23,023 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:30:23,024 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:30:23,024 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:30:23,024 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:30:23,622 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:33392
+2023-03-17 15:30:23,622 [INFO   ] [EXECUTION] fd=22 'TraderTwo' is ready!
+2023-03-17 15:30:24,034 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:30:24,772 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:51568
+2023-03-17 15:30:40,608 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:30:40,608 [INFO   ] [APP] closing event loop
+2023-03-17 15:30:51,658 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:30:51,659 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:30:51,662 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:30:51,662 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:30:51,662 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:30:51,662 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:30:51,663 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:30:52,269 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:51050
+2023-03-17 15:30:52,269 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:30:52,672 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:30:53,398 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:40162
+2023-03-17 15:31:10,627 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=127 message='ETF position limit breached'
+2023-03-17 15:31:10,627 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:31:10,627 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=139 message='ETF position limit breached'
+2023-03-17 15:31:10,627 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:31:10,627 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 15:31:16,198 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:31:16,198 [INFO   ] [APP] closing event loop
+2023-03-17 15:31:32,432 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:31:32,432 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.01,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:31:32,435 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:31:32,435 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:31:32,435 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:31:32,436 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:31:32,436 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:31:33,018 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:37172
+2023-03-17 15:31:33,019 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:31:33,444 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:31:34,159 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:34484
+2023-03-17 15:31:51,397 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=140 message='ETF position limit breached'
+2023-03-17 15:31:51,397 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:31:51,398 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=150 message='ETF position limit breached'
+2023-03-17 15:31:51,398 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:31:51,398 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 15:32:07,692 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:32:07,693 [INFO   ] [APP] closing event loop
+2023-03-17 15:33:31,014 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:33:31,014 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.01,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:33:31,018 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:33:31,018 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:33:31,018 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:33:31,018 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:33:31,018 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:33:31,621 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:53132
+2023-03-17 15:33:31,622 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:33:32,026 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:33:32,793 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:50350
+2023-03-17 15:33:49,986 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=119 message='ETF position limit breached'
+2023-03-17 15:33:49,986 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:33:49,986 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=141 message='ETF position limit breached'
+2023-03-17 15:33:49,987 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:33:49,987 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 15:33:53,710 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:33:53,710 [INFO   ] [APP] closing event loop
+2023-03-17 15:33:57,777 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:33:57,777 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:33:57,780 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:33:57,780 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:33:57,781 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:33:57,781 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:33:57,781 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:33:58,383 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:47986
+2023-03-17 15:33:58,383 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:33:58,790 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:33:59,522 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:36006
+2023-03-17 15:34:04,623 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:34:04,624 [INFO   ] [APP] closing event loop
+2023-03-17 15:35:35,656 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:35:35,657 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.1,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:35:35,660 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:35:35,660 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:35:35,660 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:35:35,661 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:35:35,661 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:35:36,266 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:49048
+2023-03-17 15:35:36,266 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:35:36,668 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:35:37,413 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:41406
+2023-03-17 15:35:47,710 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:35:47,711 [INFO   ] [APP] closing event loop
+2023-03-17 15:35:52,457 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:35:52,457 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:35:52,460 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:35:52,460 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:35:52,461 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:35:52,461 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:35:52,461 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:35:53,062 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:51084
+2023-03-17 15:35:53,062 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:35:53,469 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:35:54,209 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:47908
+2023-03-17 15:36:11,455 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=125 message='ETF position limit breached'
+2023-03-17 15:36:11,455 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:36:11,455 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=147 message='ETF position limit breached'
+2023-03-17 15:36:11,455 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:36:11,457 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 15:36:30,960 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:36:30,960 [INFO   ] [APP] closing event loop
+2023-03-17 15:37:29,221 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:37:29,221 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:37:29,225 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:37:29,225 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:37:29,226 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:37:29,226 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:37:29,226 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:37:29,832 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:42972
+2023-03-17 15:37:29,832 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:37:30,235 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:37:30,239 [ERROR  ] [CONNECTION] fd=22 connection lost:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 848, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2023-03-17 15:37:30,239 [WARNING] [EXECUTION] fd=22 lost connection to auto-trader:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 848, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2023-03-17 15:37:30,523 [INFO   ] [TIMER] shutting down the match: time=0.286988 reason='no remaining competitors'
+2023-03-17 15:37:30,524 [INFO   ] [MATCH_EVENTS] writer thread complete after processing 201 match events
+2023-03-17 15:37:30,524 [INFO   ] [SCORE_BOARD] writer thread complete after processing 3 score records
+2023-03-17 15:37:30,524 [INFO   ] [APP] closing event loop
+2023-03-17 15:37:41,759 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:37:41,759 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:37:41,764 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:37:41,764 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:37:41,765 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:37:41,765 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:37:41,765 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:37:42,365 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:48210
+2023-03-17 15:37:42,366 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:37:42,774 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:37:43,559 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:33608
+2023-03-17 15:37:48,057 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:37:48,057 [INFO   ] [APP] closing event loop
+2023-03-17 15:38:53,660 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:38:53,660 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:38:53,663 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:38:53,663 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:38:53,664 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:38:53,664 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:38:53,664 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:38:54,269 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:58356
+2023-03-17 15:38:54,269 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:38:54,672 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:38:54,677 [ERROR  ] [CONNECTION] fd=22 connection lost:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 848, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2023-03-17 15:38:54,677 [WARNING] [EXECUTION] fd=22 lost connection to auto-trader:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 848, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2023-03-17 15:38:54,967 [INFO   ] [TIMER] shutting down the match: time=0.293147 reason='no remaining competitors'
+2023-03-17 15:38:54,968 [INFO   ] [MATCH_EVENTS] writer thread complete after processing 197 match events
+2023-03-17 15:38:54,968 [INFO   ] [SCORE_BOARD] writer thread complete after processing 3 score records
+2023-03-17 15:38:54,968 [INFO   ] [APP] closing event loop
+2023-03-17 15:39:06,922 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:39:06,922 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:39:06,925 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:39:06,925 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:39:06,925 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:39:06,925 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:39:06,925 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:39:07,531 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:48798
+2023-03-17 15:39:07,532 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:39:07,933 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:39:08,664 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:48412
+2023-03-17 15:39:11,879 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:39:11,879 [INFO   ] [APP] closing event loop
+2023-03-17 15:48:05,875 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_round_1.py}
+2023-03-17 15:48:05,876 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:48:05,879 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:48:05,879 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:48:05,880 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:48:05,880 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:48:05,880 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:48:06,491 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:51960
+2023-03-17 15:48:06,491 [INFO   ] [EXECUTION] fd=22 'TraderTwo' is ready!
+2023-03-17 15:48:06,741 [INFO   ] [APP] SIGINT signal received - shutting down...
+2023-03-17 15:48:06,741 [INFO   ] [APP] closing event loop
+2023-03-17 15:48:16,040 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:48:16,040 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:48:16,043 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:48:16,043 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:48:16,043 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:48:16,043 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:48:16,044 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:48:16,658 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:42956
+2023-03-17 15:48:16,659 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:48:17,052 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:48:17,834 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:33908
+2023-03-17 15:48:30,745 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:48:30,745 [INFO   ] [APP] closing event loop
+2023-03-17 15:48:44,633 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:48:44,633 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:48:44,637 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:48:44,637 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:48:44,637 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:48:44,637 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:48:44,638 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:48:45,242 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:35618
+2023-03-17 15:48:45,242 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:48:45,647 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:48:45,650 [ERROR  ] [CONNECTION] fd=22 connection lost:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 848, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2023-03-17 15:48:45,650 [WARNING] [EXECUTION] fd=22 lost connection to auto-trader:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 848, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2023-03-17 15:48:45,872 [INFO   ] [TIMER] shutting down the match: time=0.223902 reason='no remaining competitors'
+2023-03-17 15:48:45,872 [INFO   ] [SCORE_BOARD] writer thread complete after processing 3 score records
+2023-03-17 15:48:45,873 [INFO   ] [MATCH_EVENTS] writer thread complete after processing 193 match events
+2023-03-17 15:48:45,873 [INFO   ] [APP] closing event loop
+2023-03-17 15:49:08,948 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:49:08,948 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:49:08,951 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:49:08,951 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:49:08,952 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:49:08,952 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:49:08,952 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:49:09,539 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:37234
+2023-03-17 15:49:09,539 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:49:09,961 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:49:10,694 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:54368
+2023-03-17 15:49:12,718 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:49:12,719 [INFO   ] [APP] closing event loop
+2023-03-17 15:49:25,900 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:49:25,901 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:49:25,904 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:49:25,904 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:49:25,904 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:49:25,905 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:49:25,905 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:49:26,517 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:48554
+2023-03-17 15:49:26,518 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:49:26,913 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:49:27,659 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:55766
+2023-03-17 15:49:33,515 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=6.568020 client_order_id=33 message='ETF position limit breached'
+2023-03-17 15:49:33,515 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=6.568020
+2023-03-17 15:49:33,516 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 15:49:34,429 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:49:34,429 [INFO   ] [APP] closing event loop
+2023-03-17 15:49:51,524 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:49:51,525 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:49:51,528 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:49:51,528 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:49:51,529 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:49:51,529 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:49:51,529 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:49:52,135 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:50944
+2023-03-17 15:49:52,136 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:49:52,537 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:49:52,541 [ERROR  ] [CONNECTION] fd=22 connection lost:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 848, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2023-03-17 15:49:52,542 [WARNING] [EXECUTION] fd=22 lost connection to auto-trader:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/asyncio/selector_events.py", line 848, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+2023-03-17 15:49:52,775 [INFO   ] [TIMER] shutting down the match: time=0.236997 reason='no remaining competitors'
+2023-03-17 15:49:52,776 [INFO   ] [SCORE_BOARD] writer thread complete after processing 3 score records
+2023-03-17 15:49:52,777 [INFO   ] [MATCH_EVENTS] writer thread complete after processing 193 match events
+2023-03-17 15:49:52,777 [INFO   ] [APP] closing event loop
+2023-03-17 15:51:22,225 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:51:22,225 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:51:22,228 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:51:22,228 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:51:22,229 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:51:22,229 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:51:22,229 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:51:22,828 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:43046
+2023-03-17 15:51:22,829 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:51:23,237 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:51:23,952 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:32782
+2023-03-17 15:51:40,524 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:51:40,524 [INFO   ] [APP] closing event loop
+2023-03-17 15:52:59,104 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:52:59,104 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:52:59,107 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:52:59,107 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:52:59,108 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:52:59,108 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:52:59,108 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:52:59,703 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:41778
+2023-03-17 15:52:59,703 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:53:00,118 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:53:00,866 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:59594
+2023-03-17 15:53:18,123 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=147 message='ETF position limit breached'
+2023-03-17 15:53:18,123 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:53:18,125 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 15:53:18,233 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:53:18,233 [INFO   ] [APP] closing event loop
+2023-03-17 15:54:05,002 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:54:05,002 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:54:05,006 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:54:05,006 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:54:05,006 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:54:05,007 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:54:05,007 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:54:05,615 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:57212
+2023-03-17 15:54:05,615 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:54:06,015 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:54:06,758 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:40256
+2023-03-17 15:54:23,972 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=116 message='ETF position limit breached'
+2023-03-17 15:54:23,972 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:54:23,972 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=135 message='ETF position limit breached'
+2023-03-17 15:54:23,972 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:54:23,973 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 15:55:23,973 [INFO   ] [COMPETITOR] Unhedged lots timer expired for TraderOne at etf=111 fut=-91 rel=20
+2023-03-17 15:55:58,381 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:55:58,381 [INFO   ] [APP] closing event loop
+2023-03-17 15:56:00,940 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:56:00,940 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:56:00,943 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:56:00,943 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:56:00,944 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:56:00,944 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:56:00,944 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:56:01,549 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:41742
+2023-03-17 15:56:01,549 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:56:01,953 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:56:02,700 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:57564
+2023-03-17 15:56:40,426 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:56:40,427 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:56:40,430 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:56:40,430 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:56:40,430 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:56:40,430 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:56:40,430 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:56:41,032 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:52330
+2023-03-17 15:56:41,033 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:56:41,438 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:56:42,168 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:41070
+2023-03-17 15:56:59,438 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=114 message='ETF position limit breached'
+2023-03-17 15:56:59,438 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:56:59,439 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=133 message='ETF position limit breached'
+2023-03-17 15:56:59,439 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:56:59,441 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 15:57:59,440 [INFO   ] [COMPETITOR] Unhedged lots timer expired for TraderOne at etf=119 fut=-99 rel=20
+2023-03-17 15:58:45,591 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:58:45,591 [INFO   ] [APP] closing event loop
+2023-03-17 15:58:48,229 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:58:48,229 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:58:48,232 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:58:48,232 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:58:48,233 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:58:48,233 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:58:48,233 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:58:48,833 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:51770
+2023-03-17 15:58:48,833 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:58:49,242 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:58:49,962 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:50884
+2023-03-17 15:59:07,196 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=130 message='ETF position limit breached'
+2023-03-17 15:59:07,196 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:59:07,196 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=140 message='ETF position limit breached'
+2023-03-17 15:59:07,196 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 15:59:07,197 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 15:59:46,081 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 15:59:46,081 [INFO   ] [APP] closing event loop
+2023-03-17 15:59:48,153 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 15:59:48,154 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 15:59:48,157 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 15:59:48,157 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 15:59:48,157 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 15:59:48,157 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 15:59:48,158 [INFO   ] [INFORMATION] information channel established
+2023-03-17 15:59:48,760 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:46370
+2023-03-17 15:59:48,761 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 15:59:49,166 [INFO   ] [CONTROLLER] market open
+2023-03-17 15:59:49,891 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:40312
+2023-03-17 16:00:07,124 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=108 message='ETF position limit breached'
+2023-03-17 16:00:07,124 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 16:00:07,125 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=17.952090 client_order_id=131 message='ETF position limit breached'
+2023-03-17 16:00:07,125 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=17.952090
+2023-03-17 16:00:07,125 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 16:00:34,071 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 16:00:34,071 [INFO   ] [APP] closing event loop
+2023-03-17 16:00:39,666 [INFO   ] [APP] exchange started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-17 16:00:39,666 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/market_data1.csv","MarketEventInterval":0.05,"MarketOpenDelay":1.0,"MatchEventsFile":"match_events.csv","ScoreBoardFile":"score_board.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"Host":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Hud":{"Host":"127.0.0.1","Port":12347},"Information":{"Type":"mmap","Name":"info.dat"},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":50,"PositionLimit":100},"Traders":{"TraderOne":"secret","TraderTwo":"secret","TraderThree":"secret","TradeFour":"secret","TraderFive":"secret"}}
+2023-03-17 16:00:39,669 [INFO   ] [CONTROLLER] starting the match
+2023-03-17 16:00:39,670 [INFO   ] [EXECUTION] starting execution server: host=127.0.0.1 port=12345
+2023-03-17 16:00:39,670 [INFO   ] [INFORMATION] starting information publisher: type=mmap name=info.dat
+2023-03-17 16:00:39,670 [INFO   ] [HEADS_UP] starting heads-up display server: host=127.0.0.1 port=12347
+2023-03-17 16:00:39,670 [INFO   ] [INFORMATION] information channel established
+2023-03-17 16:00:40,273 [INFO   ] [CONNECTION] fd=22 connection established: peer=127.0.0.1:55490
+2023-03-17 16:00:40,273 [INFO   ] [EXECUTION] fd=22 'TraderOne' is ready!
+2023-03-17 16:00:40,679 [INFO   ] [CONTROLLER] market open
+2023-03-17 16:00:41,422 [INFO   ] [CONNECTION] fd=23 connection established: peer=127.0.0.1:34728
+2023-03-17 16:00:55,636 [INFO   ] [COMPETITOR] 'TraderOne' sent error message: time=14.956856 client_order_id=99 message='ETF position limit breached'
+2023-03-17 16:00:55,636 [INFO   ] [COMPETITOR] 'TraderOne' closing execution channel at time=14.956856
+2023-03-17 16:00:55,637 [INFO   ] [CONNECTION] fd=22 connection lost
+2023-03-17 16:01:00,884 [INFO   ] [APP] SIGTERM signal received - shutting down...
+2023-03-17 16:01:00,884 [INFO   ] [APP] closing event loop
