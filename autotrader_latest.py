@@ -48,7 +48,7 @@ class AutoTrader(BaseAutoTrader):
         """Called when the exchange detects an error. If the error pertains to a particular order, then the 
         client_order_id will identify that order, otherwise the client_order_id will be zero."""
             
-        print("FUCK", self.etf_position + 10, self.future_position + 10)
+        print("FUCK", self.etf_position, self.future_position)
         self.logger.warning("error with order %d: %s", client_order_id, error_message.decode())
         if client_order_id != 0 and (client_order_id in self.bids or client_order_id in self.asks):
             self.on_order_status_message(client_order_id, 0, 0, 0)
@@ -163,7 +163,10 @@ class AutoTrader(BaseAutoTrader):
         if len(self.previous_ids) > 1: 
             # print(self.previous_order_id, self.previous_ids[-1])
             if self.previous_ids[-1] < self.previous_ids[-2] - 1:
-                print("FUCKITY FUCK FUCK")
+                print("FUCKITY FUCK FUCK 1")
+
+        #     self.bids.discard(client_order_id)
+        #     self.send_cancel_order(self.bid_id)
                 
         # print("POSITIONS:", self.etf_position, self.future_position)
         print("FILLED", self.previous_order_id, client_order_id, self.previous_ids)
@@ -207,7 +210,21 @@ class AutoTrader(BaseAutoTrader):
         if len(self.previous_ids) > 1: 
             # print(self.previous_order_id, self.previous_ids[-1])
             if self.previous_ids[-1] < self.previous_ids[-2] - 1:
-                print("FUCKITY FUCK FUCK")
+                print("FUCKITY FUCK FUCK 2")
+                self.etf_position = self.future_position = 0
+                if client_order_id == self.bid_id:
+                    self.bids.discard(client_order_id)
+                    self.send_cancel_order(self.bid_id)
+                    return None
+                elif client_order_id == self.ask_id:
+                    self.asks.discard(client_order_id)
+                    self.send_cancel_order(self.ask_id)
+                    return None
+                    
+                self.bids.discard(client_order_id)
+                self.asks.discard(client_order_id)
+                return None
+
         
         self.logger.info("received order status for order %d with fill volume %d remaining %d and fees %d",
                          client_order_id, fill_volume, remaining_volume, fees)
