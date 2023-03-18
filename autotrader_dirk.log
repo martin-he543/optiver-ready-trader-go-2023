@@ -1,0 +1,4 @@
+2023-03-18 13:43:19,081 [INFO   ] [APP] autotrader_dirk started with arguments={rtg.py, run, autotrader_dirk.py}
+2023-03-18 13:43:19,081 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"Type":"mmap","Name":"info.dat"},"TeamName":"TraderOne","Secret":"secret"}
+2023-03-18 13:43:19,982 [ERROR  ] [INIT] execution connection failed: Connect call failed ('127.0.0.1', 12345)
+2023-03-18 13:43:19,982 [INFO   ] [APP] closing event loop

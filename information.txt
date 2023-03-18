@@ -1,0 +1,31 @@
+1. Trade Tick Information Updates:
+(a) Our Active Orders [dimensions: (10 maximum, Order ID, Price, Volume, ETF Ask/Bid]
+(b) Last Traded ETF by any competitor [dimensions: (appended, Price, Volume)], Last Traded Futures by any competitor [dimensions: (appended, Price, Volume)]
+(c) Time Since Last Trade [dimensions: (Time)]
+
+2. Market Making Strategy
+(a) Determine LTR (last-traded price)
+(b) Determine Volatility
+(c) Prioritise Neutral Position (bring Position back to 0), measure where the market could have gone since then, base our pricing on that
+(d) A Measure of how big the orders will be
+(e) Calculate the minimal profitable ETF Ask/Bid, Calculate the maximum profitable ETF Ask/Bid
+(f) Determine what price and volume we want to place when we insert
+(g) When we wish to cancel the same order
+
+# the first dimention are 
+# ask orders - sell ETF orders
+# bid orders - buy ETF orders
+
+# the second dimension are
+# order id, price, volume
+'''
+parameters:
+- placing_order: True if the order is being placed, False if the order is partially filled and needs updating
+- id: the id of the order
+- cancel: True if the order is being cancelled, False if the order is being placed or updated, only used if placing_order is False
+- buy: True if the order is a buy order, False if the order is a sell order, only used if placing_order is True
+- placing_price: the price of the order to be placed, only used if placing_order is True
+- placing_volume: the volume of the order to be placed, only used if placing_order is True
+- remaining_volume: the remaining volume of the order, only used if placing_order is False
+
+'''

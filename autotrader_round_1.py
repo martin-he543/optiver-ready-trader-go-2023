@@ -40,7 +40,8 @@ class AutoTrader(BaseAutoTrader):
         self.asks = set()
         self.ask_id = self.ask_price = self.bid_id = self.bid_price = self.etf_position = 0
         self.recent_orders = np.zeros((50)); self.list_of_lists_2 = np.zeros((1, 5))
-        self.future_position = 0; self.etf_position = 0; self.imaginary_position = 0
+        self.future_position = 0; self.etf_position = 0
+        self.book_of_orders = np.zeros((10, ))
 
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
         """Called when the exchange detects an error.If the error pertains to a particular order, then the 

@@ -19343,3 +19343,296 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2023-03-17 19:19:25,009 [INFO   ] [CONNECTION] fd=16 connection lost
 2023-03-17 19:19:25,009 [INFO   ] [APP] closing event loop
 2023-03-17 19:19:25,009 [INFO   ] [RECEIVER] connection lost
+2023-03-18 11:26:50,244 [INFO   ] [APP] autotrader_latest started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-18 11:26:50,245 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"Type":"mmap","Name":"info.dat"},"TeamName":"TraderOne","Secret":"secret"}
+2023-03-18 11:26:50,249 [INFO   ] [CONNECTION] fd=16 connection established: peer=127.0.0.1:12345
+2023-03-18 11:26:50,670 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 1
+2023-03-18 11:26:50,670 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 1
+2023-03-18 11:26:50,670 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:26:50,672 [INFO   ] [TRADER] received order status for order 2 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:26:50,880 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 2
+2023-03-18 11:26:50,881 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 2
+2023-03-18 11:26:51,179 [INFO   ] [TRADER] received order filled for order 2 with price 148700 and volume 10
+2023-03-18 11:26:51,179 [INFO   ] [TRADER] received order status for order 2 with fill volume 10 remaining 0 and fees -149
+2023-03-18 11:26:51,179 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 2
+2023-03-18 11:26:51,199 [ERROR  ] [RECEIVER] connection lost:
+Traceback (most recent call last):
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/pubsub.py", line 136, in _subscribe_worker
+    protocol.datagram_received(buffer[start:start + length], from_addr)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 212, in datagram_received
+    self.on_datagram(typ, data, HEADER_SIZE, length)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 69, in on_datagram
+    self.on_order_book_update_message(inst, seq, *BOOK_PART.iter_unpack(data[ORDER_BOOK_HEADER_SIZE:]))
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/autotrader_latest.py", line 78, in on_order_book_update_message
+    if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
+UnboundLocalError: local variable 'current_time' referenced before assignment
+2023-03-18 11:26:51,200 [INFO   ] [APP] closing event loop
+2023-03-18 11:26:51,200 [INFO   ] [CONNECTION] fd=16 connection lost
+2023-03-18 11:26:51,201 [ERROR  ] [asyncio] Exception in callback _SelectorSocketTransport._call_connection_lost(None)
+handle: <Handle _SelectorSocketTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 976, in _call_connection_lost
+    super()._call_connection_lost(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 734, in _call_connection_lost
+    self._protocol.connection_lost(exc)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 59, in connection_lost
+    Subscription.close(self)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 186, in close
+    self._receiver_transport.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+2023-03-18 11:27:01,299 [INFO   ] [APP] autotrader_latest started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-18 11:27:01,299 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"Type":"mmap","Name":"info.dat"},"TeamName":"TraderOne","Secret":"secret"}
+2023-03-18 11:27:01,301 [INFO   ] [CONNECTION] fd=16 connection established: peer=127.0.0.1:12345
+2023-03-18 11:27:01,729 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 1
+2023-03-18 11:27:01,729 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 1
+2023-03-18 11:27:01,730 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:27:01,730 [INFO   ] [TRADER] received order status for order 2 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:27:01,967 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 2
+2023-03-18 11:27:01,967 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 2
+2023-03-18 11:27:02,215 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 3
+2023-03-18 11:27:02,215 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 3
+2023-03-18 11:27:02,215 [INFO   ] [TRADER] received order filled for order 2 with price 148700 and volume 10
+2023-03-18 11:27:02,215 [INFO   ] [TRADER] received order status for order 2 with fill volume 10 remaining 0 and fees -149
+2023-03-18 11:27:02,216 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 0 and fees 0
+2023-03-18 11:27:02,216 [INFO   ] [TRADER] received order status for order 3 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:27:02,216 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 2
+2023-03-18 11:27:02,436 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 3
+2023-03-18 11:27:02,474 [ERROR  ] [RECEIVER] connection lost:
+Traceback (most recent call last):
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/pubsub.py", line 136, in _subscribe_worker
+    protocol.datagram_received(buffer[start:start + length], from_addr)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 212, in datagram_received
+    self.on_datagram(typ, data, HEADER_SIZE, length)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 69, in on_datagram
+    self.on_order_book_update_message(inst, seq, *BOOK_PART.iter_unpack(data[ORDER_BOOK_HEADER_SIZE:]))
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/autotrader_latest.py", line 78, in on_order_book_update_message
+    if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
+UnboundLocalError: local variable 'current_time' referenced before assignment
+2023-03-18 11:27:02,474 [INFO   ] [APP] closing event loop
+2023-03-18 11:27:02,475 [INFO   ] [CONNECTION] fd=16 connection lost
+2023-03-18 11:27:02,475 [ERROR  ] [asyncio] Exception in callback _SelectorSocketTransport._call_connection_lost(None)
+handle: <Handle _SelectorSocketTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 976, in _call_connection_lost
+    super()._call_connection_lost(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 734, in _call_connection_lost
+    self._protocol.connection_lost(exc)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 59, in connection_lost
+    Subscription.close(self)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 186, in close
+    self._receiver_transport.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+2023-03-18 11:27:32,551 [INFO   ] [APP] autotrader_latest started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-18 11:27:32,552 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"Type":"mmap","Name":"info.dat"},"TeamName":"TraderOne","Secret":"secret"}
+2023-03-18 11:27:32,558 [INFO   ] [CONNECTION] fd=16 connection established: peer=127.0.0.1:12345
+2023-03-18 11:27:32,976 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 1
+2023-03-18 11:27:32,976 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 1
+2023-03-18 11:27:32,977 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:27:32,977 [INFO   ] [TRADER] received order status for order 2 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:27:33,236 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 2
+2023-03-18 11:27:33,237 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 2
+2023-03-18 11:27:33,478 [INFO   ] [TRADER] received order filled for order 2 with price 148700 and volume 10
+2023-03-18 11:27:33,478 [INFO   ] [TRADER] received order status for order 2 with fill volume 10 remaining 0 and fees -149
+2023-03-18 11:27:33,479 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 2
+2023-03-18 11:27:33,506 [ERROR  ] [RECEIVER] connection lost:
+Traceback (most recent call last):
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/pubsub.py", line 136, in _subscribe_worker
+    protocol.datagram_received(buffer[start:start + length], from_addr)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 212, in datagram_received
+    self.on_datagram(typ, data, HEADER_SIZE, length)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 69, in on_datagram
+    self.on_order_book_update_message(inst, seq, *BOOK_PART.iter_unpack(data[ORDER_BOOK_HEADER_SIZE:]))
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/autotrader_latest.py", line 78, in on_order_book_update_message
+    if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
+UnboundLocalError: local variable 'current_time' referenced before assignment
+2023-03-18 11:27:33,507 [INFO   ] [APP] closing event loop
+2023-03-18 11:27:33,507 [INFO   ] [CONNECTION] fd=16 connection lost
+2023-03-18 11:27:33,507 [ERROR  ] [asyncio] Exception in callback _SelectorSocketTransport._call_connection_lost(None)
+handle: <Handle _SelectorSocketTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 976, in _call_connection_lost
+    super()._call_connection_lost(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 734, in _call_connection_lost
+    self._protocol.connection_lost(exc)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 59, in connection_lost
+    Subscription.close(self)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 186, in close
+    self._receiver_transport.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+2023-03-18 11:27:40,131 [INFO   ] [APP] autotrader_latest started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-18 11:27:40,132 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"Type":"mmap","Name":"info.dat"},"TeamName":"TraderOne","Secret":"secret"}
+2023-03-18 11:27:40,134 [INFO   ] [CONNECTION] fd=16 connection established: peer=127.0.0.1:12345
+2023-03-18 11:27:40,563 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 1
+2023-03-18 11:27:40,563 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 1
+2023-03-18 11:27:40,564 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:27:40,564 [INFO   ] [TRADER] received order status for order 2 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:27:40,828 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 2
+2023-03-18 11:27:40,828 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 2
+2023-03-18 11:27:41,058 [INFO   ] [TRADER] received order filled for order 2 with price 148700 and volume 10
+2023-03-18 11:27:41,058 [INFO   ] [TRADER] received order status for order 2 with fill volume 10 remaining 0 and fees -149
+2023-03-18 11:27:41,058 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 2
+2023-03-18 11:27:41,104 [ERROR  ] [RECEIVER] connection lost:
+Traceback (most recent call last):
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/pubsub.py", line 136, in _subscribe_worker
+    protocol.datagram_received(buffer[start:start + length], from_addr)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 212, in datagram_received
+    self.on_datagram(typ, data, HEADER_SIZE, length)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 69, in on_datagram
+    self.on_order_book_update_message(inst, seq, *BOOK_PART.iter_unpack(data[ORDER_BOOK_HEADER_SIZE:]))
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/autotrader_latest.py", line 78, in on_order_book_update_message
+    if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
+UnboundLocalError: local variable 'current_time' referenced before assignment
+2023-03-18 11:27:41,105 [INFO   ] [APP] closing event loop
+2023-03-18 11:27:41,106 [INFO   ] [CONNECTION] fd=16 connection lost
+2023-03-18 11:27:41,106 [ERROR  ] [asyncio] Exception in callback _SelectorSocketTransport._call_connection_lost(None)
+handle: <Handle _SelectorSocketTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 976, in _call_connection_lost
+    super()._call_connection_lost(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 734, in _call_connection_lost
+    self._protocol.connection_lost(exc)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 59, in connection_lost
+    Subscription.close(self)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 186, in close
+    self._receiver_transport.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+2023-03-18 11:29:28,033 [INFO   ] [APP] autotrader_latest started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-18 11:29:28,033 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"Type":"mmap","Name":"info.dat"},"TeamName":"TraderOne","Secret":"secret"}
+2023-03-18 11:29:28,037 [INFO   ] [CONNECTION] fd=16 connection established: peer=127.0.0.1:12345
+2023-03-18 11:29:28,459 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 1
+2023-03-18 11:29:28,459 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 1
+2023-03-18 11:29:28,460 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:29:28,460 [INFO   ] [TRADER] received order status for order 2 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:29:28,751 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 2
+2023-03-18 11:29:28,752 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 2
+2023-03-18 11:29:28,948 [INFO   ] [TRADER] received order filled for order 2 with price 148700 and volume 10
+2023-03-18 11:29:28,949 [INFO   ] [TRADER] received order status for order 2 with fill volume 10 remaining 0 and fees -149
+2023-03-18 11:29:28,949 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 2
+2023-03-18 11:29:28,951 [ERROR  ] [RECEIVER] connection lost:
+Traceback (most recent call last):
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/pubsub.py", line 136, in _subscribe_worker
+    protocol.datagram_received(buffer[start:start + length], from_addr)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 212, in datagram_received
+    self.on_datagram(typ, data, HEADER_SIZE, length)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 69, in on_datagram
+    self.on_order_book_update_message(inst, seq, *BOOK_PART.iter_unpack(data[ORDER_BOOK_HEADER_SIZE:]))
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/autotrader_latest.py", line 78, in on_order_book_update_message
+    if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
+UnboundLocalError: local variable 'current_time' referenced before assignment
+2023-03-18 11:29:28,952 [INFO   ] [APP] closing event loop
+2023-03-18 11:29:28,952 [INFO   ] [CONNECTION] fd=16 connection lost
+2023-03-18 11:29:28,952 [ERROR  ] [asyncio] Exception in callback _SelectorSocketTransport._call_connection_lost(None)
+handle: <Handle _SelectorSocketTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 976, in _call_connection_lost
+    super()._call_connection_lost(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 734, in _call_connection_lost
+    self._protocol.connection_lost(exc)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 59, in connection_lost
+    Subscription.close(self)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 186, in close
+    self._receiver_transport.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+2023-03-18 11:30:31,321 [INFO   ] [APP] autotrader_latest started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-18 11:30:31,322 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"Type":"mmap","Name":"info.dat"},"TeamName":"TraderOne","Secret":"secret"}
+2023-03-18 11:30:31,328 [INFO   ] [CONNECTION] fd=16 connection established: peer=127.0.0.1:12345
+2023-03-18 11:30:31,695 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 1
+2023-03-18 11:30:31,695 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 1
+2023-03-18 11:30:31,696 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:30:31,696 [INFO   ] [TRADER] received order status for order 2 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:30:31,921 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 2
+2023-03-18 11:30:31,921 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 2
+2023-03-18 11:30:32,182 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 3
+2023-03-18 11:30:32,183 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 3
+2023-03-18 11:30:32,183 [INFO   ] [TRADER] received order filled for order 2 with price 148700 and volume 10
+2023-03-18 11:30:32,183 [INFO   ] [TRADER] received order status for order 2 with fill volume 10 remaining 0 and fees -149
+2023-03-18 11:30:32,183 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 0 and fees 0
+2023-03-18 11:30:32,184 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 2
+2023-03-18 11:30:32,184 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 3
+2023-03-18 11:30:32,184 [INFO   ] [TRADER] received order status for order 3 with fill volume 0 remaining 10 and fees 0
+2023-03-18 11:30:32,184 [INFO   ] [TRADER] received order filled for order 4 with price 148700 and volume 10
+2023-03-18 11:30:32,184 [INFO   ] [TRADER] received order status for order 4 with fill volume 10 remaining 0 and fees 297
+2023-03-18 11:30:32,387 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 4
+2023-03-18 11:30:32,464 [ERROR  ] [RECEIVER] connection lost:
+Traceback (most recent call last):
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/pubsub.py", line 136, in _subscribe_worker
+    protocol.datagram_received(buffer[start:start + length], from_addr)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 212, in datagram_received
+    self.on_datagram(typ, data, HEADER_SIZE, length)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 69, in on_datagram
+    self.on_order_book_update_message(inst, seq, *BOOK_PART.iter_unpack(data[ORDER_BOOK_HEADER_SIZE:]))
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/autotrader_latest.py", line 78, in on_order_book_update_message
+    if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
+UnboundLocalError: local variable 'current_time' referenced before assignment
+2023-03-18 11:30:32,465 [INFO   ] [APP] closing event loop
+2023-03-18 11:30:32,465 [INFO   ] [CONNECTION] fd=16 connection lost
+2023-03-18 11:30:32,468 [ERROR  ] [asyncio] Exception in callback _SelectorSocketTransport._call_connection_lost(None)
+handle: <Handle _SelectorSocketTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 976, in _call_connection_lost
+    super()._call_connection_lost(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 734, in _call_connection_lost
+    self._protocol.connection_lost(exc)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 59, in connection_lost
+    Subscription.close(self)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 186, in close
+    self._receiver_transport.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+2023-03-18 17:49:00,710 [INFO   ] [APP] autotrader_latest started with arguments={rtg.py, run, autotrader_latest.py}
+2023-03-18 17:49:00,711 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"Type":"mmap","Name":"info.dat"},"TeamName":"TraderOne","Secret":"secret"}
+2023-03-18 17:49:00,718 [INFO   ] [CONNECTION] fd=16 connection established: peer=127.0.0.1:12345
+2023-03-18 17:49:01,123 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 1
+2023-03-18 17:49:01,124 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 1
+2023-03-18 17:49:01,124 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 10 and fees 0
+2023-03-18 17:49:01,124 [INFO   ] [TRADER] received order status for order 2 with fill volume 0 remaining 10 and fees 0
+2023-03-18 17:49:01,355 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 2
+2023-03-18 17:49:01,355 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 2
+2023-03-18 17:49:01,622 [INFO   ] [TRADER] received order book for instrument 0 with sequence number 3
+2023-03-18 17:49:01,622 [INFO   ] [TRADER] received order book for instrument 1 with sequence number 3
+2023-03-18 17:49:01,623 [INFO   ] [TRADER] received order filled for order 2 with price 148700 and volume 10
+2023-03-18 17:49:01,623 [INFO   ] [TRADER] received order status for order 2 with fill volume 10 remaining 0 and fees -149
+2023-03-18 17:49:01,623 [INFO   ] [TRADER] received order status for order 1 with fill volume 0 remaining 0 and fees 0
+2023-03-18 17:49:01,623 [INFO   ] [TRADER] received order status for order 3 with fill volume 0 remaining 10 and fees 0
+2023-03-18 17:49:01,623 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 2
+2023-03-18 17:49:01,623 [INFO   ] [TRADER] received order filled for order 4 with price 148700 and volume 10
+2023-03-18 17:49:01,624 [INFO   ] [TRADER] received order status for order 4 with fill volume 10 remaining 0 and fees 297
+2023-03-18 17:49:01,832 [INFO   ] [TRADER] received trade ticks for instrument 1 with sequence number 3
+2023-03-18 17:49:01,836 [ERROR  ] [RECEIVER] connection lost:
+Traceback (most recent call last):
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/pubsub.py", line 136, in _subscribe_worker
+    protocol.datagram_received(buffer[start:start + length], from_addr)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 212, in datagram_received
+    self.on_datagram(typ, data, HEADER_SIZE, length)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 69, in on_datagram
+    self.on_order_book_update_message(inst, seq, *BOOK_PART.iter_unpack(data[ORDER_BOOK_HEADER_SIZE:]))
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/autotrader_latest.py", line 78, in on_order_book_update_message
+    if (current_time - self.recent_orders[0]) > 1:                                                          # CHECK if more than 50 messages in 1 second - STOP!
+UnboundLocalError: local variable 'current_time' referenced before assignment
+2023-03-18 17:49:01,836 [INFO   ] [APP] closing event loop
+2023-03-18 17:49:01,837 [INFO   ] [CONNECTION] fd=16 connection lost
+2023-03-18 17:49:01,837 [ERROR  ] [asyncio] Exception in callback _SelectorSocketTransport._call_connection_lost(None)
+handle: <Handle _SelectorSocketTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 976, in _call_connection_lost
+    super()._call_connection_lost(exc)
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 734, in _call_connection_lost
+    self._protocol.connection_lost(exc)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/base_auto_trader.py", line 59, in connection_lost
+    Subscription.close(self)
+  File "/home/martin/Workspaces/optiver-ready-trader-go-2023/ready_trader_go/messages.py", line 186, in close
+    self._receiver_transport.close()
+AttributeError: 'NoneType' object has no attribute 'close'
